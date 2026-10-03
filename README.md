@@ -4,7 +4,7 @@ An airport-style Home Assistant dashboard card: city banner, split-flap clocks, 
 
 [Latest release](https://github.com/JustKidding49/oasis-flightradar-card/releases/latest) · [Français](README.fr.md) · [Report an issue](https://github.com/JustKidding49/oasis-flightradar-card/issues)
 
-**Version 0.1.2 · GPL-3.0-only · Maintained by JustKidding49**
+**Version 0.1.3 · GPL-3.0-only · Maintained by JustKidding49**
 
 Available as a **custom HACS repository**, not yet in the default catalog. Documentation is in English; the current card interface is primarily French, with bilingual flight-board headings.
 
@@ -60,7 +60,7 @@ HACS manages the resource version query in storage-mode dashboards. If an old co
 
 ### Manual installation
 
-Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.2` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
+Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.3` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
 
 ## Configuration
 
@@ -86,6 +86,7 @@ Airport/add/remove entities accept `text` or `input_text`; clear accepts `button
 | Option | Default | Purpose |
 | --- | --- | --- |
 | `visible_rows` | `10` | Visible rows, from 1 to 30. |
+| `table_animations` | `true` | Enable character-cycle animations in both departure and arrival boards. Available in the visual editor. Set to `false` for immediate updates; panel styling and clocks remain unchanged. |
 | `flights_attribute` | `flights` | Attribute containing flight objects. |
 | `read_only` | `true` | Block follow-action submissions. |
 | `online_images` | `true` | Allow Wikidata/Commons photo lookup. |

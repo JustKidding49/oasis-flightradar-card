@@ -6,7 +6,7 @@ Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : band
 
 Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
 
-**Version 0.1.2.** Les 26 tests locaux réussissent. Installation de test et rendu réel vérifiés le 3 octobre 2026 dans Home Assistant, en lecture seule : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; elle n’est pas dans le catalogue par défaut.
+**Version 0.1.3.** Les 28 tests locaux réussissent. Le rendu réel de la version précédente a été vérifié le 3 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
 
 ## Ce qui est regroupé
 
@@ -35,7 +35,7 @@ Les capteurs doivent exposer un attribut `flights`, contenant une liste d’obje
 ## Installation manuelle
 
 1. Copier `dist/oasis-flightradar-card.js` dans le dossier `www` existant de Home Assistant.
-2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.2`, type **module**.
+2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.3`, type **module**.
 3. Ajouter la carte « Oasis Flightradar Card » et renseigner les entités.
 
 Le fichier autonome mesure environ 108 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.
@@ -66,6 +66,7 @@ En dehors des validations utilisateur, aucun service Home Assistant n’est lanc
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | `visible_rows` | `10` | Entier de 1 à 30 ; taille des tableaux. |
+| `table_animations` | `true` | Active les animations de caractères des tableaux Départs et Arrivées. Option disponible dans l’éditeur visuel. Avec `false`, affichage immédiat des données, sans changer le style des panneaux ni les horloges. |
 | `flights_attribute` | `flights` | Attribut contenant la liste de vols. |
 | `read_only` | `true` | Bloque toutes les validations de suivi. |
 | `online_images` | `true` | Autorise les recherches de photos Wikidata/Commons. |
