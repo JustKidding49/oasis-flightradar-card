@@ -1,0 +1,8071 @@
+[
+  {
+    "code": "OAHR",
+    "name": "Guzara · Herat - Khwaja Abdullah Ansari International Airport",
+    "city": "Guzara",
+    "country": "Afghanistan",
+    "iata": "HEA"
+  },
+  {
+    "code": "OAKB",
+    "name": "Kabul International Airport",
+    "city": "Kabul",
+    "country": "Afghanistan",
+    "iata": "KBL"
+  },
+  {
+    "code": "OAKN",
+    "name": "Kandahar · Ahmad Shah Baba International Airport",
+    "city": "Kandahar",
+    "country": "Afghanistan",
+    "iata": "KDH"
+  },
+  {
+    "code": "OAMS",
+    "name": "Mazar-i-Sharif International Airport",
+    "city": "Mazar-i-Sharif",
+    "country": "Afghanistan",
+    "iata": "MZR"
+  },
+  {
+    "code": "FABL",
+    "name": "Bloemfontein · Bram Fischer International Airport",
+    "city": "Bloemfontein",
+    "country": "Afrique du Sud",
+    "iata": "BFN"
+  },
+  {
+    "code": "FACT",
+    "name": "Cape Town International Airport",
+    "city": "Cape Town",
+    "country": "Afrique du Sud",
+    "iata": "CPT"
+  },
+  {
+    "code": "FALE",
+    "name": "Durban · King Shaka International Airport",
+    "city": "Durban",
+    "country": "Afrique du Sud",
+    "iata": "DUR"
+  },
+  {
+    "code": "FAEL",
+    "name": "East London · King Phalo Airport",
+    "city": "East London",
+    "country": "Afrique du Sud",
+    "iata": "ELS"
+  },
+  {
+    "code": "FAGG",
+    "name": "George Airport",
+    "city": "George",
+    "country": "Afrique du Sud",
+    "iata": "GRJ"
+  },
+  {
+    "code": "FAPE",
+    "name": "Gqeberha (Port Elizabeth) · Chief Dawid Stuurman International Airport",
+    "city": "Gqeberha (Port Elizabeth)",
+    "country": "Afrique du Sud",
+    "iata": "PLZ"
+  },
+  {
+    "code": "FALA",
+    "name": "Johannesburg · Lanseria International Airport",
+    "city": "Johannesburg",
+    "country": "Afrique du Sud",
+    "iata": "HLA"
+  },
+  {
+    "code": "FAOR",
+    "name": "Johannesburg · O.R. Tambo International Airport",
+    "city": "Johannesburg",
+    "country": "Afrique du Sud",
+    "iata": "JNB"
+  },
+  {
+    "code": "FAKM",
+    "name": "Kimberley Airport",
+    "city": "Kimberley",
+    "country": "Afrique du Sud",
+    "iata": "KIM"
+  },
+  {
+    "code": "FAKN",
+    "name": "Mbombela · Kruger Mpumalanga International Airport",
+    "city": "Mbombela",
+    "country": "Afrique du Sud",
+    "iata": "MQP"
+  },
+  {
+    "code": "FAPP",
+    "name": "Polokwane International Airport",
+    "city": "Polokwane",
+    "country": "Afrique du Sud",
+    "iata": "PTG"
+  },
+  {
+    "code": "LATI",
+    "name": "Rinas · Tirana International Airport Mother Teresa",
+    "city": "Rinas",
+    "country": "Albanie",
+    "iata": "TIA"
+  },
+  {
+    "code": "DAAG",
+    "name": "Alger · Houari Boumediene Airport",
+    "city": "Algiers",
+    "country": "Algérie",
+    "iata": "ALG"
+  },
+  {
+    "code": "DABB",
+    "name": "Annaba Rabah Bitat Airport",
+    "city": "Annaba",
+    "country": "Algérie",
+    "iata": "AAE"
+  },
+  {
+    "code": "DABT",
+    "name": "Batna Mostefa Ben Boulaid Airport",
+    "city": "Batna",
+    "country": "Algérie",
+    "iata": "BLJ"
+  },
+  {
+    "code": "DAAE",
+    "name": "Béjaïa · Soummam–Abane Ramdane Airport",
+    "city": "Béjaïa",
+    "country": "Algérie",
+    "iata": "BJA"
+  },
+  {
+    "code": "DAUB",
+    "name": "Biskra - Mohamed Khider Airport",
+    "city": "Biskra",
+    "country": "Algérie",
+    "iata": "BSK"
+  },
+  {
+    "code": "DAOI",
+    "name": "Chlef Aboubakr Belkaid International Airport",
+    "city": "Chlef",
+    "country": "Algérie",
+    "iata": "CFK"
+  },
+  {
+    "code": "DABC",
+    "name": "Constantine · Mohamed Boudiaf International Airport",
+    "city": "Constantine",
+    "country": "Algérie",
+    "iata": "CZL"
+  },
+  {
+    "code": "DAOO",
+    "name": "Oran Es-Sénia (Ahmed Ben Bella) International Airport",
+    "city": "Es-Sénia",
+    "country": "Algérie",
+    "iata": "ORN"
+  },
+  {
+    "code": "DAAV",
+    "name": "Tahir · Jijel Ferhat Abbas Airport",
+    "city": "Tahir",
+    "country": "Algérie",
+    "iata": "GJL"
+  },
+  {
+    "code": "DAAT",
+    "name": "Tamanrasset · Aguenar – Hadj Bey Akhamok Airport",
+    "city": "Tamanrasset",
+    "country": "Algérie",
+    "iata": "TMR"
+  },
+  {
+    "code": "DAAJ",
+    "name": "Tiska Djanet Airport",
+    "city": "Djanet",
+    "country": "Algérie",
+    "iata": "DJG"
+  },
+  {
+    "code": "DAON",
+    "name": "Zenata – Messali El Hadj Airport",
+    "city": "Zenata",
+    "country": "Algérie",
+    "iata": "TLM"
+  },
+  {
+    "code": "EDDB",
+    "name": "Berlin-Brandenburg",
+    "city": "Berlin",
+    "country": "Allemagne",
+    "iata": "BER"
+  },
+  {
+    "code": "EDNY",
+    "name": "Bodensee Airport Friedrichshafen",
+    "city": "Friedrichshafen",
+    "country": "Allemagne",
+    "iata": "FDH"
+  },
+  {
+    "code": "EDDW",
+    "name": "Bremen Airport",
+    "city": "Bremen",
+    "country": "Allemagne",
+    "iata": "BRE"
+  },
+  {
+    "code": "EDLP",
+    "name": "Büren · Paderborn Lippstadt Airport",
+    "city": "Büren",
+    "country": "Allemagne",
+    "iata": "PAD"
+  },
+  {
+    "code": "EDVK",
+    "name": "Calden · Kassel Airport",
+    "city": "Calden",
+    "country": "Allemagne",
+    "iata": "KSF"
+  },
+  {
+    "code": "EDLW",
+    "name": "Dortmund Airport",
+    "city": "Dortmund",
+    "country": "Allemagne",
+    "iata": "DTM"
+  },
+  {
+    "code": "EDDC",
+    "name": "Dresden Airport",
+    "city": "Dresden",
+    "country": "Allemagne",
+    "iata": "DRS"
+  },
+  {
+    "code": "EDDL",
+    "name": "Düsseldorf",
+    "city": "Düsseldorf",
+    "country": "Allemagne",
+    "iata": "DUS"
+  },
+  {
+    "code": "EDDE",
+    "name": "Erfurt-Weimar Airport",
+    "city": "Erfurt",
+    "country": "Allemagne",
+    "iata": "ERF"
+  },
+  {
+    "code": "EDDF",
+    "name": "Francfort",
+    "city": "Frankfurt am Main",
+    "country": "Allemagne",
+    "iata": "FRA"
+  },
+  {
+    "code": "EDFH",
+    "name": "Frankfurt am Main (Lautzenhausen) · Frankfurt-Hahn Airport",
+    "city": "Frankfurt am Main (Lautzenhausen)",
+    "country": "Allemagne",
+    "iata": "HHN"
+  },
+  {
+    "code": "EDDG",
+    "name": "Greven · Münster Osnabrück Airport",
+    "city": "Greven",
+    "country": "Allemagne",
+    "iata": "FMO"
+  },
+  {
+    "code": "EDDH",
+    "name": "Hambourg",
+    "city": "Hamburg",
+    "country": "Allemagne",
+    "iata": "HAM"
+  },
+  {
+    "code": "EDDV",
+    "name": "Hannover Airport",
+    "city": "Hannover",
+    "country": "Allemagne",
+    "iata": "HAJ"
+  },
+  {
+    "code": "EDDK",
+    "name": "Köln (Cologne) · Cologne Bonn Airport",
+    "city": "Köln (Cologne)",
+    "country": "Allemagne",
+    "iata": "CGN"
+  },
+  {
+    "code": "EDJA",
+    "name": "Memmingen Allgau Airport",
+    "city": "Memmingen",
+    "country": "Allemagne",
+    "iata": "FMM"
+  },
+  {
+    "code": "EDDM",
+    "name": "Munich",
+    "city": "Munich",
+    "country": "Allemagne",
+    "iata": "MUC"
+  },
+  {
+    "code": "EDDN",
+    "name": "Nuremberg Airport",
+    "city": "Nuremberg",
+    "country": "Allemagne",
+    "iata": "NUE"
+  },
+  {
+    "code": "EDSB",
+    "name": "Rheinmünster · Karlsruhe Baden-Baden Airport",
+    "city": "Rheinmünster",
+    "country": "Allemagne",
+    "iata": "FKB"
+  },
+  {
+    "code": "EDDP",
+    "name": "Schkeuditz · Leipzig/Halle Airport",
+    "city": "Schkeuditz",
+    "country": "Allemagne",
+    "iata": "LEJ"
+  },
+  {
+    "code": "EDDS",
+    "name": "Stuttgart Airport",
+    "city": "Stuttgart",
+    "country": "Allemagne",
+    "iata": "STR"
+  },
+  {
+    "code": "EDLV",
+    "name": "Weeze (Niederrhein) Airport",
+    "city": "Weeze",
+    "country": "Allemagne",
+    "iata": "NRN"
+  },
+  {
+    "code": "FNLU",
+    "name": "Luanda · Quatro de Fevereiro International Airport",
+    "city": "Luanda",
+    "country": "Angola",
+    "iata": "LAD"
+  },
+  {
+    "code": "FNBJ",
+    "name": "Luanda (Ícolo e Bengo) · Dr. Antonio Agostinho Neto International Airport",
+    "city": "Luanda (Ícolo e Bengo)",
+    "country": "Angola",
+    "iata": "NBJ"
+  },
+  {
+    "code": "TAPA",
+    "name": "Osbourn · V. C. Bird International Airport",
+    "city": "Osbourn",
+    "country": "Antigua-et-Barbuda",
+    "iata": "ANU"
+  },
+  {
+    "code": "OEAB",
+    "name": "Abha International Airport",
+    "city": "Abha",
+    "country": "Arabie saoudite",
+    "iata": "AHB"
+  },
+  {
+    "code": "OEDF",
+    "name": "Ad Dammam · King Fahd International Airport",
+    "city": "Ad Dammam",
+    "country": "Arabie saoudite",
+    "iata": "DMM"
+  },
+  {
+    "code": "OESK",
+    "name": "Al-Jawf International Airport",
+    "city": "Al-Jawf",
+    "country": "Arabie saoudite",
+    "iata": "AJF"
+  },
+  {
+    "code": "OEAO",
+    "name": "Al-Ula International Airport",
+    "city": "Al-Ula",
+    "country": "Arabie saoudite",
+    "iata": "ULH"
+  },
+  {
+    "code": "OEHL",
+    "name": "Hail International Airport",
+    "city": "Hail",
+    "country": "Arabie saoudite",
+    "iata": "HAS"
+  },
+  {
+    "code": "OERS",
+    "name": "Hanak · Red Sea International Airport",
+    "city": "Hanak",
+    "country": "Arabie saoudite",
+    "iata": "RSI"
+  },
+  {
+    "code": "OEAH",
+    "name": "Hofuf · Al-Ahsa International Airport",
+    "city": "Hofuf",
+    "country": "Arabie saoudite",
+    "iata": "HOF"
+  },
+  {
+    "code": "OEJN",
+    "name": "Jeddah · King Abdulaziz International Airport",
+    "city": "Jeddah",
+    "country": "Arabie saoudite",
+    "iata": "JED"
+  },
+  {
+    "code": "OEMA",
+    "name": "Medina · Prince Mohammad Bin Abdulaziz Airport",
+    "city": "Medina",
+    "country": "Arabie saoudite",
+    "iata": "MED"
+  },
+  {
+    "code": "OEPA",
+    "name": "Qaisumah–Hafar Al-Batin International Airport",
+    "city": "Qaisumah",
+    "country": "Arabie saoudite",
+    "iata": "AQI"
+  },
+  {
+    "code": "OEGS",
+    "name": "Qassim · Prince Naif bin Abdulaziz International Airport",
+    "city": "Qassim",
+    "country": "Arabie saoudite",
+    "iata": "ELQ"
+  },
+  {
+    "code": "OERK",
+    "name": "Riyadh · King Khalid International Airport",
+    "city": "Riyadh",
+    "country": "Arabie saoudite",
+    "iata": "RUH"
+  },
+  {
+    "code": "OENN",
+    "name": "Sharma · Neom Bay Airport",
+    "city": "Sharma",
+    "country": "Arabie saoudite",
+    "iata": "NUM"
+  },
+  {
+    "code": "OETB",
+    "name": "Tabuk · Prince Sultan bin Abdulaziz International Airport",
+    "city": "Tabuk",
+    "country": "Arabie saoudite",
+    "iata": "TUU"
+  },
+  {
+    "code": "OETF",
+    "name": "Taif International Airport",
+    "city": "Taif",
+    "country": "Arabie saoudite",
+    "iata": "TIF"
+  },
+  {
+    "code": "OEYN",
+    "name": "Yanbu · Prince Abdulmohsen Bin Abdulaziz International Airport",
+    "city": "Yanbu",
+    "country": "Arabie saoudite",
+    "iata": "YNB"
+  },
+  {
+    "code": "SABE",
+    "name": "Buenos Aires · Aeroparque Jorge Newbery",
+    "city": "Buenos Aires",
+    "country": "Argentine",
+    "iata": "AEP"
+  },
+  {
+    "code": "SAEZ",
+    "name": "Buenos Aires (Ezeiza) · Ezeiza International Airport - Ministro Pistarini",
+    "city": "Buenos Aires (Ezeiza)",
+    "country": "Argentine",
+    "iata": "EZE"
+  },
+  {
+    "code": "SAVC",
+    "name": "Comodoro Rivadavia · General Enrique Mosconi International Airport",
+    "city": "Comodoro Rivadavia",
+    "country": "Argentine",
+    "iata": "CRD"
+  },
+  {
+    "code": "SACO",
+    "name": "Cordoba · Ingeniero Aeronáutico Ambrosio L.V. Taravella International Airport",
+    "city": "Cordoba",
+    "country": "Argentine",
+    "iata": "COR"
+  },
+  {
+    "code": "SAME",
+    "name": "Mendoza · Governor Francisco Gabrielli International Airport",
+    "city": "Mendoza",
+    "country": "Argentine",
+    "iata": "MDZ"
+  },
+  {
+    "code": "SAZN",
+    "name": "Neuquén · Presidente Perón International Airport",
+    "city": "Neuquén",
+    "country": "Argentine",
+    "iata": "NQN"
+  },
+  {
+    "code": "SARE",
+    "name": "Resistencia International Airport",
+    "city": "Resistencia",
+    "country": "Argentine",
+    "iata": "RES"
+  },
+  {
+    "code": "SAWG",
+    "name": "Rio Gallegos · Piloto Civil Norberto Fernández International Airport",
+    "city": "Rio Gallegos",
+    "country": "Argentine",
+    "iata": "RGL"
+  },
+  {
+    "code": "SAAR",
+    "name": "Rosario Islas Malvinas International Airport",
+    "city": "Rosario",
+    "country": "Argentine",
+    "iata": "ROS"
+  },
+  {
+    "code": "SASA",
+    "name": "Salta · Martín Miguel de Güemes International Airport",
+    "city": "Salta",
+    "country": "Argentine",
+    "iata": "SLA"
+  },
+  {
+    "code": "SAZS",
+    "name": "San Carlos de Bariloche · Teniente Luis Candelaria International Airport",
+    "city": "San Carlos de Bariloche",
+    "country": "Argentine",
+    "iata": "BRC"
+  },
+  {
+    "code": "SANT",
+    "name": "San Miguel de Tucumán · Teniente Benjamín Matienzo International Airport",
+    "city": "San Miguel de Tucumán",
+    "country": "Argentine",
+    "iata": "TUC"
+  },
+  {
+    "code": "SASJ",
+    "name": "San Salvador de Jujuy · Gobernador Horacio Guzman International Airport",
+    "city": "San Salvador de Jujuy",
+    "country": "Argentine",
+    "iata": "JUJ"
+  },
+  {
+    "code": "UDSG",
+    "name": "Gyumri · Shirak International Airport",
+    "city": "Gyumri",
+    "country": "Arménie",
+    "iata": "LWN"
+  },
+  {
+    "code": "UDYZ",
+    "name": "Yerevan · Zvartnots International Airport",
+    "city": "Yerevan",
+    "country": "Arménie",
+    "iata": "EVN"
+  },
+  {
+    "code": "TNCA",
+    "name": "Oranjestad · Queen Beatrix International Airport",
+    "city": "Oranjestad",
+    "country": "Aruba",
+    "iata": "AUA"
+  },
+  {
+    "code": "YPAD",
+    "name": "Adelaide International Airport",
+    "city": "Adelaide",
+    "country": "Australie",
+    "iata": "ADL"
+  },
+  {
+    "code": "YBBN",
+    "name": "Brisbane International Airport",
+    "city": "Brisbane",
+    "country": "Australie",
+    "iata": "BNE"
+  },
+  {
+    "code": "YBRM",
+    "name": "Broome International Airport",
+    "city": "Broome",
+    "country": "Australie",
+    "iata": "BME"
+  },
+  {
+    "code": "YBCS",
+    "name": "Cairns International Airport",
+    "city": "Cairns",
+    "country": "Australie",
+    "iata": "CNS"
+  },
+  {
+    "code": "YPDN",
+    "name": "Darwin International Airport / RAAF Darwin",
+    "city": "Darwin",
+    "country": "Australie",
+    "iata": "DRW"
+  },
+  {
+    "code": "YMAV",
+    "name": "Geelong/Melbourne · Melbourne Avalon International Airport",
+    "city": "Geelong/Melbourne",
+    "country": "Australie",
+    "iata": "AVV"
+  },
+  {
+    "code": "YBCG",
+    "name": "Gold Coast Airport",
+    "city": "Gold Coast",
+    "country": "Australie",
+    "iata": "OOL"
+  },
+  {
+    "code": "YMHB",
+    "name": "Hobart (Cambridge) · Hobart International Airport",
+    "city": "Hobart (Cambridge)",
+    "country": "Australie",
+    "iata": "HBA"
+  },
+  {
+    "code": "YBSU",
+    "name": "Maroochydore · Sunshine Coast Airport",
+    "city": "Maroochydore",
+    "country": "Australie",
+    "iata": "MCY"
+  },
+  {
+    "code": "YMML",
+    "name": "Melbourne Airport",
+    "city": "Melbourne",
+    "country": "Australie",
+    "iata": "MEL"
+  },
+  {
+    "code": "YPPH",
+    "name": "Perth International Airport",
+    "city": "Perth",
+    "country": "Australie",
+    "iata": "PER"
+  },
+  {
+    "code": "YPPD",
+    "name": "Port Hedland International Airport",
+    "city": "Port Hedland",
+    "country": "Australie",
+    "iata": "PHE"
+  },
+  {
+    "code": "YSSY",
+    "name": "Sydney (Mascot) · Sydney Kingsford Smith International Airport",
+    "city": "Sydney (Mascot)",
+    "country": "Australie",
+    "iata": "SYD"
+  },
+  {
+    "code": "YBWW",
+    "name": "Toowoomba Wellcamp Airport",
+    "city": "Toowoomba",
+    "country": "Australie",
+    "iata": "WTB"
+  },
+  {
+    "code": "YWLM",
+    "name": "Williamtown · Newcastle Airport",
+    "city": "Williamtown",
+    "country": "Australie",
+    "iata": "NTL"
+  },
+  {
+    "code": "LOWG",
+    "name": "Feldkirchen bei Graz · Graz Airport",
+    "city": "Feldkirchen bei Graz",
+    "country": "Autriche",
+    "iata": "GRZ"
+  },
+  {
+    "code": "LOWI",
+    "name": "Innsbruck Airport",
+    "city": "Innsbruck",
+    "country": "Autriche",
+    "iata": "INN"
+  },
+  {
+    "code": "LOWK",
+    "name": "Klagenfurt am Wörthersee · Klagenfurt Airport",
+    "city": "Klagenfurt am Wörthersee",
+    "country": "Autriche",
+    "iata": "KLU"
+  },
+  {
+    "code": "LOWL",
+    "name": "Linz-Hörsching Airport",
+    "city": "Linz",
+    "country": "Autriche",
+    "iata": "LNZ"
+  },
+  {
+    "code": "LOWS",
+    "name": "Salzburg Airport",
+    "city": "Salzburg",
+    "country": "Autriche",
+    "iata": "SZG"
+  },
+  {
+    "code": "LOWW",
+    "name": "Vienne",
+    "city": "Vienna",
+    "country": "Autriche",
+    "iata": "VIE"
+  },
+  {
+    "code": "UBBB",
+    "name": "Baku · Heydar Aliyev International Airport",
+    "city": "Baku",
+    "country": "Azerbaïdjan",
+    "iata": "GYD"
+  },
+  {
+    "code": "UBBG",
+    "name": "Ganja International Airport",
+    "city": "Ganja",
+    "country": "Azerbaïdjan",
+    "iata": "GNJ"
+  },
+  {
+    "code": "UBBN",
+    "name": "Nakhchivan International Airport",
+    "city": "Nakhchivan",
+    "country": "Azerbaïdjan",
+    "iata": "NAJ"
+  },
+  {
+    "code": "MYGF",
+    "name": "Freeport · Grand Bahama International Airport",
+    "city": "Freeport",
+    "country": "Bahamas",
+    "iata": "FPO"
+  },
+  {
+    "code": "MYNN",
+    "name": "Nassau · Lynden Pindling International Airport",
+    "city": "Nassau",
+    "country": "Bahamas",
+    "iata": "NAS"
+  },
+  {
+    "code": "MYSM",
+    "name": "San Salvador International Airport",
+    "city": "San Salvador",
+    "country": "Bahamas",
+    "iata": "ZSA"
+  },
+  {
+    "code": "OBBI",
+    "name": "Manama · Bahrain International Airport",
+    "city": "Manama",
+    "country": "Bahreïn",
+    "iata": "BAH"
+  },
+  {
+    "code": "VGEG",
+    "name": "Chattogram (Chittagong) · Shah Amanat International Airport",
+    "city": "Chattogram (Chittagong)",
+    "country": "Bangladesh",
+    "iata": "CGP"
+  },
+  {
+    "code": "VGHS",
+    "name": "Dhaka · Hazrat Shahjalal International Airport",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "iata": "DAC"
+  },
+  {
+    "code": "VGSY",
+    "name": "Sylhet · Osmany International Airport",
+    "city": "Sylhet",
+    "country": "Bangladesh",
+    "iata": "ZYL"
+  },
+  {
+    "code": "TBPB",
+    "name": "Bridgetown · Grantley Adams International Airport",
+    "city": "Bridgetown",
+    "country": "Barbade",
+    "iata": "BGI"
+  },
+  {
+    "code": "EBCI",
+    "name": "Brussels South Charleroi Airport",
+    "city": "Charleroi",
+    "country": "Belgique",
+    "iata": "CRL"
+  },
+  {
+    "code": "EBBR",
+    "name": "Bruxelles-Zaventem",
+    "city": "Zaventem",
+    "country": "Belgique",
+    "iata": "BRU"
+  },
+  {
+    "code": "EBOS",
+    "name": "Oostende · Ostend-Bruges International Airport",
+    "city": "Oostende",
+    "country": "Belgique",
+    "iata": "OST"
+  },
+  {
+    "code": "MZBZ",
+    "name": "Belize City · Philip S. W. Goldson International Airport",
+    "city": "Belize City",
+    "country": "Belize",
+    "iata": "BZE"
+  },
+  {
+    "code": "DBBB",
+    "name": "Cotonou Cadjehoun International Airport",
+    "city": "Cotonou",
+    "country": "Bénin",
+    "iata": "COO"
+  },
+  {
+    "code": "TXKF",
+    "name": "Hamilton · L.F. Wade International Airport",
+    "city": "Hamilton",
+    "country": "Bermudes",
+    "iata": "BDA"
+  },
+  {
+    "code": "VQPR",
+    "name": "Paro International Airport",
+    "city": "Paro",
+    "country": "Bhoutan",
+    "iata": "PBH"
+  },
+  {
+    "code": "UMBB",
+    "name": "Brest International Airport",
+    "city": "Brest",
+    "country": "Biélorussie",
+    "iata": "BQT"
+  },
+  {
+    "code": "UMMS",
+    "name": "Minsk National Airport",
+    "city": "Minsk",
+    "country": "Biélorussie",
+    "iata": "MSQ"
+  },
+  {
+    "code": "SLCB",
+    "name": "Cochabamba · Jorge Wilsterman International Airport",
+    "city": "Cochabamba",
+    "country": "Bolivie",
+    "iata": "CBB"
+  },
+  {
+    "code": "SLLP",
+    "name": "La Paz / El Alto · El Alto International Airport",
+    "city": "La Paz / El Alto",
+    "country": "Bolivie",
+    "iata": "LPB"
+  },
+  {
+    "code": "SLOR",
+    "name": "Oruro · Juan Mendoza International Airport",
+    "city": "Oruro",
+    "country": "Bolivie",
+    "iata": "ORU"
+  },
+  {
+    "code": "SLUY",
+    "name": "Quijarro · Joya Andina International Airport",
+    "city": "Quijarro",
+    "country": "Bolivie",
+    "iata": "UYU"
+  },
+  {
+    "code": "SLVR",
+    "name": "Santa Cruz · Viru Viru International Airport",
+    "city": "Santa Cruz",
+    "country": "Bolivie",
+    "iata": "VVI"
+  },
+  {
+    "code": "SLAL",
+    "name": "Sucre · Alcantarí International Airport",
+    "city": "Sucre",
+    "country": "Bolivie",
+    "iata": "SRE"
+  },
+  {
+    "code": "LQTZ",
+    "name": "Dubrave Gornje · Tuzla International Airport",
+    "city": "Dubrave Gornje",
+    "country": "Bosnie-Herzégovine",
+    "iata": "TZL"
+  },
+  {
+    "code": "LQBK",
+    "name": "Mahovljani · Banja Luka International Airport",
+    "city": "Mahovljani",
+    "country": "Bosnie-Herzégovine",
+    "iata": "BNX"
+  },
+  {
+    "code": "LQMO",
+    "name": "Mostar International Airport",
+    "city": "Mostar",
+    "country": "Bosnie-Herzégovine",
+    "iata": "OMO"
+  },
+  {
+    "code": "LQSA",
+    "name": "Sarajevo International Airport",
+    "city": "Sarajevo",
+    "country": "Bosnie-Herzégovine",
+    "iata": "SJJ"
+  },
+  {
+    "code": "FBPM",
+    "name": "Francistown · Phillip Gaonwe Matante International Airport",
+    "city": "Francistown",
+    "country": "Botswana",
+    "iata": "FRW"
+  },
+  {
+    "code": "FBSK",
+    "name": "Gaborone · Sir Seretse Khama International Airport",
+    "city": "Gaborone",
+    "country": "Botswana",
+    "iata": "GBE"
+  },
+  {
+    "code": "FBKE",
+    "name": "Kasane International Airport",
+    "city": "Kasane",
+    "country": "Botswana",
+    "iata": "BBK"
+  },
+  {
+    "code": "FBMN",
+    "name": "Maun International Airport",
+    "city": "Maun",
+    "country": "Botswana",
+    "iata": "MUB"
+  },
+  {
+    "code": "SBBE",
+    "name": "Belém · Val de Cans/Júlio Cezar Ribeiro International Airport",
+    "city": "Belém",
+    "country": "Brésil",
+    "iata": "BEL"
+  },
+  {
+    "code": "SBCF",
+    "name": "Belo Horizonte · Tancredo Neves International Airport",
+    "city": "Belo Horizonte",
+    "country": "Brésil",
+    "iata": "CNF"
+  },
+  {
+    "code": "SBBV",
+    "name": "Boa Vista · Atlas Brasil Cantanhede International Airport",
+    "city": "Boa Vista",
+    "country": "Brésil",
+    "iata": "BVB"
+  },
+  {
+    "code": "SBBR",
+    "name": "Brasília · Presidente Juscelino Kubitschek International Airport",
+    "city": "Brasília",
+    "country": "Brésil",
+    "iata": "BSB"
+  },
+  {
+    "code": "SBKP",
+    "name": "Campinas · Viracopos International Airport",
+    "city": "Campinas",
+    "country": "Brésil",
+    "iata": "VCP"
+  },
+  {
+    "code": "SBCY",
+    "name": "Cuiabá · Várzea Grande–Marechal Rondon International Airport",
+    "city": "Cuiabá",
+    "country": "Brésil",
+    "iata": "CGB"
+  },
+  {
+    "code": "SBCT",
+    "name": "Curitiba-Afonso Pena International Airport",
+    "city": "Curitiba",
+    "country": "Brésil",
+    "iata": "CWB"
+  },
+  {
+    "code": "SBFL",
+    "name": "Florianópolis · Hercílio Luz International Airport",
+    "city": "Florianópolis",
+    "country": "Brésil",
+    "iata": "FLN"
+  },
+  {
+    "code": "SBFZ",
+    "name": "Fortaleza · Pinto Martins International Airport",
+    "city": "Fortaleza",
+    "country": "Brésil",
+    "iata": "FOR"
+  },
+  {
+    "code": "SBFI",
+    "name": "Foz do Iguaçu · Cataratas International Airport",
+    "city": "Foz do Iguaçu",
+    "country": "Brésil",
+    "iata": "IGU"
+  },
+  {
+    "code": "SBGO",
+    "name": "Goiânia · Santa Genoveva International Airport",
+    "city": "Goiânia",
+    "country": "Brésil",
+    "iata": "GYN"
+  },
+  {
+    "code": "SBJP",
+    "name": "João Pessoa · Presidente Castro Pinto International Airport",
+    "city": "João Pessoa",
+    "country": "Brésil",
+    "iata": "JPA"
+  },
+  {
+    "code": "SBMO",
+    "name": "Maceió · Zumbi dos Palmares International Airport",
+    "city": "Maceió",
+    "country": "Brésil",
+    "iata": "MCZ"
+  },
+  {
+    "code": "SBEG",
+    "name": "Manaus · Eduardo Gomes International Airport",
+    "city": "Manaus",
+    "country": "Brésil",
+    "iata": "MAO"
+  },
+  {
+    "code": "SBSG",
+    "name": "Natal · Rio Grande do Norte/São Gonçalo do Amarante–Governador Aluízio Alves International Airport",
+    "city": "Natal",
+    "country": "Brésil",
+    "iata": "NAT"
+  },
+  {
+    "code": "SBNF",
+    "name": "Navegantes · Ministro Victor Konder International Airport",
+    "city": "Navegantes",
+    "country": "Brésil",
+    "iata": "NVT"
+  },
+  {
+    "code": "SBPA",
+    "name": "Porto Alegre-Salgado Filho International Airport",
+    "city": "Porto Alegre",
+    "country": "Brésil",
+    "iata": "POA"
+  },
+  {
+    "code": "SBPS",
+    "name": "Porto Seguro International Airport",
+    "city": "Porto Seguro",
+    "country": "Brésil",
+    "iata": "BPS"
+  },
+  {
+    "code": "SBPV",
+    "name": "Porto Velho · Governador Jorge Teixeira de Oliveira International Airport",
+    "city": "Porto Velho",
+    "country": "Brésil",
+    "iata": "PVH"
+  },
+  {
+    "code": "SBRF",
+    "name": "Recife/Guararapes - Gilberto Freyre International Airport",
+    "city": "Recife",
+    "country": "Brésil",
+    "iata": "REC"
+  },
+  {
+    "code": "SBRB",
+    "name": "Rio Branco-Plácido de Castro International Airport",
+    "city": "Rio Branco",
+    "country": "Brésil",
+    "iata": "RBR"
+  },
+  {
+    "code": "SBRJ",
+    "name": "Rio de Janeiro · Santos Dumont Airport",
+    "city": "Rio de Janeiro",
+    "country": "Brésil",
+    "iata": "SDU"
+  },
+  {
+    "code": "SBGL",
+    "name": "Rio de Janeiro Galeão – Tom Jobim International Airport",
+    "city": "Rio De Janeiro",
+    "country": "Brésil",
+    "iata": "GIG"
+  },
+  {
+    "code": "SBSV",
+    "name": "Salvador · Deputado Luiz Eduardo Magalhães International Airport",
+    "city": "Salvador",
+    "country": "Brésil",
+    "iata": "SSA"
+  },
+  {
+    "code": "SBSL",
+    "name": "São Luís · Marechal Cunha Machado International Airport",
+    "city": "São Luís",
+    "country": "Brésil",
+    "iata": "SLZ"
+  },
+  {
+    "code": "SBSP",
+    "name": "São Paulo · Congonhas–Deputado Freitas Nobre Airport",
+    "city": "São Paulo",
+    "country": "Brésil",
+    "iata": "CGH"
+  },
+  {
+    "code": "SBGR",
+    "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+    "city": "São Paulo",
+    "country": "Brésil",
+    "iata": "GRU"
+  },
+  {
+    "code": "SBVT",
+    "name": "Vitória · Eurico de Aguiar Salles International Airport",
+    "city": "Vitória",
+    "country": "Brésil",
+    "iata": "VIX"
+  },
+  {
+    "code": "WBSB",
+    "name": "Bandar Seri Begawan · Brunei International Airport",
+    "city": "Bandar Seri Begawan",
+    "country": "Brunei",
+    "iata": "BWN"
+  },
+  {
+    "code": "LBBG",
+    "name": "Burgas Airport",
+    "city": "Burgas",
+    "country": "Bulgarie",
+    "iata": "BOJ"
+  },
+  {
+    "code": "LBPD",
+    "name": "Plovdiv International Airport",
+    "city": "Plovdiv",
+    "country": "Bulgarie",
+    "iata": "PDV"
+  },
+  {
+    "code": "LBSF",
+    "name": "Sofia Airport",
+    "city": "Sofia",
+    "country": "Bulgarie",
+    "iata": "SOF"
+  },
+  {
+    "code": "LBWN",
+    "name": "Varna Airport",
+    "city": "Varna",
+    "country": "Bulgarie",
+    "iata": "VAR"
+  },
+  {
+    "code": "DFOO",
+    "name": "Bobo Dioulasso Airport",
+    "city": "Bobo Dioulasso",
+    "country": "Burkina Faso",
+    "iata": "BOY"
+  },
+  {
+    "code": "DFFD",
+    "name": "Ouagadougou Thomas Sankara International Airport",
+    "city": "Ouagadougou",
+    "country": "Burkina Faso",
+    "iata": "OUA"
+  },
+  {
+    "code": "HBBA",
+    "name": "Bujumbura Melchior Ndadaye International Airport",
+    "city": "Bujumbura",
+    "country": "Burundi",
+    "iata": "BJM"
+  },
+  {
+    "code": "VDTI",
+    "name": "Phnom Penh (Boeng Khyang) · Techo International Airport",
+    "city": "Phnom Penh (Boeng Khyang)",
+    "country": "Cambodge",
+    "iata": "KTI"
+  },
+  {
+    "code": "VDSV",
+    "name": "Preah Sihanouk · Sihanouk International Airport",
+    "city": "Preah Sihanouk",
+    "country": "Cambodge",
+    "iata": "KOS"
+  },
+  {
+    "code": "VDSA",
+    "name": "Siem Reap-Angkor International Airport",
+    "city": "Siem Reap",
+    "country": "Cambodge",
+    "iata": "SAI"
+  },
+  {
+    "code": "VDDS",
+    "name": "Ta Noun · Dara Sakor International Airport",
+    "city": "Ta Noun",
+    "country": "Cambodge",
+    "iata": "DSY"
+  },
+  {
+    "code": "FKKD",
+    "name": "Douala International Airport",
+    "city": "Douala",
+    "country": "Cameroun",
+    "iata": "DLA"
+  },
+  {
+    "code": "FKKR",
+    "name": "Garoua International Airport",
+    "city": "Garoua",
+    "country": "Cameroun",
+    "iata": "GOU"
+  },
+  {
+    "code": "FKYS",
+    "name": "Yaoundé Nsimalen International Airport",
+    "city": "Yaoundé",
+    "country": "Cameroun",
+    "iata": "NSI"
+  },
+  {
+    "code": "CYYC",
+    "name": "Calgary International Airport",
+    "city": "Calgary",
+    "country": "Canada",
+    "iata": "YYC"
+  },
+  {
+    "code": "CYEG",
+    "name": "Edmonton International Airport",
+    "city": "Edmonton",
+    "country": "Canada",
+    "iata": "YEG"
+  },
+  {
+    "code": "CYHZ",
+    "name": "Halifax / Stanfield International Airport",
+    "city": "Halifax",
+    "country": "Canada",
+    "iata": "YHZ"
+  },
+  {
+    "code": "CYHM",
+    "name": "John C. Munro Hamilton International Airport",
+    "city": "Hamilton",
+    "country": "Canada",
+    "iata": "YHM"
+  },
+  {
+    "code": "CYLW",
+    "name": "Kelowna International Airport",
+    "city": "Kelowna",
+    "country": "Canada",
+    "iata": "YLW"
+  },
+  {
+    "code": "CYUL",
+    "name": "Montréal · Montreal / Pierre Elliott Trudeau International Airport",
+    "city": "Montréal",
+    "country": "Canada",
+    "iata": "YUL"
+  },
+  {
+    "code": "CYOW",
+    "name": "Ottawa Macdonald-Cartier International Airport",
+    "city": "Ottawa",
+    "country": "Canada",
+    "iata": "YOW"
+  },
+  {
+    "code": "CYQB",
+    "name": "Quebec Jean Lesage International Airport",
+    "city": "Quebec",
+    "country": "Canada",
+    "iata": "YQB"
+  },
+  {
+    "code": "CYXE",
+    "name": "Saskatoon John G. Diefenbaker International Airport",
+    "city": "Saskatoon",
+    "country": "Canada",
+    "iata": "YXE"
+  },
+  {
+    "code": "CYYT",
+    "name": "St. John's International Airport",
+    "city": "St. John's",
+    "country": "Canada",
+    "iata": "YYT"
+  },
+  {
+    "code": "CYYZ",
+    "name": "Toronto Pearson International Airport",
+    "city": "Toronto",
+    "country": "Canada",
+    "iata": "YYZ"
+  },
+  {
+    "code": "CYVR",
+    "name": "Vancouver International Airport",
+    "city": "Vancouver",
+    "country": "Canada",
+    "iata": "YVR"
+  },
+  {
+    "code": "CYYJ",
+    "name": "Victoria International Airport",
+    "city": "Victoria",
+    "country": "Canada",
+    "iata": "YYJ"
+  },
+  {
+    "code": "CYQG",
+    "name": "Windsor International Airport",
+    "city": "Windsor",
+    "country": "Canada",
+    "iata": "YQG"
+  },
+  {
+    "code": "CYWG",
+    "name": "Winnipeg / James Armstrong Richardson International Airport",
+    "city": "Winnipeg",
+    "country": "Canada",
+    "iata": "YWG"
+  },
+  {
+    "code": "GVAC",
+    "name": "Espargos · Amílcar Cabral International Airport",
+    "city": "Espargos",
+    "country": "Cap-Vert",
+    "iata": "SID"
+  },
+  {
+    "code": "GVNP",
+    "name": "Praia · Nelson Mandela International Airport",
+    "city": "Praia",
+    "country": "Cap-Vert",
+    "iata": "RAI"
+  },
+  {
+    "code": "GVBA",
+    "name": "Rabil · Aristides Pereira International Airport",
+    "city": "Rabil",
+    "country": "Cap-Vert",
+    "iata": "BVC"
+  },
+  {
+    "code": "GVSV",
+    "name": "São Pedro · Cesaria Evora International Airport",
+    "city": "São Pedro",
+    "country": "Cap-Vert",
+    "iata": "VXE"
+  },
+  {
+    "code": "SCFA",
+    "name": "Antofagasta · Andrés Sabella Gálvez International Airport",
+    "city": "Antofagasta",
+    "country": "Chili",
+    "iata": "ANF"
+  },
+  {
+    "code": "SCIE",
+    "name": "Concepcion · Carriel Sur International Airport",
+    "city": "Concepcion",
+    "country": "Chili",
+    "iata": "CCP"
+  },
+  {
+    "code": "SCDA",
+    "name": "Iquique · Diego Aracena International Airport",
+    "city": "Iquique",
+    "country": "Chili",
+    "iata": "IQQ"
+  },
+  {
+    "code": "SCIP",
+    "name": "Isla De Pascua · Mataveri International Airport",
+    "city": "Isla De Pascua",
+    "country": "Chili",
+    "iata": "IPC"
+  },
+  {
+    "code": "SCTE",
+    "name": "Puerto Montt · El Tepual International Airport",
+    "city": "Puerto Montt",
+    "country": "Chili",
+    "iata": "PMC"
+  },
+  {
+    "code": "SCCI",
+    "name": "Punta Arenas · President Carlos Ibáñez International Airport",
+    "city": "Punta Arenas",
+    "country": "Chili",
+    "iata": "PUQ"
+  },
+  {
+    "code": "SCEL",
+    "name": "Santiago · Comodoro Arturo Merino Benítez International Airport",
+    "city": "Santiago",
+    "country": "Chili",
+    "iata": "SCL"
+  },
+  {
+    "code": "SCQP",
+    "name": "Temuco · La Araucanía International Airport",
+    "city": "Temuco",
+    "country": "Chili",
+    "iata": "ZCO"
+  },
+  {
+    "code": "ZBOW",
+    "name": "Baotou Donghe International Airport",
+    "city": "Baotou",
+    "country": "Chine",
+    "iata": "BAV"
+  },
+  {
+    "code": "ZYCC",
+    "name": "Changchun Longjia International Airport",
+    "city": "Changchun",
+    "country": "Chine",
+    "iata": "CGQ"
+  },
+  {
+    "code": "ZGHA",
+    "name": "Changsha (Changsha) · Changsha Huanghua International Airport",
+    "city": "Changsha (Changsha)",
+    "country": "Chine",
+    "iata": "CSX"
+  },
+  {
+    "code": "ZUTF",
+    "name": "Chengdu (Jianyang) · Chengdu Tianfu International Airport",
+    "city": "Chengdu (Jianyang)",
+    "country": "Chine",
+    "iata": "TFU"
+  },
+  {
+    "code": "ZUUU",
+    "name": "Chengdu (Shuangliu) · Chengdu Shuangliu International Airport",
+    "city": "Chengdu (Shuangliu)",
+    "country": "Chine",
+    "iata": "CTU"
+  },
+  {
+    "code": "ZUCK",
+    "name": "Chongqing Jiangbei International Airport",
+    "city": "Chongqing",
+    "country": "Chine",
+    "iata": "CKG"
+  },
+  {
+    "code": "ZYTL",
+    "name": "Dalian (Ganjingzi) · Dalian Zhoushuizi International Airport",
+    "city": "Dalian (Ganjingzi)",
+    "country": "Chine",
+    "iata": "DLC"
+  },
+  {
+    "code": "ZBDT",
+    "name": "Datong Yungang International Airport",
+    "city": "Datong",
+    "country": "Chine",
+    "iata": "DAT"
+  },
+  {
+    "code": "ZLDH",
+    "name": "Dunhuang Mogao International Airport",
+    "city": "Dunhuang",
+    "country": "Chine",
+    "iata": "DNH"
+  },
+  {
+    "code": "ZHEC",
+    "name": "Ezhou Huahu International Airport",
+    "city": "Ezhou",
+    "country": "Chine",
+    "iata": "EHU"
+  },
+  {
+    "code": "ZSFZ",
+    "name": "Fuzhou (Changle) · Fuzhou Changle International Airport",
+    "city": "Fuzhou (Changle)",
+    "country": "Chine",
+    "iata": "FOC"
+  },
+  {
+    "code": "ZGGG",
+    "name": "Guangzhou (Huadu) · Guangzhou Baiyun International Airport",
+    "city": "Guangzhou (Huadu)",
+    "country": "Chine",
+    "iata": "CAN"
+  },
+  {
+    "code": "ZGKL",
+    "name": "Guilin (Lingui) · Guilin Liangjiang International Airport",
+    "city": "Guilin (Lingui)",
+    "country": "Chine",
+    "iata": "KWL"
+  },
+  {
+    "code": "ZUGY",
+    "name": "Guiyang (Nanming) · Guiyang Longdongbao International Airport",
+    "city": "Guiyang (Nanming)",
+    "country": "Chine",
+    "iata": "KWE"
+  },
+  {
+    "code": "ZLXN",
+    "name": "Haidong (Huzhu Tu Autonomous County) · Xining Caojiabao International Airport",
+    "city": "Haidong (Huzhu Tu Autonomous County)",
+    "country": "Chine",
+    "iata": "XNN"
+  },
+  {
+    "code": "ZJHK",
+    "name": "Haikou (Meilan) · Haikou Meilan International Airport",
+    "city": "Haikou (Meilan)",
+    "country": "Chine",
+    "iata": "HAK"
+  },
+  {
+    "code": "ZSHC",
+    "name": "Hangzhou Xiaoshan International Airport",
+    "city": "Hangzhou",
+    "country": "Chine",
+    "iata": "HGH"
+  },
+  {
+    "code": "ZYHB",
+    "name": "Harbin Taiping International Airport",
+    "city": "Harbin",
+    "country": "Chine",
+    "iata": "HRB"
+  },
+  {
+    "code": "ZSOF",
+    "name": "Hefei Xinqiao International Airport",
+    "city": "Hefei",
+    "country": "Chine",
+    "iata": "HFE"
+  },
+  {
+    "code": "ZBHH",
+    "name": "Hohhot Baita International Airport",
+    "city": "Hohhot",
+    "country": "Chine",
+    "iata": "HET"
+  },
+  {
+    "code": "ZSSH",
+    "name": "Huai'an Lianshui Airport",
+    "city": "Huai'an",
+    "country": "Chine",
+    "iata": "HIA"
+  },
+  {
+    "code": "ZSTX",
+    "name": "Huangshan Tunxi International Airport",
+    "city": "Huangshan",
+    "country": "Chine",
+    "iata": "TXN"
+  },
+  {
+    "code": "ZBLA",
+    "name": "Hulunbuir Hailar Airport",
+    "city": "Hailar",
+    "country": "Chine",
+    "iata": "HLD"
+  },
+  {
+    "code": "ZLJQ",
+    "name": "Jiayuguan International Airport",
+    "city": "Jiayuguan",
+    "country": "Chine",
+    "iata": "JGN"
+  },
+  {
+    "code": "ZGOW",
+    "name": "Jieyang (Rongcheng) · Jieyang Chaoshan International Airport",
+    "city": "Jieyang (Rongcheng)",
+    "country": "Chine",
+    "iata": "SWA"
+  },
+  {
+    "code": "ZSJN",
+    "name": "Jinan (Licheng) · Jinan Yaoqiang International Airport",
+    "city": "Jinan (Licheng)",
+    "country": "Chine",
+    "iata": "TNA"
+  },
+  {
+    "code": "ZPJH",
+    "name": "Jinghong (Gasa) · Xishuangbanna Gasa International Airport",
+    "city": "Jinghong (Gasa)",
+    "country": "Chine",
+    "iata": "JHG"
+  },
+  {
+    "code": "ZWSH",
+    "name": "Kashgar Laining International Airport",
+    "city": "Kashgar",
+    "country": "Chine",
+    "iata": "KHG"
+  },
+  {
+    "code": "ZPPP",
+    "name": "Kunming Changshui International Airport",
+    "city": "Kunming",
+    "country": "Chine",
+    "iata": "KMG"
+  },
+  {
+    "code": "ZLLL",
+    "name": "Lanzhou (Yongdeng) · Lanzhou Zhongchuan International Airport",
+    "city": "Lanzhou (Yongdeng)",
+    "country": "Chine",
+    "iata": "LHW"
+  },
+  {
+    "code": "ZSLG",
+    "name": "Lianyungang Huaguoshan International Airport",
+    "city": "Lianyungang",
+    "country": "Chine",
+    "iata": "LYG"
+  },
+  {
+    "code": "ZPLJ",
+    "name": "Lijiang Sanyi International Airport",
+    "city": "Lijiang",
+    "country": "Chine",
+    "iata": "LJG"
+  },
+  {
+    "code": "ZHLY",
+    "name": "Luoyang (Laocheng) · Luoyang Beijiao Airport",
+    "city": "Luoyang (Laocheng)",
+    "country": "Chine",
+    "iata": "LYA"
+  },
+  {
+    "code": "ZSCN",
+    "name": "Nanchang Changbei International Airport",
+    "city": "Nanchang",
+    "country": "Chine",
+    "iata": "KHN"
+  },
+  {
+    "code": "ZSNJ",
+    "name": "Nanjing Lukou International Airport",
+    "city": "Nanjing",
+    "country": "Chine",
+    "iata": "NKG"
+  },
+  {
+    "code": "ZGNN",
+    "name": "Nanning (Jiangnan) · Nanning Wuxu International Airport",
+    "city": "Nanning (Jiangnan)",
+    "country": "Chine",
+    "iata": "NNG"
+  },
+  {
+    "code": "ZSNB",
+    "name": "Ningbo Lishe International Airport",
+    "city": "Ningbo",
+    "country": "Chine",
+    "iata": "NGB"
+  },
+  {
+    "code": "ZBDS",
+    "name": "Ordos Ejin Horo International Airport",
+    "city": "Ordos",
+    "country": "Chine",
+    "iata": "DSN"
+  },
+  {
+    "code": "ZBAA",
+    "name": "Pékin · Beijing Capital International Airport",
+    "city": "Beijing",
+    "country": "Chine",
+    "iata": "PEK"
+  },
+  {
+    "code": "ZBAD",
+    "name": "Pékin · Beijing Daxing International Airport",
+    "city": "Beijing",
+    "country": "Chine",
+    "iata": "PKX"
+  },
+  {
+    "code": "ZSQD",
+    "name": "Qingdao (Jiaozhou) · Qingdao Jiaodong International Airport",
+    "city": "Qingdao (Jiaozhou)",
+    "country": "Chine",
+    "iata": "TAO"
+  },
+  {
+    "code": "ZYQQ",
+    "name": "Qiqihar Sanjiazi Airport",
+    "city": "Qiqihar",
+    "country": "Chine",
+    "iata": "NDG"
+  },
+  {
+    "code": "ZSQZ",
+    "name": "Quanzhou Jinjiang International Airport",
+    "city": "Quanzhou",
+    "country": "Chine",
+    "iata": "JJN"
+  },
+  {
+    "code": "ZJSY",
+    "name": "Sanya (Tianya) · Sanya Phoenix International Airport",
+    "city": "Sanya (Tianya)",
+    "country": "Chine",
+    "iata": "SYX"
+  },
+  {
+    "code": "ZSSS",
+    "name": "Shanghai (Minhang) · Shanghai Hongqiao International Airport",
+    "city": "Shanghai (Minhang)",
+    "country": "Chine",
+    "iata": "SHA"
+  },
+  {
+    "code": "ZSPD",
+    "name": "Shanghai (Pudong) · Shanghai Pudong International Airport",
+    "city": "Shanghai (Pudong)",
+    "country": "Chine",
+    "iata": "PVG"
+  },
+  {
+    "code": "ZULS",
+    "name": "Shannan (Gonggar) · Lhasa Gonggar International Airport",
+    "city": "Shannan (Gonggar)",
+    "country": "Chine",
+    "iata": "LXA"
+  },
+  {
+    "code": "ZYTX",
+    "name": "Shenyang Taoxian International Airport",
+    "city": "Shenyang",
+    "country": "Chine",
+    "iata": "SHE"
+  },
+  {
+    "code": "ZGSZ",
+    "name": "Shenzhen Bao'an International Airport",
+    "city": "Shenzhen",
+    "country": "Chine",
+    "iata": "SZX"
+  },
+  {
+    "code": "ZBSJ",
+    "name": "Shijiazhuang Zhengding International Airport",
+    "city": "Shijiazhuang",
+    "country": "Chine",
+    "iata": "SJW"
+  },
+  {
+    "code": "ZBYN",
+    "name": "Taiyuan Wusu International Airport",
+    "city": "Taiyuan",
+    "country": "Chine",
+    "iata": "TYN"
+  },
+  {
+    "code": "ZBTJ",
+    "name": "Tianjin Binhai International Airport",
+    "city": "Tianjin",
+    "country": "Chine",
+    "iata": "TSN"
+  },
+  {
+    "code": "ZWWW",
+    "name": "Ürümqi Tianshan International Airport",
+    "city": "Ürümqi",
+    "country": "Chine",
+    "iata": "URC"
+  },
+  {
+    "code": "ZSWZ",
+    "name": "Wenzhou (Longwan) · Wenzhou Longwan International Airport",
+    "city": "Wenzhou (Longwan)",
+    "country": "Chine",
+    "iata": "WNZ"
+  },
+  {
+    "code": "ZHHH",
+    "name": "Wuhan (Huangpi) · Wuhan Tianhe International Airport",
+    "city": "Wuhan (Huangpi)",
+    "country": "Chine",
+    "iata": "WUH"
+  },
+  {
+    "code": "ZSWX",
+    "name": "Wuxi · Sunan Shuofang International Airport",
+    "city": "Wuxi",
+    "country": "Chine",
+    "iata": "WUX"
+  },
+  {
+    "code": "ZLXY",
+    "name": "Xi'an Xianyang International Airport",
+    "city": "Xi'an",
+    "country": "Chine",
+    "iata": "XIY"
+  },
+  {
+    "code": "ZSAM",
+    "name": "Xiamen Gaoqi International Airport",
+    "city": "Xiamen",
+    "country": "Chine",
+    "iata": "XMN"
+  },
+  {
+    "code": "ZURK",
+    "name": "Xigazê (Samzhubzê) · Xigaze Peace Airport / Shigatse Air Base",
+    "city": "Xigazê (Samzhubzê)",
+    "country": "Chine",
+    "iata": "RKZ"
+  },
+  {
+    "code": "ZSYN",
+    "name": "Yancheng (Tinghu) · Yancheng Nanyang International Airport",
+    "city": "Yancheng (Tinghu)",
+    "country": "Chine",
+    "iata": "YNZ"
+  },
+  {
+    "code": "ZSYT",
+    "name": "Yantai Penglai International Airport",
+    "city": "Yantai",
+    "country": "Chine",
+    "iata": "YNT"
+  },
+  {
+    "code": "ZLIC",
+    "name": "Yinchuan Hedong International Airport",
+    "city": "Yinchuan",
+    "country": "Chine",
+    "iata": "INC"
+  },
+  {
+    "code": "ZSYW",
+    "name": "Yiwu/Jinhua · Yiwu Airport",
+    "city": "Yiwu/Jinhua",
+    "country": "Chine",
+    "iata": "YIW"
+  },
+  {
+    "code": "ZBYC",
+    "name": "Yuncheng (Yanhu) · Yuncheng Yanhu International Airport",
+    "city": "Yuncheng (Yanhu)",
+    "country": "Chine",
+    "iata": "YCU"
+  },
+  {
+    "code": "ZGDY",
+    "name": "Zhangjiajie (Yongding) · Zhangjiajie Hehua International Airport",
+    "city": "Zhangjiajie (Yongding)",
+    "country": "Chine",
+    "iata": "DYG"
+  },
+  {
+    "code": "ZGZJ",
+    "name": "Zhanjiang Wuchuan International Airport",
+    "city": "Zhanjiang",
+    "country": "Chine",
+    "iata": "ZHA"
+  },
+  {
+    "code": "ZHCC",
+    "name": "Zhengzhou Xinzheng International Airport",
+    "city": "Zhengzhou",
+    "country": "Chine",
+    "iata": "CGO"
+  },
+  {
+    "code": "ZSZS",
+    "name": "Zhoushan Putuoshan International Airport",
+    "city": "Zhoushan",
+    "country": "Chine",
+    "iata": "HSN"
+  },
+  {
+    "code": "ZGSD",
+    "name": "Zhuhai (Jinwan) · Zhuhai Jinwan Airport",
+    "city": "Zhuhai (Jinwan)",
+    "country": "Chine",
+    "iata": "ZUH"
+  },
+  {
+    "code": "LCLK",
+    "name": "Larnaca International Airport",
+    "city": "Larnaca",
+    "country": "Chypre",
+    "iata": "LCA"
+  },
+  {
+    "code": "LCPH",
+    "name": "Paphos International Airport",
+    "city": "Paphos",
+    "country": "Chypre",
+    "iata": "PFO"
+  },
+  {
+    "code": "LCEN",
+    "name": "Tymbou (Kirklar) · Ercan International Airport",
+    "city": "Tymbou (Kirklar)",
+    "country": "Chypre",
+    "iata": "ECN"
+  },
+  {
+    "code": "SKBQ",
+    "name": "Barranquilla · Ernesto Cortissoz International Airport",
+    "city": "Barranquilla",
+    "country": "Colombie",
+    "iata": "BAQ"
+  },
+  {
+    "code": "SKBO",
+    "name": "Bogota · El Dorado International Airport",
+    "city": "Bogota",
+    "country": "Colombie",
+    "iata": "BOG"
+  },
+  {
+    "code": "SKCL",
+    "name": "Cali · Alfonso Bonilla Aragon International Airport",
+    "city": "Cali",
+    "country": "Colombie",
+    "iata": "CLO"
+  },
+  {
+    "code": "SKCG",
+    "name": "Cartagena · Rafael Nuñez International Airport",
+    "city": "Cartagena",
+    "country": "Colombie",
+    "iata": "CTG"
+  },
+  {
+    "code": "SKRG",
+    "name": "Medellín · Jose Maria Córdova International Airport",
+    "city": "Medellín",
+    "country": "Colombie",
+    "iata": "MDE"
+  },
+  {
+    "code": "SKSP",
+    "name": "San Andrés · Gustavo Rojas Pinilla International Airport",
+    "city": "San Andrés",
+    "country": "Colombie",
+    "iata": "ADZ"
+  },
+  {
+    "code": "FMCH",
+    "name": "Moroni · Prince Said Ibrahim International Airport",
+    "city": "Moroni",
+    "country": "Comores",
+    "iata": "HAH"
+  },
+  {
+    "code": "FCBB",
+    "name": "Brazzaville · Maya-Maya International Airport",
+    "city": "Brazzaville",
+    "country": "Congo-Brazzaville",
+    "iata": "BZV"
+  },
+  {
+    "code": "FCPP",
+    "name": "Pointe Noire · Antonio Agostinho-Neto International Airport",
+    "city": "Pointe Noire",
+    "country": "Congo-Brazzaville",
+    "iata": "PNR"
+  },
+  {
+    "code": "FZNA",
+    "name": "Goma International Airport",
+    "city": "Goma",
+    "country": "Congo-Kinshasa",
+    "iata": "GOM"
+  },
+  {
+    "code": "FZAA",
+    "name": "Kinshasa · Ndjili International Airport",
+    "city": "Kinshasa",
+    "country": "Congo-Kinshasa",
+    "iata": "FIH"
+  },
+  {
+    "code": "FZIC",
+    "name": "Kisangani · Bangoka International Airport",
+    "city": "Kisangani",
+    "country": "Congo-Kinshasa",
+    "iata": "FKI"
+  },
+  {
+    "code": "FZQA",
+    "name": "Lubumbashi International Airport",
+    "city": "Lubumbashi",
+    "country": "Congo-Kinshasa",
+    "iata": "FBM"
+  },
+  {
+    "code": "ZKPY",
+    "name": "Pyongyang Sunan International Airport",
+    "city": "Pyongyang",
+    "country": "Corée du Nord",
+    "iata": "FNJ"
+  },
+  {
+    "code": "RKPK",
+    "name": "Busan · Gimhae International Airport",
+    "city": "Busan",
+    "country": "Corée du Sud",
+    "iata": "PUS"
+  },
+  {
+    "code": "RKTU",
+    "name": "Cheongju International Airport/Cheongju Air Base (K-59/G-513)",
+    "city": "Cheongju",
+    "country": "Corée du Sud",
+    "iata": "CJJ"
+  },
+  {
+    "code": "RKTN",
+    "name": "Daegu International Airport",
+    "city": "Daegu",
+    "country": "Corée du Sud",
+    "iata": "TAE"
+  },
+  {
+    "code": "RKNY",
+    "name": "Gonghang-ro · Yangyang International Airport",
+    "city": "Gonghang-ro",
+    "country": "Corée du Sud",
+    "iata": "YNY"
+  },
+  {
+    "code": "RKPC",
+    "name": "Jeju City · Jeju International Airport",
+    "city": "Jeju City",
+    "country": "Corée du Sud",
+    "iata": "CJU"
+  },
+  {
+    "code": "RKJB",
+    "name": "Muan (Piseo-ri) · Muan International Airport",
+    "city": "Muan (Piseo-ri)",
+    "country": "Corée du Sud",
+    "iata": "MWX"
+  },
+  {
+    "code": "RKSI",
+    "name": "Seoul · Incheon International Airport",
+    "city": "Seoul",
+    "country": "Corée du Sud",
+    "iata": "ICN"
+  },
+  {
+    "code": "RKSS",
+    "name": "Seoul Gimpo International Airport",
+    "city": "Seoul",
+    "country": "Corée du Sud",
+    "iata": "GMP"
+  },
+  {
+    "code": "MRLB",
+    "name": "Liberia · Daniel Oduber Quirós International Airport",
+    "city": "Liberia",
+    "country": "Costa Rica",
+    "iata": "LIR"
+  },
+  {
+    "code": "MROC",
+    "name": "San José (Alajuela) · Juan Santamaría International Airport",
+    "city": "San José (Alajuela)",
+    "country": "Costa Rica",
+    "iata": "SJO"
+  },
+  {
+    "code": "DIAP",
+    "name": "Abidjan · Félix-Houphouët-Boigny International Airport",
+    "city": "Abidjan",
+    "country": "Côte d’Ivoire",
+    "iata": "ABJ"
+  },
+  {
+    "code": "LDDU",
+    "name": "Dubrovnik Ruđer Bošković Airport",
+    "city": "Dubrovnik",
+    "country": "Croatie",
+    "iata": "DBV"
+  },
+  {
+    "code": "LDPL",
+    "name": "Pula Airport",
+    "city": "Pula",
+    "country": "Croatie",
+    "iata": "PUY"
+  },
+  {
+    "code": "LDRI",
+    "name": "Rijeka(Omišalj) · Rijeka Airport",
+    "city": "Rijeka(Omišalj)",
+    "country": "Croatie",
+    "iata": "RJK"
+  },
+  {
+    "code": "LDSP",
+    "name": "Split Saint Jerome Airport",
+    "city": "Split",
+    "country": "Croatie",
+    "iata": "SPU"
+  },
+  {
+    "code": "LDZA",
+    "name": "Velika Gorica · Zagreb Franjo Tuđman International Airport",
+    "city": "Velika Gorica",
+    "country": "Croatie",
+    "iata": "ZAG"
+  },
+  {
+    "code": "LDZD",
+    "name": "Zadar Airport",
+    "city": "Zadar",
+    "country": "Croatie",
+    "iata": "ZAD"
+  },
+  {
+    "code": "MUCM",
+    "name": "Camaguey · Ignacio Agramonte International Airport",
+    "city": "Camaguey",
+    "country": "Cuba",
+    "iata": "CMW"
+  },
+  {
+    "code": "MUHA",
+    "name": "Havana · José Martí International Airport",
+    "city": "Havana",
+    "country": "Cuba",
+    "iata": "HAV"
+  },
+  {
+    "code": "MUHG",
+    "name": "Holguin · Frank Pais International Airport",
+    "city": "Holguin",
+    "country": "Cuba",
+    "iata": "HOG"
+  },
+  {
+    "code": "MUVR",
+    "name": "Matanzas · Juan Gualberto Gomez International Airport",
+    "city": "Matanzas",
+    "country": "Cuba",
+    "iata": "VRA"
+  },
+  {
+    "code": "MUSC",
+    "name": "Santa Clara · Abel Santamaria International Airport",
+    "city": "Santa Clara",
+    "country": "Cuba",
+    "iata": "SNU"
+  },
+  {
+    "code": "MUCU",
+    "name": "Santiago · Antonio Maceo International Airport",
+    "city": "Santiago",
+    "country": "Cuba",
+    "iata": "SCU"
+  },
+  {
+    "code": "TNCC",
+    "name": "Willemstad · Hato International Airport",
+    "city": "Willemstad",
+    "country": "Curaçao",
+    "iata": "CUR"
+  },
+  {
+    "code": "EKYT",
+    "name": "Aalborg Airport",
+    "city": "Aalborg",
+    "country": "Danemark",
+    "iata": "AAL"
+  },
+  {
+    "code": "EKAH",
+    "name": "Aarhus Airport",
+    "city": "Aarhus",
+    "country": "Danemark",
+    "iata": "AAR"
+  },
+  {
+    "code": "EKBI",
+    "name": "Billund Airport",
+    "city": "Billund",
+    "country": "Danemark",
+    "iata": "BLL"
+  },
+  {
+    "code": "EKCH",
+    "name": "Copenhague",
+    "city": "Copenhagen",
+    "country": "Danemark",
+    "iata": "CPH"
+  },
+  {
+    "code": "EKOD",
+    "name": "Odense Hans Christian Andersen Airport",
+    "city": "Odense",
+    "country": "Danemark",
+    "iata": "ODE"
+  },
+  {
+    "code": "HDAM",
+    "name": "Djibouti City · Djibouti-Ambouli Airport",
+    "city": "Djibouti City",
+    "country": "Djibouti",
+    "iata": "JIB"
+  },
+  {
+    "code": "HESX",
+    "name": "Al Jiza · Sphinx International Airport",
+    "city": "Al Jiza",
+    "country": "Égypte",
+    "iata": "SPX"
+  },
+  {
+    "code": "HEAX",
+    "name": "Alexandria International Airport",
+    "city": "Alexandria",
+    "country": "Égypte",
+    "iata": "HBE"
+  },
+  {
+    "code": "HESN",
+    "name": "Aswan International Airport",
+    "city": "Aswan",
+    "country": "Égypte",
+    "iata": "ASW"
+  },
+  {
+    "code": "HEAT",
+    "name": "Asyut International Airport",
+    "city": "Asyut",
+    "country": "Égypte",
+    "iata": "ATZ"
+  },
+  {
+    "code": "HEAL",
+    "name": "El Alamein International Airport",
+    "city": "El Alamein",
+    "country": "Égypte",
+    "iata": "DBB"
+  },
+  {
+    "code": "HEAR",
+    "name": "El Arish International Airport",
+    "city": "El Arish",
+    "country": "Égypte",
+    "iata": "AAC"
+  },
+  {
+    "code": "HEGN",
+    "name": "Hurghada International Airport",
+    "city": "Hurghada",
+    "country": "Égypte",
+    "iata": "HRG"
+  },
+  {
+    "code": "HECA",
+    "name": "Le Caire · Cairo International Airport",
+    "city": "Cairo",
+    "country": "Égypte",
+    "iata": "CAI"
+  },
+  {
+    "code": "HELX",
+    "name": "Luxor International Airport",
+    "city": "Luxor",
+    "country": "Égypte",
+    "iata": "LXR"
+  },
+  {
+    "code": "HEMA",
+    "name": "Marsa Alam International Airport",
+    "city": "Marsa Alam",
+    "country": "Égypte",
+    "iata": "RMF"
+  },
+  {
+    "code": "HEMM",
+    "name": "Marsa Matruh · Mersa Matruh International Airport",
+    "city": "Marsa Matruh",
+    "country": "Égypte",
+    "iata": "MUH"
+  },
+  {
+    "code": "HEPS",
+    "name": "Port Said International Airport",
+    "city": "Port Said",
+    "country": "Égypte",
+    "iata": "PSD"
+  },
+  {
+    "code": "HESH",
+    "name": "Sharm El Sheikh International Airport",
+    "city": "Sharm El Sheikh",
+    "country": "Égypte",
+    "iata": "SSH"
+  },
+  {
+    "code": "HESG",
+    "name": "Suhaj International Airport",
+    "city": "Suhaj",
+    "country": "Égypte",
+    "iata": "HMB"
+  },
+  {
+    "code": "OMAA",
+    "name": "Abu Dhabi · Zayed International Airport",
+    "city": "Abu Dhabi",
+    "country": "Émirats arabes unis",
+    "iata": "AUH"
+  },
+  {
+    "code": "OMAL",
+    "name": "Al Ain International Airport",
+    "city": "Al Ain",
+    "country": "Émirats arabes unis",
+    "iata": "AAN"
+  },
+  {
+    "code": "OMDB",
+    "name": "Dubaï · Dubai International Airport",
+    "city": "Dubai",
+    "country": "Émirats arabes unis",
+    "iata": "DXB"
+  },
+  {
+    "code": "OMDW",
+    "name": "Dubai(Jebel Ali) · Al Maktoum International Airport",
+    "city": "Dubai(Jebel Ali)",
+    "country": "Émirats arabes unis",
+    "iata": "DWC"
+  },
+  {
+    "code": "OMFJ",
+    "name": "Fujairah International Airport",
+    "city": "Fujairah",
+    "country": "Émirats arabes unis",
+    "iata": "FJR"
+  },
+  {
+    "code": "OMRK",
+    "name": "Ras Al Khaimah International Airport",
+    "city": "Ras Al Khaimah",
+    "country": "Émirats arabes unis",
+    "iata": "RKT"
+  },
+  {
+    "code": "OMSJ",
+    "name": "Sharjah International Airport",
+    "city": "Sharjah",
+    "country": "Émirats arabes unis",
+    "iata": "SHJ"
+  },
+  {
+    "code": "SEGU",
+    "name": "Guayaquil · José Joaquín de Olmedo International Airport",
+    "city": "Guayaquil",
+    "country": "Équateur",
+    "iata": "GYE"
+  },
+  {
+    "code": "SEQM",
+    "name": "Quito · Mariscal Sucre International Airport",
+    "city": "Quito",
+    "country": "Équateur",
+    "iata": "UIO"
+  },
+  {
+    "code": "SESA",
+    "name": "Salinas/La Libertad · General Ulpiano Paez International Airport",
+    "city": "Salinas/La Libertad",
+    "country": "Équateur",
+    "iata": "SNC"
+  },
+  {
+    "code": "SETN",
+    "name": "Tachina · Carlos Concha Torres International Airport",
+    "city": "Tachina",
+    "country": "Équateur",
+    "iata": "ESM"
+  },
+  {
+    "code": "LEAL",
+    "name": "Alicante-Elche",
+    "city": "Alicante",
+    "country": "Espagne",
+    "iata": "ALC"
+  },
+  {
+    "code": "LEBL",
+    "name": "Barcelone-El Prat",
+    "city": "Barcelona",
+    "country": "Espagne",
+    "iata": "BCN"
+  },
+  {
+    "code": "LEBB",
+    "name": "Bilbao Airport",
+    "city": "Bilbao",
+    "country": "Espagne",
+    "iata": "BIO"
+  },
+  {
+    "code": "LEMI",
+    "name": "Corvera · Region of Murcia International Airport",
+    "city": "Corvera",
+    "country": "Espagne",
+    "iata": "RMU"
+  },
+  {
+    "code": "GCFV",
+    "name": "El Matorral · Fuerteventura Airport",
+    "city": "El Matorral",
+    "country": "Espagne",
+    "iata": "FUE"
+  },
+  {
+    "code": "LEGE",
+    "name": "Girona-Costa Brava Airport",
+    "city": "Girona",
+    "country": "Espagne",
+    "iata": "GRO"
+  },
+  {
+    "code": "GCLP",
+    "name": "Gran Canaria Island · Gran Canaria Airport",
+    "city": "Gran Canaria Island",
+    "country": "Espagne",
+    "iata": "LPA"
+  },
+  {
+    "code": "LEIB",
+    "name": "Ibiza (Eivissa) · Ibiza Airport",
+    "city": "Ibiza (Eivissa)",
+    "country": "Espagne",
+    "iata": "IBZ"
+  },
+  {
+    "code": "LEMD",
+    "name": "Madrid-Barajas",
+    "city": "Madrid",
+    "country": "Espagne",
+    "iata": "MAD"
+  },
+  {
+    "code": "LEMH",
+    "name": "Mahón (Maó) · Menorca Airport",
+    "city": "Mahón (Maó)",
+    "country": "Espagne",
+    "iata": "MAH"
+  },
+  {
+    "code": "LEMG",
+    "name": "Málaga",
+    "city": "Málaga",
+    "country": "Espagne",
+    "iata": "AGP"
+  },
+  {
+    "code": "LEPA",
+    "name": "Palma de Majorque",
+    "city": "Palma de Mallorca",
+    "country": "Espagne",
+    "iata": "PMI"
+  },
+  {
+    "code": "LEAS",
+    "name": "Ranón · Asturias Airport",
+    "city": "Ranón",
+    "country": "Espagne",
+    "iata": "OVD"
+  },
+  {
+    "code": "LERS",
+    "name": "Reus Airport",
+    "city": "Reus",
+    "country": "Espagne",
+    "iata": "REU"
+  },
+  {
+    "code": "GCRR",
+    "name": "San Bartolomé · César Manrique-Lanzarote Airport",
+    "city": "San Bartolomé",
+    "country": "Espagne",
+    "iata": "ACE"
+  },
+  {
+    "code": "LEST",
+    "name": "Santiago de Compostela · Santiago-Rosalía de Castro Airport",
+    "city": "Santiago de Compostela",
+    "country": "Espagne",
+    "iata": "SCQ"
+  },
+  {
+    "code": "LEZL",
+    "name": "Seville Airport",
+    "city": "Seville",
+    "country": "Espagne",
+    "iata": "SVQ"
+  },
+  {
+    "code": "GCXO",
+    "name": "Tenerife Norte-Ciudad de La Laguna Airport",
+    "city": "Tenerife",
+    "country": "Espagne",
+    "iata": "TFN"
+  },
+  {
+    "code": "GCTS",
+    "name": "Tenerife Sur Airport",
+    "city": "Tenerife",
+    "country": "Espagne",
+    "iata": "TFS"
+  },
+  {
+    "code": "LEVC",
+    "name": "Valence",
+    "city": "Valencia",
+    "country": "Espagne",
+    "iata": "VLC"
+  },
+  {
+    "code": "LEZG",
+    "name": "Zaragoza Airport",
+    "city": "Zaragoza",
+    "country": "Espagne",
+    "iata": "ZAZ"
+  },
+  {
+    "code": "EETN",
+    "name": "Lennart Meri Tallinn Airport",
+    "city": "Tallinn",
+    "country": "Estonie",
+    "iata": "TLL"
+  },
+  {
+    "code": "FDSK",
+    "name": "Mpaka · King Mswati III International Airport",
+    "city": "Mpaka",
+    "country": "Eswatini",
+    "iata": "SHO"
+  },
+  {
+    "code": "KALB",
+    "name": "Albany International Airport",
+    "city": "Albany",
+    "country": "États-Unis",
+    "iata": "ALB"
+  },
+  {
+    "code": "KABQ",
+    "name": "Albuquerque International Sunport",
+    "city": "Albuquerque",
+    "country": "États-Unis",
+    "iata": "ABQ"
+  },
+  {
+    "code": "KAUS",
+    "name": "Austin Bergstrom International Airport",
+    "city": "Austin",
+    "country": "États-Unis",
+    "iata": "AUS"
+  },
+  {
+    "code": "KBWI",
+    "name": "Baltimore/Washington International Thurgood Marshall Airport",
+    "city": "Baltimore",
+    "country": "États-Unis",
+    "iata": "BWI"
+  },
+  {
+    "code": "KBHM",
+    "name": "Birmingham-Shuttlesworth International Airport",
+    "city": "Birmingham",
+    "country": "États-Unis",
+    "iata": "BHM"
+  },
+  {
+    "code": "KBOI",
+    "name": "Boise Air Terminal/Gowen Field",
+    "city": "Boise",
+    "country": "États-Unis",
+    "iata": "BOI"
+  },
+  {
+    "code": "KBOS",
+    "name": "Boston Logan International Airport",
+    "city": "Boston",
+    "country": "États-Unis",
+    "iata": "BOS"
+  },
+  {
+    "code": "KBUF",
+    "name": "Buffalo Niagara International Airport",
+    "city": "Buffalo",
+    "country": "États-Unis",
+    "iata": "BUF"
+  },
+  {
+    "code": "KCHS",
+    "name": "Charleston International Airport",
+    "city": "Charleston",
+    "country": "États-Unis",
+    "iata": "CHS"
+  },
+  {
+    "code": "KCLT",
+    "name": "Charlotte Douglas International Airport",
+    "city": "Charlotte",
+    "country": "États-Unis",
+    "iata": "CLT"
+  },
+  {
+    "code": "KMDW",
+    "name": "Chicago Midway International Airport",
+    "city": "Chicago",
+    "country": "États-Unis",
+    "iata": "MDW"
+  },
+  {
+    "code": "KORD",
+    "name": "Chicago O'Hare International Airport",
+    "city": "Chicago",
+    "country": "États-Unis",
+    "iata": "ORD"
+  },
+  {
+    "code": "KCVG",
+    "name": "Cincinnati / Covington · Cincinnati Northern Kentucky International Airport",
+    "city": "Cincinnati / Covington",
+    "country": "États-Unis",
+    "iata": "CVG"
+  },
+  {
+    "code": "KCOS",
+    "name": "City of Colorado Springs Municipal Airport",
+    "city": "Colorado Springs",
+    "country": "États-Unis",
+    "iata": "COS"
+  },
+  {
+    "code": "KCLE",
+    "name": "Cleveland Hopkins International Airport",
+    "city": "Cleveland",
+    "country": "États-Unis",
+    "iata": "CLE"
+  },
+  {
+    "code": "KDAL",
+    "name": "Dallas Love Field",
+    "city": "Dallas",
+    "country": "États-Unis",
+    "iata": "DAL"
+  },
+  {
+    "code": "KDFW",
+    "name": "Dallas-Fort Worth · Dallas Fort Worth International Airport",
+    "city": "Dallas-Fort Worth",
+    "country": "États-Unis",
+    "iata": "DFW"
+  },
+  {
+    "code": "KDEN",
+    "name": "Denver International Airport",
+    "city": "Denver",
+    "country": "États-Unis",
+    "iata": "DEN"
+  },
+  {
+    "code": "KDSM",
+    "name": "Des Moines International Airport",
+    "city": "Des Moines",
+    "country": "États-Unis",
+    "iata": "DSM"
+  },
+  {
+    "code": "KDTW",
+    "name": "Detroit Metropolitan Wayne County Airport",
+    "city": "Detroit",
+    "country": "États-Unis",
+    "iata": "DTW"
+  },
+  {
+    "code": "KELP",
+    "name": "El Paso International Airport",
+    "city": "El Paso",
+    "country": "États-Unis",
+    "iata": "ELP"
+  },
+  {
+    "code": "KFLL",
+    "name": "Fort Lauderdale Hollywood International Airport",
+    "city": "Fort Lauderdale",
+    "country": "États-Unis",
+    "iata": "FLL"
+  },
+  {
+    "code": "KRSW",
+    "name": "Fort Myers · Southwest Florida International Airport",
+    "city": "Fort Myers",
+    "country": "États-Unis",
+    "iata": "RSW"
+  },
+  {
+    "code": "KROC",
+    "name": "Frederick Douglass Greater Rochester International Airport",
+    "city": "Rochester",
+    "country": "États-Unis",
+    "iata": "ROC"
+  },
+  {
+    "code": "KFAT",
+    "name": "Fresno Yosemite International Airport",
+    "city": "Fresno",
+    "country": "États-Unis",
+    "iata": "FAT"
+  },
+  {
+    "code": "KGRR",
+    "name": "Grand Rapids · Gerald R. Ford International Airport",
+    "city": "Grand Rapids",
+    "country": "États-Unis",
+    "iata": "GRR"
+  },
+  {
+    "code": "KGSO",
+    "name": "Greensboro · Piedmont Triad International Airport",
+    "city": "Greensboro",
+    "country": "États-Unis",
+    "iata": "GSO"
+  },
+  {
+    "code": "KBDL",
+    "name": "Hartford · Bradley International Airport",
+    "city": "Hartford",
+    "country": "États-Unis",
+    "iata": "BDL"
+  },
+  {
+    "code": "KATL",
+    "name": "Hartsfield Jackson Atlanta International Airport",
+    "city": "Atlanta",
+    "country": "États-Unis",
+    "iata": "ATL"
+  },
+  {
+    "code": "KBUR",
+    "name": "Hollywood Burbank/Bob Hope Airport",
+    "city": "Burbank",
+    "country": "États-Unis",
+    "iata": "BUR"
+  },
+  {
+    "code": "PHNL",
+    "name": "Honolulu, Oahu · Daniel K. Inouye International Airport",
+    "city": "Honolulu, Oahu",
+    "country": "États-Unis",
+    "iata": "HNL"
+  },
+  {
+    "code": "KIAH",
+    "name": "Houston · George Bush Intercontinental Airport",
+    "city": "Houston",
+    "country": "États-Unis",
+    "iata": "IAH"
+  },
+  {
+    "code": "KHOU",
+    "name": "Houston · William P. Hobby Airport",
+    "city": "Houston",
+    "country": "États-Unis",
+    "iata": "HOU"
+  },
+  {
+    "code": "KIND",
+    "name": "Indianapolis International Airport",
+    "city": "Indianapolis",
+    "country": "États-Unis",
+    "iata": "IND"
+  },
+  {
+    "code": "KJAX",
+    "name": "Jacksonville International Airport",
+    "city": "Jacksonville",
+    "country": "États-Unis",
+    "iata": "JAX"
+  },
+  {
+    "code": "KCMH",
+    "name": "John Glenn Columbus International Airport",
+    "city": "Columbus",
+    "country": "États-Unis",
+    "iata": "CMH"
+  },
+  {
+    "code": "PHOG",
+    "name": "Kahului International Airport",
+    "city": "Kahului",
+    "country": "États-Unis",
+    "iata": "OGG"
+  },
+  {
+    "code": "PHKO",
+    "name": "Kailua-Kona · Ellison Onizuka Kona International Airport at Keāhole",
+    "city": "Kailua-Kona",
+    "country": "États-Unis",
+    "iata": "KOA"
+  },
+  {
+    "code": "KMCI",
+    "name": "Kansas City International Airport",
+    "city": "Kansas City",
+    "country": "États-Unis",
+    "iata": "MCI"
+  },
+  {
+    "code": "KTYS",
+    "name": "Knoxville/Maryville · McGhee Tyson Airport",
+    "city": "Knoxville/Maryville",
+    "country": "États-Unis",
+    "iata": "TYS"
+  },
+  {
+    "code": "KLAS",
+    "name": "Las Vegas · Harry Reid International Airport",
+    "city": "Las Vegas",
+    "country": "États-Unis",
+    "iata": "LAS"
+  },
+  {
+    "code": "PHLI",
+    "name": "Lihue, Kauai · Lihue Airport",
+    "city": "Lihue, Kauai",
+    "country": "États-Unis",
+    "iata": "LIH"
+  },
+  {
+    "code": "KLGB",
+    "name": "Long Beach International Airport",
+    "city": "Long Beach",
+    "country": "États-Unis",
+    "iata": "LGB"
+  },
+  {
+    "code": "KLAX",
+    "name": "Los Angeles International Airport",
+    "city": "Los Angeles",
+    "country": "États-Unis",
+    "iata": "LAX"
+  },
+  {
+    "code": "KMSY",
+    "name": "Louis Armstrong New Orleans International Airport",
+    "city": "New Orleans",
+    "country": "États-Unis",
+    "iata": "MSY"
+  },
+  {
+    "code": "KSDF",
+    "name": "Louisville Muhammad Ali International Airport",
+    "city": "Louisville",
+    "country": "États-Unis",
+    "iata": "SDF"
+  },
+  {
+    "code": "KMEM",
+    "name": "Memphis · Frederick W. Smith International Airport",
+    "city": "Memphis",
+    "country": "États-Unis",
+    "iata": "MEM"
+  },
+  {
+    "code": "KMIA",
+    "name": "Miami International Airport",
+    "city": "Miami",
+    "country": "États-Unis",
+    "iata": "MIA"
+  },
+  {
+    "code": "KMKE",
+    "name": "Milwaukee · General Mitchell International Airport",
+    "city": "Milwaukee",
+    "country": "États-Unis",
+    "iata": "MKE"
+  },
+  {
+    "code": "KSJC",
+    "name": "Mineta San Jose International Airport",
+    "city": "San Jose",
+    "country": "États-Unis",
+    "iata": "SJC"
+  },
+  {
+    "code": "KMSP",
+    "name": "Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field",
+    "city": "Minneapolis",
+    "country": "États-Unis",
+    "iata": "MSP"
+  },
+  {
+    "code": "KMYR",
+    "name": "Myrtle Beach International Airport",
+    "city": "Myrtle Beach",
+    "country": "États-Unis",
+    "iata": "MYR"
+  },
+  {
+    "code": "KBNA",
+    "name": "Nashville International Airport",
+    "city": "Nashville",
+    "country": "États-Unis",
+    "iata": "BNA"
+  },
+  {
+    "code": "KJFK",
+    "name": "New York · John F. Kennedy International Airport",
+    "city": "New York",
+    "country": "États-Unis",
+    "iata": "JFK"
+  },
+  {
+    "code": "KLGA",
+    "name": "New York · LaGuardia Airport",
+    "city": "New York",
+    "country": "États-Unis",
+    "iata": "LGA"
+  },
+  {
+    "code": "KEWR",
+    "name": "Newark Liberty International Airport",
+    "city": "Newark",
+    "country": "États-Unis",
+    "iata": "EWR"
+  },
+  {
+    "code": "KORF",
+    "name": "Norfolk International Airport",
+    "city": "Norfolk",
+    "country": "États-Unis",
+    "iata": "ORF"
+  },
+  {
+    "code": "KOAK",
+    "name": "Oakland San Francisco Bay Airport",
+    "city": "Oakland",
+    "country": "États-Unis",
+    "iata": "OAK"
+  },
+  {
+    "code": "KOKC",
+    "name": "Oklahoma City · OKC Will Rogers World Airport",
+    "city": "Oklahoma City",
+    "country": "États-Unis",
+    "iata": "OKC"
+  },
+  {
+    "code": "KOMA",
+    "name": "Omaha · Eppley Airfield",
+    "city": "Omaha",
+    "country": "États-Unis",
+    "iata": "OMA"
+  },
+  {
+    "code": "KONT",
+    "name": "Ontario International Airport",
+    "city": "Ontario",
+    "country": "États-Unis",
+    "iata": "ONT"
+  },
+  {
+    "code": "KMCO",
+    "name": "Orlando International Airport",
+    "city": "Orlando",
+    "country": "États-Unis",
+    "iata": "MCO"
+  },
+  {
+    "code": "KSFB",
+    "name": "Orlando Sanford International Airport",
+    "city": "Orlando",
+    "country": "États-Unis",
+    "iata": "SFB"
+  },
+  {
+    "code": "KPSP",
+    "name": "Palm Springs International Airport",
+    "city": "Palm Springs",
+    "country": "États-Unis",
+    "iata": "PSP"
+  },
+  {
+    "code": "KPNS",
+    "name": "Pensacola International Airport",
+    "city": "Pensacola",
+    "country": "États-Unis",
+    "iata": "PNS"
+  },
+  {
+    "code": "KPHL",
+    "name": "Philadelphia International Airport",
+    "city": "Philadelphia",
+    "country": "États-Unis",
+    "iata": "PHL"
+  },
+  {
+    "code": "KPHX",
+    "name": "Phoenix Sky Harbor International Airport",
+    "city": "Phoenix",
+    "country": "États-Unis",
+    "iata": "PHX"
+  },
+  {
+    "code": "KPIE",
+    "name": "Pinellas Park · St. Petersburg Clearwater International Airport",
+    "city": "Pinellas Park",
+    "country": "États-Unis",
+    "iata": "PIE"
+  },
+  {
+    "code": "KPIT",
+    "name": "Pittsburgh International Airport",
+    "city": "Pittsburgh",
+    "country": "États-Unis",
+    "iata": "PIT"
+  },
+  {
+    "code": "KPDX",
+    "name": "Portland International Airport",
+    "city": "Portland",
+    "country": "États-Unis",
+    "iata": "PDX"
+  },
+  {
+    "code": "KPWM",
+    "name": "Portland International Jetport",
+    "city": "Portland",
+    "country": "États-Unis",
+    "iata": "PWM"
+  },
+  {
+    "code": "KPVD",
+    "name": "Providence/Warwick · Rhode Island T. F. Green International Airport",
+    "city": "Providence/Warwick",
+    "country": "États-Unis",
+    "iata": "PVD"
+  },
+  {
+    "code": "KRDU",
+    "name": "Raleigh/Durham · Raleigh-Durham International Airport",
+    "city": "Raleigh/Durham",
+    "country": "États-Unis",
+    "iata": "RDU"
+  },
+  {
+    "code": "KRNO",
+    "name": "Reno Tahoe International Airport",
+    "city": "Reno",
+    "country": "États-Unis",
+    "iata": "RNO"
+  },
+  {
+    "code": "KRIC",
+    "name": "Richmond International Airport",
+    "city": "Richmond",
+    "country": "États-Unis",
+    "iata": "RIC"
+  },
+  {
+    "code": "KDCA",
+    "name": "Ronald Reagan Washington National Airport",
+    "city": "Washington",
+    "country": "États-Unis",
+    "iata": "DCA"
+  },
+  {
+    "code": "KSMF",
+    "name": "Sacramento International Airport",
+    "city": "Sacramento",
+    "country": "États-Unis",
+    "iata": "SMF"
+  },
+  {
+    "code": "KSLC",
+    "name": "Salt Lake City International Airport",
+    "city": "Salt Lake City",
+    "country": "États-Unis",
+    "iata": "SLC"
+  },
+  {
+    "code": "KSAT",
+    "name": "San Antonio International Airport",
+    "city": "San Antonio",
+    "country": "États-Unis",
+    "iata": "SAT"
+  },
+  {
+    "code": "KSBD",
+    "name": "San Bernardino International Airport",
+    "city": "San Bernardino",
+    "country": "États-Unis",
+    "iata": "SBD"
+  },
+  {
+    "code": "KSAN",
+    "name": "San Diego International Airport",
+    "city": "San Diego",
+    "country": "États-Unis",
+    "iata": "SAN"
+  },
+  {
+    "code": "KSFO",
+    "name": "San Francisco International Airport",
+    "city": "San Francisco",
+    "country": "États-Unis",
+    "iata": "SFO"
+  },
+  {
+    "code": "KSNA",
+    "name": "Santa Ana · John Wayne Orange County International Airport",
+    "city": "Santa Ana",
+    "country": "États-Unis",
+    "iata": "SNA"
+  },
+  {
+    "code": "KSRQ",
+    "name": "Sarasota/Bradenton · Sarasota Bradenton International Airport",
+    "city": "Sarasota/Bradenton",
+    "country": "États-Unis",
+    "iata": "SRQ"
+  },
+  {
+    "code": "KSAV",
+    "name": "Savannah Hilton Head International Airport",
+    "city": "Savannah",
+    "country": "États-Unis",
+    "iata": "SAV"
+  },
+  {
+    "code": "KSEA",
+    "name": "Seattle–Tacoma International Airport",
+    "city": "Seattle",
+    "country": "États-Unis",
+    "iata": "SEA"
+  },
+  {
+    "code": "KGEG",
+    "name": "Spokane International Airport",
+    "city": "Spokane",
+    "country": "États-Unis",
+    "iata": "GEG"
+  },
+  {
+    "code": "KSTL",
+    "name": "St Louis · St. Louis Lambert International Airport",
+    "city": "St Louis",
+    "country": "États-Unis",
+    "iata": "STL"
+  },
+  {
+    "code": "KSYR",
+    "name": "Syracuse Hancock International Airport",
+    "city": "Syracuse",
+    "country": "États-Unis",
+    "iata": "SYR"
+  },
+  {
+    "code": "KTPA",
+    "name": "Tampa International Airport",
+    "city": "Tampa",
+    "country": "États-Unis",
+    "iata": "TPA"
+  },
+  {
+    "code": "PANC",
+    "name": "Ted Stevens Anchorage International Airport",
+    "city": "Anchorage",
+    "country": "États-Unis",
+    "iata": "ANC"
+  },
+  {
+    "code": "KTUS",
+    "name": "Tucson International Airport",
+    "city": "Tucson",
+    "country": "États-Unis",
+    "iata": "TUS"
+  },
+  {
+    "code": "KTUL",
+    "name": "Tulsa International Airport",
+    "city": "Tulsa",
+    "country": "États-Unis",
+    "iata": "TUL"
+  },
+  {
+    "code": "KIAD",
+    "name": "Washington Dulles International Airport",
+    "city": "Dulles",
+    "country": "États-Unis",
+    "iata": "IAD"
+  },
+  {
+    "code": "KDJT",
+    "name": "West Palm Beach · President Donald J. Trump International Airport",
+    "city": "West Palm Beach",
+    "country": "États-Unis",
+    "iata": "DJT"
+  },
+  {
+    "code": "HAAB",
+    "name": "Addis Ababa Bole International Airport",
+    "city": "Addis Ababa",
+    "country": "Éthiopie",
+    "iata": "ADD"
+  },
+  {
+    "code": "HADR",
+    "name": "Dire Dawa · Aba Tenna Dejazmach Yilma International Airport",
+    "city": "Dire Dawa",
+    "country": "Éthiopie",
+    "iata": "DIR"
+  },
+  {
+    "code": "HALA",
+    "name": "Hawassa International Airport",
+    "city": "Hawassa",
+    "country": "Éthiopie",
+    "iata": "AWA"
+  },
+  {
+    "code": "HAJJ",
+    "name": "Jijiga · Gerad Wilwal International Airport",
+    "city": "Jijiga",
+    "country": "Éthiopie",
+    "iata": "JIJ"
+  },
+  {
+    "code": "NFFN",
+    "name": "Nadi International Airport",
+    "city": "Nadi",
+    "country": "Fidji",
+    "iata": "NAN"
+  },
+  {
+    "code": "NFNA",
+    "name": "Nausori International Airport",
+    "city": "Nausori",
+    "country": "Fidji",
+    "iata": "SUV"
+  },
+  {
+    "code": "EFHK",
+    "name": "Helsinki-Vantaa",
+    "city": "Helsinki (Vantaa)",
+    "country": "Finlande",
+    "iata": "HEL"
+  },
+  {
+    "code": "EFIV",
+    "name": "Ivalo Airport",
+    "city": "Ivalo",
+    "country": "Finlande",
+    "iata": "IVL"
+  },
+  {
+    "code": "EFKT",
+    "name": "Kittilä International Airport",
+    "city": "Kittilä",
+    "country": "Finlande",
+    "iata": "KTT"
+  },
+  {
+    "code": "EFKU",
+    "name": "Kuopio / Siilinjärvi · Kuopio Airport",
+    "city": "Kuopio / Siilinjärvi",
+    "country": "Finlande",
+    "iata": "KUO"
+  },
+  {
+    "code": "EFLP",
+    "name": "Lappeenranta Airport",
+    "city": "Lappeenranta",
+    "country": "Finlande",
+    "iata": "LPP"
+  },
+  {
+    "code": "EFOU",
+    "name": "Oulu / Oulunsalo · Oulu Airport",
+    "city": "Oulu / Oulunsalo",
+    "country": "Finlande",
+    "iata": "OUL"
+  },
+  {
+    "code": "EFRO",
+    "name": "Rovaniemi Airport",
+    "city": "Rovaniemi",
+    "country": "Finlande",
+    "iata": "RVN"
+  },
+  {
+    "code": "EFTP",
+    "name": "Tampere / Pirkkala · Tampere-Pirkkala Airport",
+    "city": "Tampere / Pirkkala",
+    "country": "Finlande",
+    "iata": "TMP"
+  },
+  {
+    "code": "EFTU",
+    "name": "Turku Airport",
+    "city": "Turku",
+    "country": "Finlande",
+    "iata": "TKU"
+  },
+  {
+    "code": "EFVA",
+    "name": "Vaasa Airport",
+    "city": "Vaasa",
+    "country": "Finlande",
+    "iata": "VAA"
+  },
+  {
+    "code": "LFSB",
+    "name": "Bâle / Mulhouse · EuroAirport Basel–Mulhouse–Freiburg",
+    "city": "Bâle / Mulhouse",
+    "country": "France",
+    "iata": "BSL"
+  },
+  {
+    "code": "LFKB",
+    "name": "Bastia-Poretta International airport",
+    "city": "Bastia",
+    "country": "France",
+    "iata": "BIA"
+  },
+  {
+    "code": "LFOB",
+    "name": "Beauvais-Tillé",
+    "city": "Beauvais",
+    "country": "France",
+    "iata": "BVA"
+  },
+  {
+    "code": "LFBD",
+    "name": "Bordeaux-Mérignac",
+    "city": "Bordeaux",
+    "country": "France",
+    "iata": "BOD"
+  },
+  {
+    "code": "LFRB",
+    "name": "Brest Bretagne airport",
+    "city": "Brest",
+    "country": "France",
+    "iata": "BES"
+  },
+  {
+    "code": "LFLC",
+    "name": "Clermont-Ferrand Auvergne airport",
+    "city": "Clermont-Ferrand",
+    "country": "France",
+    "iata": "CFE"
+  },
+  {
+    "code": "LFKF",
+    "name": "Figari Sud-Corse Airport",
+    "city": "Figari",
+    "country": "France",
+    "iata": "FSC"
+  },
+  {
+    "code": "LFQQ",
+    "name": "Lesquin · Lille Airport",
+    "city": "Lesquin",
+    "country": "France",
+    "iata": "LIL"
+  },
+  {
+    "code": "LFLL",
+    "name": "Lyon-Saint-Exupéry",
+    "city": "Colombier-Saugnieu, Rhône",
+    "country": "France",
+    "iata": "LYS"
+  },
+  {
+    "code": "LFML",
+    "name": "Marignane, Bouches-du-Rhône · Marseille Provence Airport",
+    "city": "Marignane, Bouches-du-Rhône",
+    "country": "France",
+    "iata": "MRS"
+  },
+  {
+    "code": "LFMT",
+    "name": "Montpellier/Méditerranée · Montpellier-Méditerranée Airport",
+    "city": "Montpellier/Méditerranée",
+    "country": "France",
+    "iata": "MPL"
+  },
+  {
+    "code": "LFRS",
+    "name": "Nantes-Atlantique",
+    "city": "Nantes",
+    "country": "France",
+    "iata": "NTE"
+  },
+  {
+    "code": "LFMN",
+    "name": "Nice-Côte d’Azur",
+    "city": "Nice, Alpes-Maritimes",
+    "country": "France",
+    "iata": "NCE"
+  },
+  {
+    "code": "LFPB",
+    "name": "Paris Le Bourget",
+    "city": "Paris",
+    "country": "France",
+    "iata": "LBG"
+  },
+  {
+    "code": "LFPG",
+    "name": "Paris-Charles-de-Gaulle",
+    "city": "Paris (Roissy-en-France, Val-d'Oise)",
+    "country": "France",
+    "iata": "CDG"
+  },
+  {
+    "code": "LFPO",
+    "name": "Paris-Orly",
+    "city": "Paris (Orly, Val-de-Marne)",
+    "country": "France",
+    "iata": "ORY"
+  },
+  {
+    "code": "LFST",
+    "name": "Strasbourg Airport",
+    "city": "Strasbourg",
+    "country": "France",
+    "iata": "SXB"
+  },
+  {
+    "code": "LFBO",
+    "name": "Toulouse-Blagnac",
+    "city": "Toulouse/Blagnac",
+    "country": "France",
+    "iata": "TLS"
+  },
+  {
+    "country": "France",
+    "name": "Tours-Val de Loire",
+    "code": "LFOT"
+  },
+  {
+    "code": "FOOL",
+    "name": "Libreville Leon M'ba International Airport",
+    "city": "Libreville",
+    "country": "Gabon",
+    "iata": "LBV"
+  },
+  {
+    "code": "FOOG",
+    "name": "Port Gentil International Airport",
+    "city": "Port Gentil",
+    "country": "Gabon",
+    "iata": "POG"
+  },
+  {
+    "code": "GBYD",
+    "name": "Banjul (Yundum) · Banjul International Airport",
+    "city": "Banjul (Yundum)",
+    "country": "Gambie",
+    "iata": "BJL"
+  },
+  {
+    "code": "UGSB",
+    "name": "Alexander Kartveli Batumi International Airport",
+    "city": "Batumi",
+    "country": "Géorgie",
+    "iata": "BUS"
+  },
+  {
+    "code": "UGKO",
+    "name": "Kopitnari · David the Builder Kutaisi International Airport",
+    "city": "Kopitnari",
+    "country": "Géorgie",
+    "iata": "KUT"
+  },
+  {
+    "code": "UGSS",
+    "name": "Sukhumi · Vladislav Ardzinba Sukhum International Airport",
+    "city": "Sukhumi",
+    "country": "Géorgie",
+    "iata": "SUI"
+  },
+  {
+    "code": "UGTB",
+    "name": "Tbilisi International Airport",
+    "city": "Tbilisi",
+    "country": "Géorgie",
+    "iata": "TBS"
+  },
+  {
+    "code": "DGAA",
+    "name": "Accra · Kotoka International Airport",
+    "city": "Accra",
+    "country": "Ghana",
+    "iata": "ACC"
+  },
+  {
+    "code": "DGSI",
+    "name": "Kumasi · Prempeh I International Airport",
+    "city": "Kumasi",
+    "country": "Ghana",
+    "iata": "KMS"
+  },
+  {
+    "code": "DGLE",
+    "name": "Tamale · Yakubu Tali International Airport",
+    "city": "Tamale",
+    "country": "Ghana",
+    "iata": "TML"
+  },
+  {
+    "code": "LXGB",
+    "name": "Gibraltar Airport",
+    "city": "Gibraltar",
+    "country": "Gibraltar",
+    "iata": "GIB"
+  },
+  {
+    "code": "LGAV",
+    "name": "Athènes",
+    "city": "Spata-Artemida",
+    "country": "Grèce",
+    "iata": "ATH"
+  },
+  {
+    "code": "LGIR",
+    "name": "Heraklion International Nikos Kazantzakis Airport",
+    "city": "Heraklion",
+    "country": "Grèce",
+    "iata": "HER"
+  },
+  {
+    "code": "LGKV",
+    "name": "Kavala Alexander the Great International Airport",
+    "city": "Kavala",
+    "country": "Grèce",
+    "iata": "KVA"
+  },
+  {
+    "code": "LGKR",
+    "name": "Kerkyra (Corfu) · Corfu Ioannis Kapodistrias International Airport",
+    "city": "Kerkyra (Corfu)",
+    "country": "Grèce",
+    "iata": "CFU"
+  },
+  {
+    "code": "LGKO",
+    "name": "Kos Island · Kos International Airport \"Ippokratis\"",
+    "city": "Kos Island",
+    "country": "Grèce",
+    "iata": "KGS"
+  },
+  {
+    "code": "LGRP",
+    "name": "Rhodes International Airport \"Diagoras\"",
+    "city": "Rhodes",
+    "country": "Grèce",
+    "iata": "RHO"
+  },
+  {
+    "code": "LGSR",
+    "name": "Santorini Island · Santorini International Airport",
+    "city": "Santorini Island",
+    "country": "Grèce",
+    "iata": "JTR"
+  },
+  {
+    "code": "LGSA",
+    "name": "Souda · Chania International Airport",
+    "city": "Souda",
+    "country": "Grèce",
+    "iata": "CHQ"
+  },
+  {
+    "code": "LGTS",
+    "name": "Thessaloniki Macedonia International Airport",
+    "city": "Thessaloniki",
+    "country": "Grèce",
+    "iata": "SKG"
+  },
+  {
+    "code": "TGPY",
+    "name": "Saint George's · Maurice Bishop International Airport",
+    "city": "Saint George's",
+    "country": "Grenade",
+    "iata": "GND"
+  },
+  {
+    "code": "BGGH",
+    "name": "Nuuk International Airport",
+    "city": "Nuuk",
+    "country": "Groenland",
+    "iata": "GOH"
+  },
+  {
+    "code": "TFFR",
+    "name": "Pointe-à-Pitre · Maryse Condé International Airport",
+    "city": "Pointe-à-Pitre",
+    "country": "Guadeloupe",
+    "iata": "PTP"
+  },
+  {
+    "code": "PGUM",
+    "name": "Hagåtña · Antonio B. Won Pat International Airport",
+    "city": "Hagåtña",
+    "country": "Guam",
+    "iata": "GUM"
+  },
+  {
+    "code": "MGGT",
+    "name": "Guatemala City · La Aurora International Airport",
+    "city": "Guatemala City",
+    "country": "Guatemala",
+    "iata": "GUA"
+  },
+  {
+    "code": "GUCY",
+    "name": "Conakry · Ahmed Sékou Touré International Airport",
+    "city": "Conakry",
+    "country": "Guinée",
+    "iata": "CKY"
+  },
+  {
+    "code": "FGBT",
+    "name": "Bata International Airport",
+    "city": "Bata",
+    "country": "Guinée équatoriale",
+    "iata": "BSG"
+  },
+  {
+    "code": "FGCO",
+    "name": "Corisco Island · Corisco International Airport",
+    "city": "Corisco Island",
+    "country": "Guinée équatoriale",
+    "iata": "OCS"
+  },
+  {
+    "code": "FGSL",
+    "name": "Malabo International Airport",
+    "city": "Malabo",
+    "country": "Guinée équatoriale",
+    "iata": "SSG"
+  },
+  {
+    "code": "GGOV",
+    "name": "Bissau · Osvaldo Vieira International Airport",
+    "city": "Bissau",
+    "country": "Guinée-Bissau",
+    "iata": "OXB"
+  },
+  {
+    "code": "SYCJ",
+    "name": "Georgetown · Cheddi Jagan International Airport",
+    "city": "Georgetown",
+    "country": "Guyana",
+    "iata": "GEO"
+  },
+  {
+    "code": "SOCA",
+    "name": "Matoury · Cayenne – Félix Eboué Airport",
+    "city": "Matoury",
+    "country": "Guyane française",
+    "iata": "CAY"
+  },
+  {
+    "code": "MTCH",
+    "name": "Cap Haitien International Airport",
+    "city": "Cap Haitien",
+    "country": "Haïti",
+    "iata": "CAP"
+  },
+  {
+    "code": "MTPP",
+    "name": "Port-au-Prince · Toussaint Louverture International Airport",
+    "city": "Port-au-Prince",
+    "country": "Haïti",
+    "iata": "PAP"
+  },
+  {
+    "code": "MHRO",
+    "name": "Coxen Hole · Juan Manuel Gálvez International Airport",
+    "city": "Coxen Hole",
+    "country": "Honduras",
+    "iata": "RTB"
+  },
+  {
+    "code": "MHPR",
+    "name": "Palmerola International Airport",
+    "city": "Palmerola",
+    "country": "Honduras",
+    "iata": "XPL"
+  },
+  {
+    "code": "MHLM",
+    "name": "San Pedro Sula · Ramón Villeda Morales International Airport",
+    "city": "San Pedro Sula",
+    "country": "Honduras",
+    "iata": "SAP"
+  },
+  {
+    "code": "VHHH",
+    "name": "Hong Kong International Airport",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "iata": "HKG"
+  },
+  {
+    "code": "LHBP",
+    "name": "Budapest",
+    "city": "Budapest",
+    "country": "Hongrie",
+    "iata": "BUD"
+  },
+  {
+    "code": "LHDC",
+    "name": "Debrecen International Airport",
+    "city": "Debrecen",
+    "country": "Hongrie",
+    "iata": "DEB"
+  },
+  {
+    "code": "LHPP",
+    "name": "Pécs-Pogány International Airport",
+    "city": "Pécs",
+    "country": "Hongrie",
+    "iata": "PEV"
+  },
+  {
+    "code": "EGNS",
+    "name": "Castletown, Rushen · Isle of Man Airport",
+    "city": "Castletown, Rushen",
+    "country": "Île de Man",
+    "iata": "IOM"
+  },
+  {
+    "code": "MWCR",
+    "name": "George Town · Owen Roberts International Airport",
+    "city": "George Town",
+    "country": "Îles Caïmans",
+    "iata": "GCM"
+  },
+  {
+    "code": "YPCC",
+    "name": "West Island · Cocos (Keeling) Islands Airport",
+    "city": "West Island",
+    "country": "Îles Cocos",
+    "iata": "CCK"
+  },
+  {
+    "code": "NCRG",
+    "name": "Avarua · Rarotonga International Airport",
+    "city": "Avarua",
+    "country": "Îles Cook",
+    "iata": "RAR"
+  },
+  {
+    "code": "EKVG",
+    "name": "Vágar Airport",
+    "city": "Vágar",
+    "country": "Îles Féroé",
+    "iata": "FAE"
+  },
+  {
+    "code": "PGRO",
+    "name": "Rota Island · Rota International Airport",
+    "city": "Rota Island",
+    "country": "Îles Mariannes du Nord",
+    "iata": "ROP"
+  },
+  {
+    "code": "PKMJ",
+    "name": "Majuro Atoll · Marshall Islands International Airport",
+    "city": "Majuro Atoll",
+    "country": "Îles Marshall",
+    "iata": "MAJ"
+  },
+  {
+    "code": "AGGH",
+    "name": "Honiara International Airport",
+    "city": "Honiara",
+    "country": "Îles Salomon",
+    "iata": "HIR"
+  },
+  {
+    "code": "MBPV",
+    "name": "Providenciales International Airport",
+    "city": "Providenciales",
+    "country": "Îles Turques-et-Caïques",
+    "iata": "PLS"
+  },
+  {
+    "code": "TUPJ",
+    "name": "Beef Island · Terrance B. Lettsome International Airport",
+    "city": "Beef Island",
+    "country": "Îles Vierges britanniques",
+    "iata": "EIS"
+  },
+  {
+    "code": "TIST",
+    "name": "Charlotte Amalie · Cyril E. King Airport",
+    "city": "Charlotte Amalie",
+    "country": "Îles Vierges des États-Unis",
+    "iata": "STT"
+  },
+  {
+    "code": "VAAH",
+    "name": "Ahmedabad · Sardar Vallabh Patel International Airport",
+    "city": "Ahmedabad",
+    "country": "Inde",
+    "iata": "AMD"
+  },
+  {
+    "code": "VIAR",
+    "name": "Amritsar · Sri Guru Ram Das Ji International Airport",
+    "city": "Amritsar",
+    "country": "Inde",
+    "iata": "ATQ"
+  },
+  {
+    "code": "VABP",
+    "name": "Bhopal · Raja Bhoj International Airport",
+    "city": "Bhopal",
+    "country": "Inde",
+    "iata": "BHO"
+  },
+  {
+    "code": "VEBS",
+    "name": "Bhubaneswar · Biju Patnaik International Airport",
+    "city": "Bhubaneswar",
+    "country": "Inde",
+    "iata": "BBI"
+  },
+  {
+    "code": "VOCL",
+    "name": "Calicut International Airport",
+    "city": "Calicut",
+    "country": "Inde",
+    "iata": "CCJ"
+  },
+  {
+    "code": "VICG",
+    "name": "Chandigarh · Shaheed Bhagat Singh International Airport",
+    "city": "Chandigarh",
+    "country": "Inde",
+    "iata": "IXC"
+  },
+  {
+    "code": "VOMM",
+    "name": "Chennai International Airport",
+    "city": "Chennai",
+    "country": "Inde",
+    "iata": "MAA"
+  },
+  {
+    "code": "VOCB",
+    "name": "Coimbatore International Airport",
+    "city": "Coimbatore",
+    "country": "Inde",
+    "iata": "CJB"
+  },
+  {
+    "code": "VIND",
+    "name": "Gautam Buddha Nagar · Noida International Airport",
+    "city": "Gautam Buddha Nagar",
+    "country": "Inde",
+    "iata": "DXN"
+  },
+  {
+    "code": "VEGT",
+    "name": "Guwahati · Lokpriya Gopinath Bordoloi International Airport",
+    "city": "Guwahati",
+    "country": "Inde",
+    "iata": "GAU"
+  },
+  {
+    "code": "VIHX",
+    "name": "Halwara International Airport",
+    "city": "Halwara",
+    "country": "Inde",
+    "iata": "HWR"
+  },
+  {
+    "code": "VIHR",
+    "name": "Hisar · Maharaja Agrasen International Airport",
+    "city": "Hisar",
+    "country": "Inde",
+    "iata": "HSS"
+  },
+  {
+    "code": "VOHS",
+    "name": "Hyderabad · Rajiv Gandhi International Airport",
+    "city": "Hyderabad",
+    "country": "Inde",
+    "iata": "HYD"
+  },
+  {
+    "code": "VEIM",
+    "name": "Imphal · Bir Tikendrajit International Airport",
+    "city": "Imphal",
+    "country": "Inde",
+    "iata": "IMF"
+  },
+  {
+    "code": "VAID",
+    "name": "Indore · Devi Ahilya Bai Holkar International Airport",
+    "city": "Indore",
+    "country": "Inde",
+    "iata": "IDR"
+  },
+  {
+    "code": "VIJP",
+    "name": "Jaipur International Airport",
+    "city": "Jaipur",
+    "country": "Inde",
+    "iata": "JAI"
+  },
+  {
+    "code": "VASD",
+    "name": "Kakadi · Shirdi International Airport",
+    "city": "Kakadi",
+    "country": "Inde",
+    "iata": "SAG"
+  },
+  {
+    "code": "VOKN",
+    "name": "Kannur International Airport",
+    "city": "Kannur",
+    "country": "Inde",
+    "iata": "CNN"
+  },
+  {
+    "code": "VOBL",
+    "name": "Kempegowda International Airport Bengaluru",
+    "city": "Bengaluru",
+    "country": "Inde",
+    "iata": "BLR"
+  },
+  {
+    "code": "VOCI",
+    "name": "Kochi · Cochin International Airport",
+    "city": "Kochi",
+    "country": "Inde",
+    "iata": "COK"
+  },
+  {
+    "code": "VECC",
+    "name": "Kolkata · Netaji Subhash Chandra Bose International Airport",
+    "city": "Kolkata",
+    "country": "Inde",
+    "iata": "CCU"
+  },
+  {
+    "code": "VILK",
+    "name": "Lucknow · Chaudhary Charan Singh International Airport",
+    "city": "Lucknow",
+    "country": "Inde",
+    "iata": "LKO"
+  },
+  {
+    "code": "VOML",
+    "name": "Mangaluru International Airport",
+    "city": "Mangaluru",
+    "country": "Inde",
+    "iata": "IXE"
+  },
+  {
+    "code": "VOGA",
+    "name": "Mopa · Manohar International Airport",
+    "city": "Mopa",
+    "country": "Inde",
+    "iata": "GOX"
+  },
+  {
+    "code": "VABB",
+    "name": "Mumbai · Chhatrapati Shivaji Maharaj International Airport",
+    "city": "Mumbai",
+    "country": "Inde",
+    "iata": "BOM"
+  },
+  {
+    "code": "VANP",
+    "name": "Nagpur · Dr. Babasaheb Ambedkar International Airport",
+    "city": "Nagpur",
+    "country": "Inde",
+    "iata": "NAG"
+  },
+  {
+    "code": "VAOZ",
+    "name": "Nashik International Airport",
+    "city": "Nashik",
+    "country": "Inde",
+    "iata": "ISK"
+  },
+  {
+    "code": "VANM",
+    "name": "Navi Mumbai International Airport",
+    "city": "Navi Mumbai",
+    "country": "Inde",
+    "iata": "NMI"
+  },
+  {
+    "code": "VIDP",
+    "name": "New Delhi · Indira Gandhi International Airport",
+    "city": "New Delhi",
+    "country": "Inde",
+    "iata": "DEL"
+  },
+  {
+    "code": "VOPB",
+    "name": "Port Blair · Veer Savarkar International Airport / INS Utkrosh",
+    "city": "Port Blair",
+    "country": "Inde",
+    "iata": "IXZ"
+  },
+  {
+    "code": "VAPO",
+    "name": "Pune International Airport",
+    "city": "Pune",
+    "country": "Inde",
+    "iata": "PNQ"
+  },
+  {
+    "code": "VAHS",
+    "name": "Rajkot International Airport",
+    "city": "Rajkot",
+    "country": "Inde",
+    "iata": "HSR"
+  },
+  {
+    "code": "VEBD",
+    "name": "Siliguri · Bagdogra Airport",
+    "city": "Siliguri",
+    "country": "Inde",
+    "iata": "IXB"
+  },
+  {
+    "code": "VISR",
+    "name": "Srinagar International Airport",
+    "city": "Srinagar",
+    "country": "Inde",
+    "iata": "SXR"
+  },
+  {
+    "code": "VASU",
+    "name": "Surat International Airport",
+    "city": "Surat",
+    "country": "Inde",
+    "iata": "STV"
+  },
+  {
+    "code": "VOTV",
+    "name": "Thiruvananthapuram International Airport",
+    "city": "Thiruvananthapuram",
+    "country": "Inde",
+    "iata": "TRV"
+  },
+  {
+    "code": "VOTR",
+    "name": "Tiruchirappalli International Airport",
+    "city": "Tiruchirappalli",
+    "country": "Inde",
+    "iata": "TRZ"
+  },
+  {
+    "code": "VOTP",
+    "name": "Tirupati International Airport",
+    "city": "Tirupati",
+    "country": "Inde",
+    "iata": "TIR"
+  },
+  {
+    "code": "VABO",
+    "name": "Vadodara International Airport",
+    "city": "Vadodara",
+    "country": "Inde",
+    "iata": "BDQ"
+  },
+  {
+    "code": "VEBN",
+    "name": "Varanasi · Lal Bahadur Shastri International Airport",
+    "city": "Varanasi",
+    "country": "Inde",
+    "iata": "VNS"
+  },
+  {
+    "code": "VOGO",
+    "name": "Vasco da Gama · Goa Dabolim International Airport",
+    "city": "Vasco da Gama",
+    "country": "Inde",
+    "iata": "GOI"
+  },
+  {
+    "code": "VOBZ",
+    "name": "Vijayawada International Airport",
+    "city": "Vijayawada",
+    "country": "Inde",
+    "iata": "VGA"
+  },
+  {
+    "code": "VOVI",
+    "name": "Visakhapatnam · Alluri Sitarama Raju International Airport (Vizag)",
+    "city": "Visakhapatnam",
+    "country": "Inde",
+    "iata": "VTZ"
+  },
+  {
+    "code": "WAPP",
+    "name": "Ambon · Pattimura International Airport",
+    "city": "Ambon",
+    "country": "Indonésie",
+    "iata": "AMQ"
+  },
+  {
+    "code": "WALL",
+    "name": "Balikpapan · Sultan Aji Muhammad Sulaiman Sepinggan International Airport",
+    "city": "Balikpapan",
+    "country": "Indonésie",
+    "iata": "BPN"
+  },
+  {
+    "code": "WITT",
+    "name": "Banda Aceh · Sultan Iskandar Muda International Airport",
+    "city": "Banda Aceh",
+    "country": "Indonésie",
+    "iata": "BTJ"
+  },
+  {
+    "code": "WAOO",
+    "name": "Banjarbaru · Syamsudin Noor International Airport",
+    "city": "Banjarbaru",
+    "country": "Indonésie",
+    "iata": "BDJ"
+  },
+  {
+    "code": "WIDD",
+    "name": "Batam · Hang Nadim International Airport",
+    "city": "Batam",
+    "country": "Indonésie",
+    "iata": "BTH"
+  },
+  {
+    "code": "WIMM",
+    "name": "Beringin · Kualanamu International Airport",
+    "city": "Beringin",
+    "country": "Indonésie",
+    "iata": "KNO"
+  },
+  {
+    "code": "WIHH",
+    "name": "Jakarta · Halim Perdanakusuma International Airport",
+    "city": "Jakarta",
+    "country": "Indonésie",
+    "iata": "HLP"
+  },
+  {
+    "code": "WIII",
+    "name": "Jakarta · Soekarno-Hatta International Airport",
+    "city": "Jakarta",
+    "country": "Indonésie",
+    "iata": "CGK"
+  },
+  {
+    "code": "WADD",
+    "name": "Kuta, Badung · Denpasar I Gusti Ngurah Rai International Airport",
+    "city": "Kuta, Badung",
+    "country": "Indonésie",
+    "iata": "DPS"
+  },
+  {
+    "code": "WAAA",
+    "name": "Makassar · Sultan Hasanuddin International Airport",
+    "city": "Makassar",
+    "country": "Indonésie",
+    "iata": "UPG"
+  },
+  {
+    "code": "WAMM",
+    "name": "Manado · Sam Ratulangi International Airport",
+    "city": "Manado",
+    "country": "Indonésie",
+    "iata": "MDC"
+  },
+  {
+    "code": "WADL",
+    "name": "Mataram (Pujut, Lombok Tengah) · Lombok International Airport",
+    "city": "Mataram (Pujut, Lombok Tengah)",
+    "country": "Indonésie",
+    "iata": "LOP"
+  },
+  {
+    "code": "WIEE",
+    "name": "Padang (Katapiang) · Minangkabau International Airport",
+    "city": "Padang (Katapiang)",
+    "country": "Indonésie",
+    "iata": "PDG"
+  },
+  {
+    "code": "WIOO",
+    "name": "Pontianak · Supadio International Airport",
+    "city": "Pontianak",
+    "country": "Indonésie",
+    "iata": "PNK"
+  },
+  {
+    "code": "WAHS",
+    "name": "Semarang · Jenderal Ahmad Yani Airport",
+    "city": "Semarang",
+    "country": "Indonésie",
+    "iata": "SRG"
+  },
+  {
+    "code": "WAJJ",
+    "name": "Sentani · Dortheys Hiyo Eluay International Airport",
+    "city": "Sentani",
+    "country": "Indonésie",
+    "iata": "DJJ"
+  },
+  {
+    "code": "WARR",
+    "name": "Surabaya · Juanda International Airport",
+    "city": "Surabaya",
+    "country": "Indonésie",
+    "iata": "SUB"
+  },
+  {
+    "code": "WAHQ",
+    "name": "Surakarta · Adisoemarmo International Airport",
+    "city": "Surakarta",
+    "country": "Indonésie",
+    "iata": "SOC"
+  },
+  {
+    "code": "WAHI",
+    "name": "Yogyakarta International Airport",
+    "city": "Yogyakarta",
+    "country": "Indonésie",
+    "iata": "YIA"
+  },
+  {
+    "code": "ORNI",
+    "name": "Al Najaf International Airport",
+    "city": "Najaf",
+    "country": "Irak",
+    "iata": "NJF"
+  },
+  {
+    "code": "ORER",
+    "name": "Arbil · Erbil International Airport",
+    "city": "Arbil",
+    "country": "Irak",
+    "iata": "EBL"
+  },
+  {
+    "code": "ORBI",
+    "name": "Baghdad International Airport / New Al Muthana Air Base",
+    "city": "Baghdad",
+    "country": "Irak",
+    "iata": "BGW"
+  },
+  {
+    "code": "ORMM",
+    "name": "Basra International Airport",
+    "city": "Basra",
+    "country": "Irak",
+    "iata": "BSR"
+  },
+  {
+    "code": "ORKK",
+    "name": "Kirkuk International Airport",
+    "city": "Kirkuk",
+    "country": "Irak",
+    "iata": "KIK"
+  },
+  {
+    "code": "OIAA",
+    "name": "Abadan Ayatollah Jami International Airport",
+    "city": "Abadan",
+    "country": "Iran",
+    "iata": "ABD"
+  },
+  {
+    "code": "OIAW",
+    "name": "Ahvaz · Qasem Soleimani International Airport",
+    "city": "Ahvaz",
+    "country": "Iran",
+    "iata": "AWZ"
+  },
+  {
+    "code": "OIKB",
+    "name": "Bandar Abbas International Airport",
+    "city": "Bandar Abbas",
+    "country": "Iran",
+    "iata": "BND"
+  },
+  {
+    "code": "OIMB",
+    "name": "Birjand International Airport",
+    "city": "Birjand",
+    "country": "Iran",
+    "iata": "XBJ"
+  },
+  {
+    "code": "OIFM",
+    "name": "Isfahan Shahid Beheshti International Airport",
+    "city": "Isfahan",
+    "country": "Iran",
+    "iata": "IFN"
+  },
+  {
+    "code": "OIIP",
+    "name": "Karaj · Payam International Airport",
+    "city": "Karaj",
+    "country": "Iran",
+    "iata": "PYK"
+  },
+  {
+    "code": "OIKK",
+    "name": "Kerman · Ayatollah Hashemi Rafsanjani International Airport",
+    "city": "Kerman",
+    "country": "Iran",
+    "iata": "KER"
+  },
+  {
+    "code": "OIBK",
+    "name": "Kish Island · Kish International Airport",
+    "city": "Kish Island",
+    "country": "Iran",
+    "iata": "KIH"
+  },
+  {
+    "code": "OIMM",
+    "name": "Mashhad International Airport",
+    "city": "Mashhad",
+    "country": "Iran",
+    "iata": "MHD"
+  },
+  {
+    "code": "OIKQ",
+    "name": "Qeshm(Dayrestan) · Qeshm International Airport",
+    "city": "Qeshm(Dayrestan)",
+    "country": "Iran",
+    "iata": "GSM"
+  },
+  {
+    "code": "OISS",
+    "name": "Shiraz Shahid Dastghaib International Airport",
+    "city": "Shiraz",
+    "country": "Iran",
+    "iata": "SYZ"
+  },
+  {
+    "code": "OITT",
+    "name": "Tabriz International Airport",
+    "city": "Tabriz",
+    "country": "Iran",
+    "iata": "TBZ"
+  },
+  {
+    "code": "OIIE",
+    "name": "Tehran · Imam Khomeini International Airport",
+    "city": "Tehran",
+    "country": "Iran",
+    "iata": "IKA"
+  },
+  {
+    "code": "OIII",
+    "name": "Tehran · Mehrabad International Airport",
+    "city": "Tehran",
+    "country": "Iran",
+    "iata": "THR"
+  },
+  {
+    "code": "OIZH",
+    "name": "Zahedan International Airport",
+    "city": "Zahedan",
+    "country": "Iran",
+    "iata": "ZAH"
+  },
+  {
+    "code": "EIKN",
+    "name": "Charlestown · Ireland West Airport Knock",
+    "city": "Charlestown",
+    "country": "Irlande",
+    "iata": "NOC"
+  },
+  {
+    "code": "EICK",
+    "name": "Cork International Airport",
+    "city": "Cork",
+    "country": "Irlande",
+    "iata": "ORK"
+  },
+  {
+    "code": "EIDW",
+    "name": "Dublin",
+    "city": "Dublin",
+    "country": "Irlande",
+    "iata": "DUB"
+  },
+  {
+    "code": "EINN",
+    "name": "Shannon Airport",
+    "city": "Shannon",
+    "country": "Irlande",
+    "iata": "SNN"
+  },
+  {
+    "code": "BIAR",
+    "name": "Akureyri International Airport",
+    "city": "Akureyri",
+    "country": "Islande",
+    "iata": "AEY"
+  },
+  {
+    "code": "BIKF",
+    "name": "Reykjavík · Keflavik International Airport",
+    "city": "Reykjavík",
+    "country": "Islande",
+    "iata": "KEF"
+  },
+  {
+    "code": "LLER",
+    "name": "Eilat · Ramon International Airport",
+    "city": "Eilat",
+    "country": "Israël",
+    "iata": "ETM"
+  },
+  {
+    "code": "LLBG",
+    "name": "Tel Aviv · Ben Gurion International Airport",
+    "city": "Tel Aviv",
+    "country": "Israël",
+    "iata": "TLV"
+  },
+  {
+    "code": "LIBD",
+    "name": "Bari Karol Wojtyła International Airport",
+    "city": "Bari",
+    "country": "Italie",
+    "iata": "BRI"
+  },
+  {
+    "code": "LIME",
+    "name": "Bergame-Orio al Serio",
+    "city": "Orio al Serio (BG)",
+    "country": "Italie",
+    "iata": "BGY"
+  },
+  {
+    "code": "LIPE",
+    "name": "Bologna Guglielmo Marconi Airport",
+    "city": "Bologna",
+    "country": "Italie",
+    "iata": "BLQ"
+  },
+  {
+    "code": "LIBR",
+    "name": "Brindisi Airport",
+    "city": "Brindisi",
+    "country": "Italie",
+    "iata": "BDS"
+  },
+  {
+    "code": "LIEE",
+    "name": "Cagliari Elmas Airport",
+    "city": "Cagliari",
+    "country": "Italie",
+    "iata": "CAG"
+  },
+  {
+    "code": "LIPX",
+    "name": "Caselle (VR) · Verona Villafranca Valerio Catullo Airport",
+    "city": "Caselle (VR)",
+    "country": "Italie",
+    "iata": "VRN"
+  },
+  {
+    "code": "LIMF",
+    "name": "Caselle Torinese (TO) · Turin Airport",
+    "city": "Caselle Torinese (TO)",
+    "country": "Italie",
+    "iata": "TRN"
+  },
+  {
+    "code": "LICC",
+    "name": "Catane-Fontanarossa",
+    "city": "Catania",
+    "country": "Italie",
+    "iata": "CTA"
+  },
+  {
+    "code": "LIRQ",
+    "name": "Firenze (FI) · Florence Airport, Peretola",
+    "city": "Firenze (FI)",
+    "country": "Italie",
+    "iata": "FLR"
+  },
+  {
+    "code": "LIMJ",
+    "name": "Genova (GE) · Genoa Cristoforo Colombo Airport",
+    "city": "Genova (GE)",
+    "country": "Italie",
+    "iata": "GOA"
+  },
+  {
+    "code": "LICA",
+    "name": "Lamezia Terme (CZ) · Lamezia Terme Sant'Eufemia International Airport",
+    "city": "Lamezia Terme (CZ)",
+    "country": "Italie",
+    "iata": "SUF"
+  },
+  {
+    "code": "LIMC",
+    "name": "Milan-Malpensa",
+    "city": "Ferno (VA)",
+    "country": "Italie",
+    "iata": "MXP"
+  },
+  {
+    "code": "LIRN",
+    "name": "Naples-Capodichino",
+    "city": "Napoli",
+    "country": "Italie",
+    "iata": "NAP"
+  },
+  {
+    "code": "LIEO",
+    "name": "Olbia (SS) · Olbia Costa Smeralda Airport",
+    "city": "Olbia (SS)",
+    "country": "Italie",
+    "iata": "OLB"
+  },
+  {
+    "code": "LICJ",
+    "name": "Palermo · Falcone–Borsellino Airport",
+    "city": "Palermo",
+    "country": "Italie",
+    "iata": "PMO"
+  },
+  {
+    "code": "LIRZ",
+    "name": "Perugia (PG) · Perugia San Francesco d'Assisi – Umbria International Airport",
+    "city": "Perugia (PG)",
+    "country": "Italie",
+    "iata": "PEG"
+  },
+  {
+    "code": "LIBP",
+    "name": "Pescara · Abruzzo Airport",
+    "city": "Pescara",
+    "country": "Italie",
+    "iata": "PSR"
+  },
+  {
+    "code": "LIRP",
+    "name": "Pisa (PI) · Pisa International Airport",
+    "city": "Pisa (PI)",
+    "country": "Italie",
+    "iata": "PSA"
+  },
+  {
+    "code": "LIPR",
+    "name": "Rimini (RN) · Federico Fellini International Airport",
+    "city": "Rimini (RN)",
+    "country": "Italie",
+    "iata": "RMI"
+  },
+  {
+    "code": "LIRA",
+    "name": "Rome · Ciampino–G. B. Pastine International Airport",
+    "city": "Rome",
+    "country": "Italie",
+    "iata": "CIA"
+  },
+  {
+    "code": "LIRF",
+    "name": "Rome-Fiumicino",
+    "city": "Rome",
+    "country": "Italie",
+    "iata": "FCO"
+  },
+  {
+    "code": "LIPQ",
+    "name": "Ronchi dei Legionari/Trieste · Trieste Airport",
+    "city": "Ronchi dei Legionari/Trieste",
+    "country": "Italie",
+    "iata": "TRS"
+  },
+  {
+    "code": "LIML",
+    "name": "Segrate (MI) · Milano Linate Airport",
+    "city": "Segrate (MI)",
+    "country": "Italie",
+    "iata": "LIN"
+  },
+  {
+    "code": "LIPH",
+    "name": "Treviso (TV) · Treviso Airport",
+    "city": "Treviso (TV)",
+    "country": "Italie",
+    "iata": "TSF"
+  },
+  {
+    "code": "LIPZ",
+    "name": "Venise-Marco-Polo",
+    "city": "Venezia (VE)",
+    "country": "Italie",
+    "iata": "VCE"
+  },
+  {
+    "code": "MKJP",
+    "name": "Kingston · Norman Manley International Airport",
+    "city": "Kingston",
+    "country": "Jamaïque",
+    "iata": "KIN"
+  },
+  {
+    "code": "MKJS",
+    "name": "Montego Bay · Sangster International Airport",
+    "city": "Montego Bay",
+    "country": "Jamaïque",
+    "iata": "MBJ"
+  },
+  {
+    "code": "RJSA",
+    "name": "Aomori Airport",
+    "city": "Aomori",
+    "country": "Japon",
+    "iata": "AOJ"
+  },
+  {
+    "code": "RJFF",
+    "name": "Fukuoka Airport",
+    "city": "Fukuoka",
+    "country": "Japon",
+    "iata": "FUK"
+  },
+  {
+    "code": "RJCH",
+    "name": "Hakodate Airport",
+    "city": "Hakodate",
+    "country": "Japon",
+    "iata": "HKD"
+  },
+  {
+    "code": "RJOA",
+    "name": "Hiroshima Airport",
+    "city": "Hiroshima",
+    "country": "Japon",
+    "iata": "HIJ"
+  },
+  {
+    "code": "RJFK",
+    "name": "Kagoshima Airport",
+    "city": "Kagoshima",
+    "country": "Japon",
+    "iata": "KOJ"
+  },
+  {
+    "code": "RJNK",
+    "name": "Kanazawa · Komatsu Airport / JASDF Komatsu Air Base",
+    "city": "Kanazawa",
+    "country": "Japon",
+    "iata": "KMQ"
+  },
+  {
+    "code": "RJFR",
+    "name": "Kitakyushu Airport",
+    "city": "Kitakyushu",
+    "country": "Japon",
+    "iata": "KKJ"
+  },
+  {
+    "code": "RJBE",
+    "name": "Kobe Airport",
+    "city": "Kobe",
+    "country": "Japon",
+    "iata": "UKB"
+  },
+  {
+    "code": "RJFT",
+    "name": "Kumamoto Airport",
+    "city": "Kumamoto",
+    "country": "Japon",
+    "iata": "KMJ"
+  },
+  {
+    "code": "RJFS",
+    "name": "Kyushu Saga International Airport",
+    "city": "Saga",
+    "country": "Japon",
+    "iata": "HSG"
+  },
+  {
+    "code": "RJNS",
+    "name": "Makinohara / Shimada · Mount Fuji Shizuoka Airport",
+    "city": "Makinohara / Shimada",
+    "country": "Japon",
+    "iata": "FSZ"
+  },
+  {
+    "code": "RJOM",
+    "name": "Matsuyama Airport",
+    "city": "Matsuyama",
+    "country": "Japon",
+    "iata": "MYJ"
+  },
+  {
+    "code": "RJFM",
+    "name": "Miyazaki Airport",
+    "city": "Miyazaki",
+    "country": "Japon",
+    "iata": "KMI"
+  },
+  {
+    "code": "RJFU",
+    "name": "Nagasaki Airport",
+    "city": "Nagasaki",
+    "country": "Japon",
+    "iata": "NGS"
+  },
+  {
+    "code": "ROAH",
+    "name": "Naha International Airport",
+    "city": "Naha",
+    "country": "Japon",
+    "iata": "OKA"
+  },
+  {
+    "code": "RJOK",
+    "name": "Nankoku · Kochi Ryoma Airport",
+    "city": "Nankoku",
+    "country": "Japon",
+    "iata": "KCZ"
+  },
+  {
+    "code": "RJAA",
+    "name": "Narita International Airport",
+    "city": "Narita",
+    "country": "Japon",
+    "iata": "NRT"
+  },
+  {
+    "code": "RJSS",
+    "name": "Natori · Sendai Airport",
+    "city": "Natori",
+    "country": "Japon",
+    "iata": "SDJ"
+  },
+  {
+    "code": "RJSN",
+    "name": "Niigata Airport",
+    "city": "Niigata",
+    "country": "Japon",
+    "iata": "KIJ"
+  },
+  {
+    "code": "RJOB",
+    "name": "Okayama Momotaro Airport",
+    "city": "Okayama",
+    "country": "Japon",
+    "iata": "OKJ"
+  },
+  {
+    "code": "RJAH",
+    "name": "Omitama · Ibaraki Airport",
+    "city": "Omitama",
+    "country": "Japon",
+    "iata": "IBR"
+  },
+  {
+    "code": "RJBB",
+    "name": "Osaka · Kansai International Airport",
+    "city": "Osaka",
+    "country": "Japon",
+    "iata": "KIX"
+  },
+  {
+    "code": "RJOO",
+    "name": "Osaka Itami International Airport",
+    "city": "Osaka",
+    "country": "Japon",
+    "iata": "ITM"
+  },
+  {
+    "code": "RJCC",
+    "name": "Sapporo · New Chitose Airport",
+    "city": "Sapporo",
+    "country": "Japon",
+    "iata": "CTS"
+  },
+  {
+    "code": "RJOT",
+    "name": "Takamatsu Airport",
+    "city": "Takamatsu",
+    "country": "Japon",
+    "iata": "TAK"
+  },
+  {
+    "code": "RJGG",
+    "name": "Tokoname · Chubu Centrair International Airport",
+    "city": "Tokoname",
+    "country": "Japon",
+    "iata": "NGO"
+  },
+  {
+    "code": "RJOS",
+    "name": "Tokushima Awaodori Airport / JMSDF Tokushima Air Base",
+    "city": "Tokushima",
+    "country": "Japon",
+    "iata": "TKS"
+  },
+  {
+    "code": "RJTT",
+    "name": "Tokyo Haneda International Airport",
+    "city": "Tokyo",
+    "country": "Japon",
+    "iata": "HND"
+  },
+  {
+    "code": "OJAI",
+    "name": "Amman · Queen Alia International Airport",
+    "city": "Amman",
+    "country": "Jordanie",
+    "iata": "AMM"
+  },
+  {
+    "code": "OJAQ",
+    "name": "Aqaba · King Hussein International Airport",
+    "city": "Aqaba",
+    "country": "Jordanie",
+    "iata": "AQJ"
+  },
+  {
+    "code": "OJAM",
+    "name": "Marka International (Amman Civil) Airport",
+    "city": "Amman",
+    "country": "Jordanie",
+    "iata": "ADJ"
+  },
+  {
+    "code": "UATE",
+    "name": "Aktau International Airport",
+    "city": "Aktau",
+    "country": "Kazakhstan",
+    "iata": "SCO"
+  },
+  {
+    "code": "UATT",
+    "name": "Aktobe International Airport",
+    "city": "Aktobe",
+    "country": "Kazakhstan",
+    "iata": "AKX"
+  },
+  {
+    "code": "UAAA",
+    "name": "Almaty International Airport",
+    "city": "Almaty",
+    "country": "Kazakhstan",
+    "iata": "ALA"
+  },
+  {
+    "code": "UACC",
+    "name": "Astana · Nursultan Nazarbayev International Airport",
+    "city": "Astana",
+    "country": "Kazakhstan",
+    "iata": "NQZ"
+  },
+  {
+    "code": "UATG",
+    "name": "Atyrau International Airport",
+    "city": "Atyrau",
+    "country": "Kazakhstan",
+    "iata": "GUW"
+  },
+  {
+    "code": "UAOL",
+    "name": "Baikonur Krayniy International Airport",
+    "city": "Baikonur",
+    "country": "Kazakhstan",
+    "iata": "BXY"
+  },
+  {
+    "code": "UAKK",
+    "name": "Karaganda · Sary-Arka Airport",
+    "city": "Karaganda",
+    "country": "Kazakhstan",
+    "iata": "KGF"
+  },
+  {
+    "code": "UACK",
+    "name": "Kokshetau International Airport",
+    "city": "Kokshetau",
+    "country": "Kazakhstan",
+    "iata": "KOV"
+  },
+  {
+    "code": "UAUU",
+    "name": "Kostanay International Airport",
+    "city": "Kostanay",
+    "country": "Kazakhstan",
+    "iata": "KSN"
+  },
+  {
+    "code": "UAOO",
+    "name": "Kyzylorda · Korkyt Ata International Airport",
+    "city": "Kyzylorda",
+    "country": "Kazakhstan",
+    "iata": "KZO"
+  },
+  {
+    "code": "UASP",
+    "name": "Pavlodar International Airport",
+    "city": "Pavlodar",
+    "country": "Kazakhstan",
+    "iata": "PWQ"
+  },
+  {
+    "code": "UACP",
+    "name": "Petropavl International Airport",
+    "city": "Petropavl",
+    "country": "Kazakhstan",
+    "iata": "PPK"
+  },
+  {
+    "code": "UASS",
+    "name": "Semey · Semei International Airport",
+    "city": "Semey",
+    "country": "Kazakhstan",
+    "iata": "PLX"
+  },
+  {
+    "code": "UAII",
+    "name": "Shymkent International Airport",
+    "city": "Shymkent",
+    "country": "Kazakhstan",
+    "iata": "CIT"
+  },
+  {
+    "code": "UADD",
+    "name": "Taraz International Airport",
+    "city": "Taraz",
+    "country": "Kazakhstan",
+    "iata": "DMB"
+  },
+  {
+    "code": "UAIT",
+    "name": "Turkıstan · Hazrat Sultan International Airport",
+    "city": "Turkıstan",
+    "country": "Kazakhstan",
+    "iata": "HSA"
+  },
+  {
+    "code": "UARR",
+    "name": "Uralsk · Manshuk Mametova International Airport",
+    "city": "Uralsk",
+    "country": "Kazakhstan",
+    "iata": "URA"
+  },
+  {
+    "code": "UASK",
+    "name": "Ust-Kamenogorsk (Oskemen) · Oskemen International Airport",
+    "city": "Ust-Kamenogorsk (Oskemen)",
+    "country": "Kazakhstan",
+    "iata": "UKK"
+  },
+  {
+    "code": "UAKD",
+    "name": "Zhezkazgan National Airport",
+    "city": "Zhezkazgan",
+    "country": "Kazakhstan",
+    "iata": "DZN"
+  },
+  {
+    "code": "HKEL",
+    "name": "Eldoret International Airport",
+    "city": "Eldoret",
+    "country": "Kenya",
+    "iata": "EDL"
+  },
+  {
+    "code": "HKKI",
+    "name": "Kisumu International Airport",
+    "city": "Kisumu",
+    "country": "Kenya",
+    "iata": "KIS"
+  },
+  {
+    "code": "HKMO",
+    "name": "Mombasa · Moi International Airport",
+    "city": "Mombasa",
+    "country": "Kenya",
+    "iata": "MBA"
+  },
+  {
+    "code": "HKJK",
+    "name": "Nairobi · Jomo Kenyatta International Airport",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "iata": "NBO"
+  },
+  {
+    "code": "UCFM",
+    "name": "Bishkek · Manas International Airport",
+    "city": "Bishkek",
+    "country": "Kirghizstan",
+    "iata": "BSZ"
+  },
+  {
+    "code": "UCFO",
+    "name": "Osh International Airport",
+    "city": "Osh",
+    "country": "Kirghizstan",
+    "iata": "OSS"
+  },
+  {
+    "code": "UCFL",
+    "name": "Tamchy · Issyk-Kul International Airport",
+    "city": "Tamchy",
+    "country": "Kirghizstan",
+    "iata": "IKU"
+  },
+  {
+    "code": "PLCH",
+    "name": "Kiritimati · Cassidy International Airport",
+    "city": "Kiritimati",
+    "country": "Kiribati",
+    "iata": "CXI"
+  },
+  {
+    "code": "NGTA",
+    "name": "South Tarawa · Bonriki International Airport",
+    "city": "South Tarawa",
+    "country": "Kiribati",
+    "iata": "TRW"
+  },
+  {
+    "code": "BKPR",
+    "name": "Prishtina · Priština Adem Jashari International Airport",
+    "city": "Prishtina",
+    "country": "Kosovo",
+    "iata": "PRN"
+  },
+  {
+    "code": "OKKK",
+    "name": "Kuwait City · Kuwait International Airport",
+    "city": "Kuwait City",
+    "country": "Koweït",
+    "iata": "KWI"
+  },
+  {
+    "code": "FMEP",
+    "name": "Saint-Pierre Pierrefonds Airport",
+    "city": "Saint-Pierre",
+    "country": "La Réunion",
+    "iata": "ZSE"
+  },
+  {
+    "code": "FMEE",
+    "name": "Sainte-Marie · Roland Garros Airport",
+    "city": "Sainte-Marie",
+    "country": "La Réunion",
+    "iata": "RUN"
+  },
+  {
+    "code": "VLLB",
+    "name": "Luang Phabang International Airport",
+    "city": "Luang Phabang",
+    "country": "Laos",
+    "iata": "LPQ"
+  },
+  {
+    "code": "VLPS",
+    "name": "Pakse International Airport",
+    "city": "Pakse",
+    "country": "Laos",
+    "iata": "PKZ"
+  },
+  {
+    "code": "VLVT",
+    "name": "Vientiane · Wattay International Airport",
+    "city": "Vientiane",
+    "country": "Laos",
+    "iata": "VTE"
+  },
+  {
+    "code": "FXMM",
+    "name": "Maseru(Mazenod) · Moshoeshoe I International Airport",
+    "city": "Maseru(Mazenod)",
+    "country": "Lesotho",
+    "iata": "MSU"
+  },
+  {
+    "code": "EVRA",
+    "name": "Riga International Airport",
+    "city": "Riga",
+    "country": "Lettonie",
+    "iata": "RIX"
+  },
+  {
+    "code": "OLBA",
+    "name": "Beirut Rafic Hariri International Airport",
+    "city": "Beirut",
+    "country": "Liban",
+    "iata": "BEY"
+  },
+  {
+    "code": "GLRB",
+    "name": "Monrovia · Roberts International Airport",
+    "city": "Monrovia",
+    "country": "Liberia",
+    "iata": "ROB"
+  },
+  {
+    "code": "HLLQ",
+    "name": "Al Albraq · Al Abraq International Airport",
+    "city": "Al Albraq",
+    "country": "Libye",
+    "iata": "LAQ"
+  },
+  {
+    "code": "HLLB",
+    "name": "Benina International Airport",
+    "city": "Benina",
+    "country": "Libye",
+    "iata": "BEN"
+  },
+  {
+    "code": "HLLM",
+    "name": "Tripoli · Mitiga International Airport",
+    "city": "Tripoli",
+    "country": "Libye",
+    "iata": "MJI"
+  },
+  {
+    "code": "EYKA",
+    "name": "Kaunas International Airport",
+    "city": "Kaunas",
+    "country": "Lituanie",
+    "iata": "KUN"
+  },
+  {
+    "code": "EYPA",
+    "name": "Palanga International Airport",
+    "city": "Palanga",
+    "country": "Lituanie",
+    "iata": "PLQ"
+  },
+  {
+    "code": "EYVI",
+    "name": "Vilnius International Airport",
+    "city": "Vilnius",
+    "country": "Lituanie",
+    "iata": "VNO"
+  },
+  {
+    "code": "ELLX",
+    "name": "Luxembourg-Findel International Airport",
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "iata": "LUX"
+  },
+  {
+    "code": "VMMC",
+    "name": "Nossa Senhora do Carmo · Macau International Airport",
+    "city": "Nossa Senhora do Carmo",
+    "country": "Macao",
+    "iata": "MFM"
+  },
+  {
+    "code": "LWSK",
+    "name": "Ilinden · Skopje International Airport",
+    "city": "Ilinden",
+    "country": "Macédoine du Nord",
+    "iata": "SKP"
+  },
+  {
+    "code": "LWOH",
+    "name": "Ohrid St. Paul the Apostle Airport",
+    "city": "Ohrid",
+    "country": "Macédoine du Nord",
+    "iata": "OHD"
+  },
+  {
+    "code": "FMMI",
+    "name": "Antananarivo · Ivato International Airport",
+    "city": "Antananarivo",
+    "country": "Madagascar",
+    "iata": "TNR"
+  },
+  {
+    "code": "FMNM",
+    "name": "Mahajanga · Amborovy Airport",
+    "city": "Mahajanga",
+    "country": "Madagascar",
+    "iata": "MJN"
+  },
+  {
+    "code": "FMNN",
+    "name": "Nosy Be International Airport",
+    "city": "Nosy Be",
+    "country": "Madagascar",
+    "iata": "NOS"
+  },
+  {
+    "code": "FMMT",
+    "name": "Toamasina Ambalamanasy Airport",
+    "city": "Toamasina",
+    "country": "Madagascar",
+    "iata": "TMM"
+  },
+  {
+    "code": "WMKI",
+    "name": "Ipoh · Sultan Azlan Shah Airport",
+    "city": "Ipoh",
+    "country": "Malaisie",
+    "iata": "IPH"
+  },
+  {
+    "code": "WMKJ",
+    "name": "Johor Bahru · Senai International Airport",
+    "city": "Johor Bahru",
+    "country": "Malaisie",
+    "iata": "JHB"
+  },
+  {
+    "code": "WBKK",
+    "name": "Kota Kinabalu International Airport",
+    "city": "Kota Kinabalu",
+    "country": "Malaisie",
+    "iata": "BKI"
+  },
+  {
+    "code": "WBGG",
+    "name": "Kuching International Airport",
+    "city": "Kuching",
+    "country": "Malaisie",
+    "iata": "KCH"
+  },
+  {
+    "code": "WMKL",
+    "name": "Langkawi International Airport",
+    "city": "Langkawi",
+    "country": "Malaisie",
+    "iata": "LGK"
+  },
+  {
+    "code": "WMKP",
+    "name": "Penang International Airport",
+    "city": "Penang",
+    "country": "Malaisie",
+    "iata": "PEN"
+  },
+  {
+    "code": "WMKK",
+    "name": "Sepang · Kuala Lumpur International Airport",
+    "city": "Sepang",
+    "country": "Malaisie",
+    "iata": "KUL"
+  },
+  {
+    "code": "WMSA",
+    "name": "Subang · Sultan Abdul Aziz Shah International Airport",
+    "city": "Subang",
+    "country": "Malaisie",
+    "iata": "SZB"
+  },
+  {
+    "code": "FWCL",
+    "name": "Blantyre · Chileka International Airport",
+    "city": "Blantyre",
+    "country": "Malawi",
+    "iata": "BLZ"
+  },
+  {
+    "code": "FWKI",
+    "name": "Lumbadzi · Kamuzu International Airport",
+    "city": "Lumbadzi",
+    "country": "Malawi",
+    "iata": "LLW"
+  },
+  {
+    "code": "VRMG",
+    "name": "Gan International Airport",
+    "city": "Gan",
+    "country": "Maldives",
+    "iata": "GAN"
+  },
+  {
+    "code": "VRMH",
+    "name": "Haa Dhaalu Atoll · Hanimaadhoo International Airport",
+    "city": "Haa Dhaalu Atoll",
+    "country": "Maldives",
+    "iata": "HAQ"
+  },
+  {
+    "code": "VRMM",
+    "name": "Malé · Velana International Airport",
+    "city": "Malé",
+    "country": "Maldives",
+    "iata": "MLE"
+  },
+  {
+    "code": "GABS",
+    "name": "Bamako · Modibo Keita International Airport",
+    "city": "Bamako",
+    "country": "Mali",
+    "iata": "BKO"
+  },
+  {
+    "code": "GATB",
+    "name": "Timbuktu · Tombouktou Airport",
+    "city": "Timbuktu",
+    "country": "Mali",
+    "iata": "TOM"
+  },
+  {
+    "code": "LMML",
+    "name": "Valletta · Malta International Airport",
+    "city": "Valletta",
+    "country": "Malte",
+    "iata": "MLA"
+  },
+  {
+    "code": "GMAD",
+    "name": "Agadir (Temsia) · Al Massira Airport",
+    "city": "Agadir (Temsia)",
+    "country": "Maroc",
+    "iata": "AGA"
+  },
+  {
+    "code": "GMFO",
+    "name": "Ahl Angad · Oujda Angads Airport",
+    "city": "Ahl Angad",
+    "country": "Maroc",
+    "iata": "OUD"
+  },
+  {
+    "code": "GMMN",
+    "name": "Casablanca · Mohammed V International Airport",
+    "city": "Casablanca",
+    "country": "Maroc",
+    "iata": "CMN"
+  },
+  {
+    "code": "GMFF",
+    "name": "Fes Saïss International Airport",
+    "city": "Saïss",
+    "country": "Maroc",
+    "iata": "FEZ"
+  },
+  {
+    "code": "GMMX",
+    "name": "Marrakesh Menara Airport",
+    "city": "Marrakesh",
+    "country": "Maroc",
+    "iata": "RAK"
+  },
+  {
+    "code": "GMMW",
+    "name": "Nador Al Aaroui International Airport",
+    "city": "Al Aaroui",
+    "country": "Maroc",
+    "iata": "NDR"
+  },
+  {
+    "code": "GMMZ",
+    "name": "Ouarzazate International Airport",
+    "city": "Ouarzazate",
+    "country": "Maroc",
+    "iata": "OZZ"
+  },
+  {
+    "code": "GMMD",
+    "name": "Oulad Yaich · Beni Mellal Airport",
+    "city": "Oulad Yaich",
+    "country": "Maroc",
+    "iata": "BEM"
+  },
+  {
+    "code": "GMME",
+    "name": "Rabat-Salé Airport",
+    "city": "Rabat",
+    "country": "Maroc",
+    "iata": "RBA"
+  },
+  {
+    "code": "GMTT",
+    "name": "Tangier Ibn Battuta Airport",
+    "city": "Tangier",
+    "country": "Maroc",
+    "iata": "TNG"
+  },
+  {
+    "code": "GMTN",
+    "name": "Tétouan · Sania Ramel Airport",
+    "city": "Tétouan",
+    "country": "Maroc",
+    "iata": "TTU"
+  },
+  {
+    "code": "GMAZ",
+    "name": "Zagora Airport",
+    "city": "Zagora",
+    "country": "Maroc",
+    "iata": "OZG"
+  },
+  {
+    "code": "TFFF",
+    "name": "Fort-de-France · Martinique Aimé Césaire International Airport",
+    "city": "Fort-de-France",
+    "country": "Martinique",
+    "iata": "FDF"
+  },
+  {
+    "code": "FIMP",
+    "name": "Plaine Magnien · Sir Seewoosagur Ramgoolam International Airport",
+    "city": "Plaine Magnien",
+    "country": "Maurice",
+    "iata": "MRU"
+  },
+  {
+    "code": "GQPP",
+    "name": "Nouadhibou International Airport",
+    "city": "Nouadhibou",
+    "country": "Mauritanie",
+    "iata": "NDB"
+  },
+  {
+    "code": "GQNO",
+    "name": "Nouakchott–Oumtounsy International Airport",
+    "city": "Nouakchott",
+    "country": "Mauritanie",
+    "iata": "NKC"
+  },
+  {
+    "code": "FMCZ",
+    "name": "Dzaoudzi Pamandzi International Airport",
+    "city": "Dzaoudzi",
+    "country": "Mayotte",
+    "iata": "DZA"
+  },
+  {
+    "code": "MMAA",
+    "name": "Acapulco · General Juan N. Álvarez International Airport",
+    "city": "Acapulco",
+    "country": "Mexique",
+    "iata": "ACA"
+  },
+  {
+    "code": "MMAS",
+    "name": "Aguascalientes International Airport",
+    "city": "Aguascalientes",
+    "country": "Mexique",
+    "iata": "AGU"
+  },
+  {
+    "code": "MMBT",
+    "name": "Bahías de Huatulco International Airport",
+    "city": "Huatulco",
+    "country": "Mexique",
+    "iata": "HUX"
+  },
+  {
+    "code": "MMUN",
+    "name": "Cancún International Airport",
+    "city": "Cancún",
+    "country": "Mexique",
+    "iata": "CUN"
+  },
+  {
+    "code": "MMCU",
+    "name": "Chihuahua · General Roberto Fierro Villalobos International Airport",
+    "city": "Chihuahua",
+    "country": "Mexique",
+    "iata": "CUU"
+  },
+  {
+    "code": "MMCS",
+    "name": "Ciudad Juárez · Abraham González International Airport",
+    "city": "Ciudad Juárez",
+    "country": "Mexique",
+    "iata": "CJS"
+  },
+  {
+    "code": "MMCZ",
+    "name": "Cozumel International Airport",
+    "city": "Cozumel",
+    "country": "Mexique",
+    "iata": "CZM"
+  },
+  {
+    "code": "MMCL",
+    "name": "Culiacán · Bachigualato Federal International Airport",
+    "city": "Culiacán",
+    "country": "Mexique",
+    "iata": "CUL"
+  },
+  {
+    "code": "MMTL",
+    "name": "Felipe Carrillo Puerto International Airport Tulum",
+    "city": "Tulum",
+    "country": "Mexique",
+    "iata": "TQO"
+  },
+  {
+    "code": "MMGL",
+    "name": "Guadalajara International Airport",
+    "city": "Guadalajara",
+    "country": "Mexique",
+    "iata": "GDL"
+  },
+  {
+    "code": "MMHO",
+    "name": "Hermosillo · General Ignacio L. Pesqueira International Airport",
+    "city": "Hermosillo",
+    "country": "Mexique",
+    "iata": "HMO"
+  },
+  {
+    "code": "MMZH",
+    "name": "Ixtapa-Zihuatanejo International Airport",
+    "city": "Ixtapa",
+    "country": "Mexique",
+    "iata": "ZIH"
+  },
+  {
+    "code": "MMLT",
+    "name": "Loreto International Airport",
+    "city": "Loreto",
+    "country": "Mexique",
+    "iata": "LTO"
+  },
+  {
+    "code": "MMMZ",
+    "name": "Mazatlàn · General Rafael Buelna International Airport",
+    "city": "Mazatlàn",
+    "country": "Mexique",
+    "iata": "MZT"
+  },
+  {
+    "code": "MMMD",
+    "name": "Mérida · Manuel Crescencio Rejón International Airport",
+    "city": "Mérida",
+    "country": "Mexique",
+    "iata": "MID"
+  },
+  {
+    "code": "MMSM",
+    "name": "Mexico City · Felipe Ángeles International Airport",
+    "city": "Mexico City",
+    "country": "Mexique",
+    "iata": "NLU"
+  },
+  {
+    "code": "MMMX",
+    "name": "Mexico City Benito Juárez International Airport",
+    "city": "Mexico City",
+    "country": "Mexique",
+    "iata": "MEX"
+  },
+  {
+    "code": "MMMY",
+    "name": "Monterrey International Airport",
+    "city": "Monterrey",
+    "country": "Mexique",
+    "iata": "MTY"
+  },
+  {
+    "code": "MMMM",
+    "name": "Morelia · General Francisco J. Mujica International Airport",
+    "city": "Morelia",
+    "country": "Mexique",
+    "iata": "MLM"
+  },
+  {
+    "code": "MMOX",
+    "name": "Oaxaca · Xoxocotlán International Airport",
+    "city": "Oaxaca",
+    "country": "Mexique",
+    "iata": "OAX"
+  },
+  {
+    "code": "MMPB",
+    "name": "Puebla · Hermanos Serdán International Airport",
+    "city": "Puebla",
+    "country": "Mexique",
+    "iata": "PBC"
+  },
+  {
+    "code": "MMPR",
+    "name": "Puerto Vallarta International Airport",
+    "city": "Puerto Vallarta",
+    "country": "Mexique",
+    "iata": "PVR"
+  },
+  {
+    "code": "MMQT",
+    "name": "Querétaro Intercontinental Airport",
+    "city": "Querétaro",
+    "country": "Mexique",
+    "iata": "QRO"
+  },
+  {
+    "code": "MMSD",
+    "name": "San José del Cabo · Los Cabos International Airport",
+    "city": "San José del Cabo",
+    "country": "Mexique",
+    "iata": "SJD"
+  },
+  {
+    "code": "MMLO",
+    "name": "Silao · Guanajuato International Airport",
+    "city": "Silao",
+    "country": "Mexique",
+    "iata": "BJX"
+  },
+  {
+    "code": "MMTJ",
+    "name": "Tijuana · General Abelardo L. Rodriguez International Airport",
+    "city": "Tijuana",
+    "country": "Mexique",
+    "iata": "TIJ"
+  },
+  {
+    "code": "MMTO",
+    "name": "Toluca · Adolfo López Mateos International Airport",
+    "city": "Toluca",
+    "country": "Mexique",
+    "iata": "TLC"
+  },
+  {
+    "code": "MMVR",
+    "name": "Veracruz · General Heriberto Jara International Airport",
+    "city": "Veracruz",
+    "country": "Mexique",
+    "iata": "VER"
+  },
+  {
+    "code": "MMVA",
+    "name": "Villahermosa · Carlos Rovirosa Pérez International Airport",
+    "city": "Villahermosa",
+    "country": "Mexique",
+    "iata": "VSA"
+  },
+  {
+    "code": "PTSA",
+    "name": "Okat · Kosrae International Airport",
+    "city": "Okat",
+    "country": "Micronésie",
+    "iata": "KSA"
+  },
+  {
+    "code": "PTKK",
+    "name": "Weno Island · Chuuk International Airport",
+    "city": "Weno Island",
+    "country": "Micronésie",
+    "iata": "TKK"
+  },
+  {
+    "code": "PTYA",
+    "name": "Yap Island · Yap International Airport",
+    "city": "Yap Island",
+    "country": "Micronésie",
+    "iata": "YAP"
+  },
+  {
+    "code": "LUKK",
+    "name": "Chişinău International Airport",
+    "city": "Chişinău",
+    "country": "Moldavie",
+    "iata": "RMO"
+  },
+  {
+    "code": "ZMCK",
+    "name": "Ulaanbaatar (Sergelen) · Ulaanbaatar Chinggis Khaan International Airport",
+    "city": "Ulaanbaatar (Sergelen)",
+    "country": "Mongolie",
+    "iata": "UBN"
+  },
+  {
+    "code": "LYPG",
+    "name": "Podgorica Airport / Podgorica Golubovci Airbase",
+    "city": "Podgorica",
+    "country": "Monténégro",
+    "iata": "TGD"
+  },
+  {
+    "code": "TRPG",
+    "name": "Gerald's Park · John A. Osborne Airport",
+    "city": "Gerald's Park",
+    "country": "Montserrat",
+    "iata": "MNI"
+  },
+  {
+    "code": "FQBR",
+    "name": "Beira International Airport",
+    "city": "Beira",
+    "country": "Mozambique",
+    "iata": "BEW"
+  },
+  {
+    "code": "FQMA",
+    "name": "Maputo Airport",
+    "city": "Maputo",
+    "country": "Mozambique",
+    "iata": "MPM"
+  },
+  {
+    "code": "FQNP",
+    "name": "Nampula Airport",
+    "city": "Nampula",
+    "country": "Mozambique",
+    "iata": "APL"
+  },
+  {
+    "code": "FQTT",
+    "name": "Tete Airport",
+    "city": "Tete",
+    "country": "Mozambique",
+    "iata": "TET"
+  },
+  {
+    "code": "VYMD",
+    "name": "Mandalay International Airport",
+    "city": "Mandalay",
+    "country": "Myanmar (Birmanie)",
+    "iata": "MDL"
+  },
+  {
+    "code": "VYNT",
+    "name": "Naypyitaw · Nay Pyi Taw International Airport",
+    "city": "Naypyitaw",
+    "country": "Myanmar (Birmanie)",
+    "iata": "NYT"
+  },
+  {
+    "code": "VYYY",
+    "name": "Yangon International Airport",
+    "city": "Yangon",
+    "country": "Myanmar (Birmanie)",
+    "iata": "RGN"
+  },
+  {
+    "code": "FYWB",
+    "name": "Walvis Bay(Rooikop) · Walvis Bay International Airport",
+    "city": "Walvis Bay(Rooikop)",
+    "country": "Namibie",
+    "iata": "WVB"
+  },
+  {
+    "code": "FYWH",
+    "name": "Windhoek · Hosea Kutako International Airport",
+    "city": "Windhoek",
+    "country": "Namibie",
+    "iata": "WDH"
+  },
+  {
+    "code": "VNKT",
+    "name": "Kathmandu · Tribhuvan International Airport",
+    "city": "Kathmandu",
+    "country": "Népal",
+    "iata": "KTM"
+  },
+  {
+    "code": "VNPR",
+    "name": "Pokhara International Airport",
+    "city": "Pokhara",
+    "country": "Népal",
+    "iata": "PHH"
+  },
+  {
+    "code": "VNBW",
+    "name": "Siddharthanagar (Bhairahawa) · Gautam Buddha International Airport",
+    "city": "Siddharthanagar (Bhairahawa)",
+    "country": "Népal",
+    "iata": "BWA"
+  },
+  {
+    "code": "MNMG",
+    "name": "Augusto C. Sandino (Managua) International Airport",
+    "city": "Managua",
+    "country": "Nicaragua",
+    "iata": "MGA"
+  },
+  {
+    "code": "DRRN",
+    "name": "Niamey · Diori Hamani International Airport",
+    "city": "Niamey",
+    "country": "Niger",
+    "iata": "NIM"
+  },
+  {
+    "code": "DNAA",
+    "name": "Abuja · Nnamdi Azikiwe International Airport",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "iata": "ABV"
+  },
+  {
+    "code": "DNAS",
+    "name": "Asaba International Airport",
+    "city": "Asaba",
+    "country": "Nigeria",
+    "iata": "ABB"
+  },
+  {
+    "code": "DNBK",
+    "name": "Birinin Kebbi · Sir Ahmadu Bello International Airport",
+    "city": "Birinin Kebbi",
+    "country": "Nigeria",
+    "iata": ""
+  },
+  {
+    "code": "DNEN",
+    "name": "Enegu · Akanu Ibiam International Airport",
+    "city": "Enegu",
+    "country": "Nigeria",
+    "iata": "ENU"
+  },
+  {
+    "code": "DNIL",
+    "name": "Ilorin/Ogbomosho · General Tunde Idiagbon International Airport",
+    "city": "Ilorin/Ogbomosho",
+    "country": "Nigeria",
+    "iata": "ILR"
+  },
+  {
+    "code": "DNKA",
+    "name": "Kaduna International Airport",
+    "city": "Kaduna",
+    "country": "Nigeria",
+    "iata": "KAD"
+  },
+  {
+    "code": "DNMM",
+    "name": "Lagos · Murtala Muhammed International Airport",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "iata": "LOS"
+  },
+  {
+    "code": "DNMA",
+    "name": "Maiduguri International Airport",
+    "city": "Maiduguri",
+    "country": "Nigeria",
+    "iata": "MIU"
+  },
+  {
+    "code": "DNKN",
+    "name": "Mallam Aminu Kano International Airport",
+    "city": "Kano",
+    "country": "Nigeria",
+    "iata": "KAN"
+  },
+  {
+    "code": "DNPO",
+    "name": "Port Harcourt International Airport",
+    "city": "Port Harcourt",
+    "country": "Nigeria",
+    "iata": "PHC"
+  },
+  {
+    "code": "DNBC",
+    "name": "Sir Abubakar Tafawa Balewa Bauchi State International Airport",
+    "city": "Bauchi",
+    "country": "Nigeria",
+    "iata": "BCU"
+  },
+  {
+    "code": "DNSO",
+    "name": "Sokoto · Sadiq Abubakar III International Airport",
+    "city": "Sokoto",
+    "country": "Nigeria",
+    "iata": "SKO"
+  },
+  {
+    "code": "ENAL",
+    "name": "Ålesund Airport",
+    "city": "Ålesund",
+    "country": "Norvège",
+    "iata": "AES"
+  },
+  {
+    "code": "ENBR",
+    "name": "Bergen Airport, Flesland",
+    "city": "Bergen",
+    "country": "Norvège",
+    "iata": "BGO"
+  },
+  {
+    "code": "ENBO",
+    "name": "Bodø Airport",
+    "city": "Bodø",
+    "country": "Norvège",
+    "iata": "BOO"
+  },
+  {
+    "code": "ENEV",
+    "name": "Evenes · Harstad/Narvik Airport",
+    "city": "Evenes",
+    "country": "Norvège",
+    "iata": "EVE"
+  },
+  {
+    "code": "ENCN",
+    "name": "Kristiansand(Kjevik) · Kristiansand Airport",
+    "city": "Kristiansand(Kjevik)",
+    "country": "Norvège",
+    "iata": "KRS"
+  },
+  {
+    "code": "ENGM",
+    "name": "Oslo-Gardermoen",
+    "city": "Oslo (Gardermoen)",
+    "country": "Norvège",
+    "iata": "OSL"
+  },
+  {
+    "code": "ENTO",
+    "name": "Sandefjord(Torp) · Sandefjord Airport, Torp",
+    "city": "Sandefjord(Torp)",
+    "country": "Norvège",
+    "iata": "TRF"
+  },
+  {
+    "code": "ENZV",
+    "name": "Stavanger Airport, Sola",
+    "city": "Stavanger",
+    "country": "Norvège",
+    "iata": "SVG"
+  },
+  {
+    "code": "ENTC",
+    "name": "Tromsø Airport",
+    "city": "Tromsø",
+    "country": "Norvège",
+    "iata": "TOS"
+  },
+  {
+    "code": "ENVA",
+    "name": "Trondheim Airport, Værnes",
+    "city": "Trondheim",
+    "country": "Norvège",
+    "iata": "TRD"
+  },
+  {
+    "code": "NWWW",
+    "name": "Nouméa (La Tontouta) · La Tontouta International Airport",
+    "city": "Nouméa (La Tontouta)",
+    "country": "Nouvelle-Calédonie",
+    "iata": "NOU"
+  },
+  {
+    "code": "NZAA",
+    "name": "Auckland International Airport",
+    "city": "Auckland",
+    "country": "Nouvelle-Zélande",
+    "iata": "AKL"
+  },
+  {
+    "code": "NZCH",
+    "name": "Christchurch International Airport",
+    "city": "Christchurch",
+    "country": "Nouvelle-Zélande",
+    "iata": "CHC"
+  },
+  {
+    "code": "NZQN",
+    "name": "Queenstown Airport",
+    "city": "Queenstown",
+    "country": "Nouvelle-Zélande",
+    "iata": "ZQN"
+  },
+  {
+    "code": "NZWN",
+    "name": "Wellington International Airport",
+    "city": "Wellington",
+    "country": "Nouvelle-Zélande",
+    "iata": "WLG"
+  },
+  {
+    "code": "OODQ",
+    "name": "Duqm International Airport",
+    "city": "Duqm",
+    "country": "Oman",
+    "iata": "DQM"
+  },
+  {
+    "code": "OOMS",
+    "name": "Muscat/Seeb · Muscat International Airport",
+    "city": "Muscat/Seeb",
+    "country": "Oman",
+    "iata": "MCT"
+  },
+  {
+    "code": "OOSA",
+    "name": "Salalah International Airport",
+    "city": "Salalah",
+    "country": "Oman",
+    "iata": "SLL"
+  },
+  {
+    "code": "OOSH",
+    "name": "Suhar International Airport",
+    "city": "Suhar",
+    "country": "Oman",
+    "iata": "OHS"
+  },
+  {
+    "code": "HUEN",
+    "name": "Entebbe International Airport",
+    "city": "Entebbe",
+    "country": "Ouganda",
+    "iata": "EBB"
+  },
+  {
+    "code": "UZSB",
+    "name": "Bukhara International Airport",
+    "city": "Bukhara",
+    "country": "Ouzbékistan",
+    "iata": "BHK"
+  },
+  {
+    "code": "UZFN",
+    "name": "Namangan International Airport",
+    "city": "Namangan",
+    "country": "Ouzbékistan",
+    "iata": "NMA"
+  },
+  {
+    "code": "UZNN",
+    "name": "Nukus International Airport",
+    "city": "Nukus",
+    "country": "Ouzbékistan",
+    "iata": "NCU"
+  },
+  {
+    "code": "UZSS",
+    "name": "Samarkand International Airport",
+    "city": "Samarkand",
+    "country": "Ouzbékistan",
+    "iata": "SKD"
+  },
+  {
+    "code": "UZTT",
+    "name": "Tashkent International Airport",
+    "city": "Tashkent",
+    "country": "Ouzbékistan",
+    "iata": "TAS"
+  },
+  {
+    "code": "UZNU",
+    "name": "Urgench International Airport",
+    "city": "Urgench",
+    "country": "Ouzbékistan",
+    "iata": "UGC"
+  },
+  {
+    "code": "OPIS",
+    "name": "Attock · Islamabad International Airport",
+    "city": "Attock",
+    "country": "Pakistan",
+    "iata": "ISB"
+  },
+  {
+    "code": "OPFA",
+    "name": "Faisalabad International Airport",
+    "city": "Faisalabad",
+    "country": "Pakistan",
+    "iata": "LYP"
+  },
+  {
+    "code": "OPGW",
+    "name": "Gurandani · New Gwadar International Airport",
+    "city": "Gurandani",
+    "country": "Pakistan",
+    "iata": "GWD"
+  },
+  {
+    "code": "OPKC",
+    "name": "Karachi · Jinnah International Airport",
+    "city": "Karachi",
+    "country": "Pakistan",
+    "iata": "KHI"
+  },
+  {
+    "code": "OPLA",
+    "name": "Lahore · Allama Iqbal International Airport",
+    "city": "Lahore",
+    "country": "Pakistan",
+    "iata": "LHE"
+  },
+  {
+    "code": "OPMT",
+    "name": "Multan International Airport",
+    "city": "Multan",
+    "country": "Pakistan",
+    "iata": "MUX"
+  },
+  {
+    "code": "OPPS",
+    "name": "Peshawar · Bacha Khan International Airport",
+    "city": "Peshawar",
+    "country": "Pakistan",
+    "iata": "PEW"
+  },
+  {
+    "code": "OPQT",
+    "name": "Quetta International Airport",
+    "city": "Quetta",
+    "country": "Pakistan",
+    "iata": "UET"
+  },
+  {
+    "code": "OPST",
+    "name": "Sialkot International Airport",
+    "city": "Sialkot",
+    "country": "Pakistan",
+    "iata": "SKT"
+  },
+  {
+    "code": "OPSD",
+    "name": "Skardu International Airport",
+    "city": "Skardu",
+    "country": "Pakistan",
+    "iata": "KDU"
+  },
+  {
+    "code": "OPTU",
+    "name": "Turbat International Airport",
+    "city": "Turbat",
+    "country": "Pakistan",
+    "iata": "TUK"
+  },
+  {
+    "code": "PTRO",
+    "name": "Babelthuap Island · Roman Tmetuchl International Airport",
+    "city": "Babelthuap Island",
+    "country": "Palaos",
+    "iata": "ROR"
+  },
+  {
+    "code": "MPTO",
+    "name": "Tocumen International Airport",
+    "city": "Tocumen",
+    "country": "Panama",
+    "iata": "PTY"
+  },
+  {
+    "code": "AYNZ",
+    "name": "Lae · Nadzab Tomodachi International Airport",
+    "city": "Lae",
+    "country": "Papouasie-Nouvelle-Guinée",
+    "iata": "LAE"
+  },
+  {
+    "code": "AYPY",
+    "name": "Port Moresby Jacksons International Airport",
+    "city": "Port Moresby",
+    "country": "Papouasie-Nouvelle-Guinée",
+    "iata": "POM"
+  },
+  {
+    "code": "SGAS",
+    "name": "Asunción · Silvio Pettirossi International Airport",
+    "city": "Asunción",
+    "country": "Paraguay",
+    "iata": "ASU"
+  },
+  {
+    "code": "SGES",
+    "name": "Ciudad del Este · Guaraní International Airport",
+    "city": "Ciudad del Este",
+    "country": "Paraguay",
+    "iata": "AGT"
+  },
+  {
+    "code": "SGEN",
+    "name": "Encarnación · Teniente Ramon A. Ayub Gonzalez International Airport",
+    "city": "Encarnación",
+    "country": "Paraguay",
+    "iata": "ENO"
+  },
+  {
+    "code": "EHAM",
+    "name": "Amsterdam-Schiphol",
+    "city": "Amsterdam",
+    "country": "Pays-Bas",
+    "iata": "AMS"
+  },
+  {
+    "code": "EHEH",
+    "name": "Eindhoven Airport",
+    "city": "Eindhoven",
+    "country": "Pays-Bas",
+    "iata": "EIN"
+  },
+  {
+    "code": "EHGG",
+    "name": "Groningen Airport Eelde",
+    "city": "Groningen",
+    "country": "Pays-Bas",
+    "iata": "GRQ"
+  },
+  {
+    "code": "EHBK",
+    "name": "Maastricht Aachen Airport",
+    "city": "Maastricht",
+    "country": "Pays-Bas",
+    "iata": "MST"
+  },
+  {
+    "code": "EHRD",
+    "name": "Rotterdam The Hague Airport",
+    "city": "Rotterdam",
+    "country": "Pays-Bas",
+    "iata": "RTM"
+  },
+  {
+    "code": "TNCB",
+    "name": "Kralendijk · Flamingo International Airport",
+    "city": "Kralendijk",
+    "country": "Pays-Bas caribéens",
+    "iata": "BON"
+  },
+  {
+    "code": "SPQU",
+    "name": "Arequipa · Rodríguez Ballón International Airport",
+    "city": "Arequipa",
+    "country": "Pérou",
+    "iata": "AQP"
+  },
+  {
+    "code": "SPHI",
+    "name": "Chiclayo · Capitán FAP José A. Quiñones González International Airport",
+    "city": "Chiclayo",
+    "country": "Pérou",
+    "iata": "CIX"
+  },
+  {
+    "code": "SPZO",
+    "name": "Cusco · Alejandro Velasco Astete International Airport",
+    "city": "Cusco",
+    "country": "Pérou",
+    "iata": "CUZ"
+  },
+  {
+    "code": "SPQT",
+    "name": "Iquitos · Coronel FAP Francisco Secada Vignetta International Airport",
+    "city": "Iquitos",
+    "country": "Pérou",
+    "iata": "IQT"
+  },
+  {
+    "code": "SPJL",
+    "name": "Juliaca · Inca Manco Capac International Airport",
+    "city": "Juliaca",
+    "country": "Pérou",
+    "iata": "JUL"
+  },
+  {
+    "code": "SPJC",
+    "name": "Lima · Jorge Chávez International Airport",
+    "city": "Lima",
+    "country": "Pérou",
+    "iata": "LIM"
+  },
+  {
+    "code": "SPCL",
+    "name": "Pucallpa · Cap FAP David Abenzur Rengifo International Airport",
+    "city": "Pucallpa",
+    "country": "Pérou",
+    "iata": "PCL"
+  },
+  {
+    "code": "SPRU",
+    "name": "Trujillo · Capitán FAP Carlos Martínez de Pinillos International Airport",
+    "city": "Trujillo",
+    "country": "Pérou",
+    "iata": "TRU"
+  },
+  {
+    "code": "RPVB",
+    "name": "Bacolod City · Bacolod-Silay International Airport",
+    "city": "Bacolod City",
+    "country": "Philippines",
+    "iata": "BCD"
+  },
+  {
+    "code": "RPSP",
+    "name": "Bohol-Panglao International Airport",
+    "city": "Panglao",
+    "country": "Philippines",
+    "iata": "TAG"
+  },
+  {
+    "code": "RPVI",
+    "name": "Cabatuan · Iloilo International Airport",
+    "city": "Cabatuan",
+    "country": "Philippines",
+    "iata": "ILO"
+  },
+  {
+    "code": "RPVM",
+    "name": "Cebu City/Lapu-Lapu City · Mactan Cebu International Airport",
+    "city": "Cebu City/Lapu-Lapu City",
+    "country": "Philippines",
+    "iata": "CEB"
+  },
+  {
+    "code": "RPMD",
+    "name": "Davao · Francisco Bangoy International Airport",
+    "city": "Davao",
+    "country": "Philippines",
+    "iata": "DVO"
+  },
+  {
+    "code": "RPMR",
+    "name": "General Santos International Airport",
+    "city": "General Santos",
+    "country": "Philippines",
+    "iata": "GES"
+  },
+  {
+    "code": "RPVK",
+    "name": "Kalibo International Airport",
+    "city": "Kalibo",
+    "country": "Philippines",
+    "iata": "KLO"
+  },
+  {
+    "code": "RPMY",
+    "name": "Laguindingan International Airport",
+    "city": "Laguindingan",
+    "country": "Philippines",
+    "iata": "CGY"
+  },
+  {
+    "code": "RPLI",
+    "name": "Laoag City · Laoag International Airport",
+    "city": "Laoag City",
+    "country": "Philippines",
+    "iata": "LAO"
+  },
+  {
+    "code": "RPLK",
+    "name": "Legazpi · Bicol International Airport",
+    "city": "Legazpi",
+    "country": "Philippines",
+    "iata": "DRP"
+  },
+  {
+    "code": "RPLC",
+    "name": "Mabalacat · Clark International Airport / Clark Air Base",
+    "city": "Mabalacat",
+    "country": "Philippines",
+    "iata": "CRK"
+  },
+  {
+    "code": "RPLL",
+    "name": "Manila (Pasay) · Ninoy Aquino International Airport",
+    "city": "Manila (Pasay)",
+    "country": "Philippines",
+    "iata": "MNL"
+  },
+  {
+    "code": "RPLB",
+    "name": "Olongapo · Subic Bay International Airport / Naval Air Station Cubi Point",
+    "city": "Olongapo",
+    "country": "Philippines",
+    "iata": "SFS"
+  },
+  {
+    "code": "RPVP",
+    "name": "Puerto Princesa International Airport / PAF Antonio Bautista Air Base",
+    "city": "Puerto Princesa",
+    "country": "Philippines",
+    "iata": "PPS"
+  },
+  {
+    "code": "RPMZ",
+    "name": "Zamboanga International Airport",
+    "city": "Zamboanga",
+    "country": "Philippines",
+    "iata": "ZAM"
+  },
+  {
+    "code": "EPWR",
+    "name": "Copernicus Wrocław Airport",
+    "city": "Wrocław",
+    "country": "Pologne",
+    "iata": "WRO"
+  },
+  {
+    "code": "EPKK",
+    "name": "Cracovie-Balice",
+    "city": "Balice",
+    "country": "Pologne",
+    "iata": "KRK"
+  },
+  {
+    "code": "EPGD",
+    "name": "Gdańsk Lech Wałęsa Airport",
+    "city": "Gdańsk",
+    "country": "Pologne",
+    "iata": "GDN"
+  },
+  {
+    "code": "EPKT",
+    "name": "Katowice Wojciech Korfanty International Airport",
+    "city": "Katowice",
+    "country": "Pologne",
+    "iata": "KTW"
+  },
+  {
+    "code": "EPLL",
+    "name": "Łódź Władysław Reymont Airport",
+    "city": "Łódź",
+    "country": "Pologne",
+    "iata": "LCJ"
+  },
+  {
+    "code": "EPLB",
+    "name": "Lublin Airport",
+    "city": "Lublin",
+    "country": "Pologne",
+    "iata": "LUZ"
+  },
+  {
+    "code": "EPMO",
+    "name": "Nowy Dwór Mazowiecki · Warsaw Modlin Airport",
+    "city": "Nowy Dwór Mazowiecki",
+    "country": "Pologne",
+    "iata": "WMI"
+  },
+  {
+    "code": "EPPO",
+    "name": "Poznań-Ławica Airport",
+    "city": "Poznań",
+    "country": "Pologne",
+    "iata": "POZ"
+  },
+  {
+    "code": "EPRZ",
+    "name": "Rzeszów-Jasionka Airport",
+    "city": "Jasionka",
+    "country": "Pologne",
+    "iata": "RZE"
+  },
+  {
+    "code": "EPSC",
+    "name": "Szczecin(Glewice) · Solidarity Szczecin–Goleniów Airport",
+    "city": "Szczecin(Glewice)",
+    "country": "Pologne",
+    "iata": "SZZ"
+  },
+  {
+    "code": "EPWA",
+    "name": "Varsovie-Chopin",
+    "city": "Warsaw",
+    "country": "Pologne",
+    "iata": "WAW"
+  },
+  {
+    "code": "NTAA",
+    "name": "Papeete · Fa'a'ā International Airport",
+    "city": "Papeete",
+    "country": "Polynésie française",
+    "iata": "PPT"
+  },
+  {
+    "code": "TJSJ",
+    "name": "San Juan · Luis Munoz Marin International Airport",
+    "city": "San Juan",
+    "country": "Porto Rico",
+    "iata": "SJU"
+  },
+  {
+    "code": "LPFR",
+    "name": "Faro - Gago Coutinho International Airport",
+    "city": "Faro",
+    "country": "Portugal",
+    "iata": "FAO"
+  },
+  {
+    "code": "LPMA",
+    "name": "Funchal · Cristiano Ronaldo International Airport",
+    "city": "Funchal",
+    "country": "Portugal",
+    "iata": "FNC"
+  },
+  {
+    "code": "LPPT",
+    "name": "Lisbonne",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "iata": "LIS"
+  },
+  {
+    "code": "LPPD",
+    "name": "Ponta Delgada · João Paulo II Airport",
+    "city": "Ponta Delgada",
+    "country": "Portugal",
+    "iata": "PDL"
+  },
+  {
+    "code": "LPPR",
+    "name": "Porto",
+    "city": "Porto",
+    "country": "Portugal",
+    "iata": "OPO"
+  },
+  {
+    "code": "OTHH",
+    "name": "Doha · Hamad International Airport",
+    "city": "Doha",
+    "country": "Qatar",
+    "iata": "DOH"
+  },
+  {
+    "code": "OTBD",
+    "name": "Doha International Airport",
+    "city": "Doha",
+    "country": "Qatar",
+    "iata": "DIA"
+  },
+  {
+    "code": "FEFF",
+    "name": "Bangui M'Poko International Airport",
+    "city": "Bangui",
+    "country": "République centrafricaine",
+    "iata": "BGF"
+  },
+  {
+    "code": "MDLR",
+    "name": "La Romana · Casa De Campo International Airport",
+    "city": "La Romana",
+    "country": "République dominicaine",
+    "iata": "LRM"
+  },
+  {
+    "code": "MDPC",
+    "name": "Punta Cana International Airport",
+    "city": "Punta Cana",
+    "country": "République dominicaine",
+    "iata": "PUJ"
+  },
+  {
+    "code": "MDST",
+    "name": "Santiago · Cibao International Airport",
+    "city": "Santiago",
+    "country": "République dominicaine",
+    "iata": "STI"
+  },
+  {
+    "code": "MDSD",
+    "name": "Santo Domingo · Las Américas International Airport",
+    "city": "Santo Domingo",
+    "country": "République dominicaine",
+    "iata": "SDQ"
+  },
+  {
+    "code": "LRBC",
+    "name": "Bacău George Enescu International  Airport",
+    "city": "Bacău",
+    "country": "Roumanie",
+    "iata": "BCM"
+  },
+  {
+    "code": "LRBV",
+    "name": "Brașov (Ghimbav) · Brașov-Ghimbav International Airport",
+    "city": "Brașov (Ghimbav)",
+    "country": "Roumanie",
+    "iata": "GHV"
+  },
+  {
+    "code": "LROP",
+    "name": "Bucarest-Henri-Coandă",
+    "city": "Otopeni",
+    "country": "Roumanie",
+    "iata": "OTP"
+  },
+  {
+    "code": "LRBS",
+    "name": "Bucharest Băneasa Aurel Vlaicu International Airport",
+    "city": "Bucharest",
+    "country": "Roumanie",
+    "iata": "BBU"
+  },
+  {
+    "code": "LRCL",
+    "name": "Cluj-Napoca · Avram Iancu Cluj International Airport",
+    "city": "Cluj-Napoca",
+    "country": "Roumanie",
+    "iata": "CLJ"
+  },
+  {
+    "code": "LRCK",
+    "name": "Constanța · Mihail Kogălniceanu International Airport",
+    "city": "Constanța",
+    "country": "Roumanie",
+    "iata": "CND"
+  },
+  {
+    "code": "LRCV",
+    "name": "Craiova International Airport",
+    "city": "Craiova",
+    "country": "Roumanie",
+    "iata": "CRA"
+  },
+  {
+    "code": "LRIA",
+    "name": "Iaşi International Airport",
+    "city": "Iaşi",
+    "country": "Roumanie",
+    "iata": "IAS"
+  },
+  {
+    "code": "LROD",
+    "name": "Oradea International Airport",
+    "city": "Oradea",
+    "country": "Roumanie",
+    "iata": "OMR"
+  },
+  {
+    "code": "LRSB",
+    "name": "Sibiu International Airport",
+    "city": "Sibiu",
+    "country": "Roumanie",
+    "iata": "SBZ"
+  },
+  {
+    "code": "LRSV",
+    "name": "Suceava Ștefan cel Mare International Airport",
+    "city": "Suceava",
+    "country": "Roumanie",
+    "iata": "SCV"
+  },
+  {
+    "code": "LRTR",
+    "name": "Timişoara · Timișoara Traian Vuia International Airport",
+    "city": "Timişoara",
+    "country": "Roumanie",
+    "iata": "TSR"
+  },
+  {
+    "code": "EGPD",
+    "name": "Aberdeen International Airport",
+    "city": "Aberdeen",
+    "country": "Royaume-Uni",
+    "iata": "ABZ"
+  },
+  {
+    "code": "EGAA",
+    "name": "Belfast International Airport",
+    "city": "Belfast",
+    "country": "Royaume-Uni",
+    "iata": "BFS"
+  },
+  {
+    "code": "EGBB",
+    "name": "Birmingham",
+    "city": "Birmingham, West Midlands",
+    "country": "Royaume-Uni",
+    "iata": "BHX"
+  },
+  {
+    "code": "EGGD",
+    "name": "Bristol Airport",
+    "city": "Bristol",
+    "country": "Royaume-Uni",
+    "iata": "BRS"
+  },
+  {
+    "code": "EGFF",
+    "name": "Cardiff International Airport",
+    "city": "Cardiff",
+    "country": "Royaume-Uni",
+    "iata": "CWL"
+  },
+  {
+    "code": "EGPH",
+    "name": "Édimbourg",
+    "city": "Ingliston, Edinburgh",
+    "country": "Royaume-Uni",
+    "iata": "EDI"
+  },
+  {
+    "code": "EGPF",
+    "name": "Glasgow Airport",
+    "city": "Glasgow",
+    "country": "Royaume-Uni",
+    "iata": "GLA"
+  },
+  {
+    "code": "EGNM",
+    "name": "Leeds, West Yorkshire · Leeds Bradford Airport",
+    "city": "Leeds, West Yorkshire",
+    "country": "Royaume-Uni",
+    "iata": "LBA"
+  },
+  {
+    "code": "EGGP",
+    "name": "Liverpool John Lennon Airport",
+    "city": "Liverpool",
+    "country": "Royaume-Uni",
+    "iata": "LPL"
+  },
+  {
+    "code": "EGKK",
+    "name": "Londres-Gatwick",
+    "city": "London",
+    "country": "Royaume-Uni",
+    "iata": "LGW"
+  },
+  {
+    "code": "EGLL",
+    "name": "Londres-Heathrow",
+    "city": "London",
+    "country": "Royaume-Uni",
+    "iata": "LHR"
+  },
+  {
+    "code": "EGGW",
+    "name": "Londres-Luton",
+    "city": "Luton, Luton",
+    "country": "Royaume-Uni",
+    "iata": "LTN"
+  },
+  {
+    "code": "EGSS",
+    "name": "Londres-Stansted",
+    "city": "London, Essex",
+    "country": "Royaume-Uni",
+    "iata": "STN"
+  },
+  {
+    "code": "EGCC",
+    "name": "Manchester",
+    "city": "Manchester, Greater Manchester",
+    "country": "Royaume-Uni",
+    "iata": "MAN"
+  },
+  {
+    "code": "EGNT",
+    "name": "Newcastle upon Tyne, Tyne and Wear · Newcastle International Airport",
+    "city": "Newcastle upon Tyne, Tyne and Wear",
+    "country": "Royaume-Uni",
+    "iata": "NCL"
+  },
+  {
+    "code": "EGNX",
+    "name": "Nottingham, Leicestershire · East Midlands Airport",
+    "city": "Nottingham, Leicestershire",
+    "country": "Royaume-Uni",
+    "iata": "EMA"
+  },
+  {
+    "code": "EGPK",
+    "name": "Prestwick, South Ayrshire · Glasgow Prestwick Airport",
+    "city": "Prestwick, South Ayrshire",
+    "country": "Royaume-Uni",
+    "iata": "PIK"
+  },
+  {
+    "code": "UNAA",
+    "name": "Abakan International Airport",
+    "city": "Abakan",
+    "country": "Russie",
+    "iata": "ABA"
+  },
+  {
+    "code": "URMG",
+    "name": "Akhmat Kadyrov Grozny International Airport",
+    "city": "Grozny",
+    "country": "Russie",
+    "iata": "GRV"
+  },
+  {
+    "code": "UNEE",
+    "name": "Alexei Leonov Kemerovo International Airport",
+    "city": "Kemerovo",
+    "country": "Russie",
+    "iata": "KEJ"
+  },
+  {
+    "code": "UHWW",
+    "name": "Artyom · Vladivostok International Airport",
+    "city": "Artyom",
+    "country": "Russie",
+    "iata": "VVO"
+  },
+  {
+    "code": "URWA",
+    "name": "Astrakhan Narimanovo Boris M. Kustodiev International Airport",
+    "city": "Astrakhan",
+    "country": "Russie",
+    "iata": "ASF"
+  },
+  {
+    "code": "UNBB",
+    "name": "Barnaul Gherman Titov International Airport",
+    "city": "Barnaul",
+    "country": "Russie",
+    "iata": "BAX"
+  },
+  {
+    "code": "UIAA",
+    "name": "Chita-Kadala International Airport",
+    "city": "Chita",
+    "country": "Russie",
+    "iata": "HTA"
+  },
+  {
+    "code": "ULMM",
+    "name": "Emperor Nicholas II Murmansk Airport",
+    "city": "Murmansk",
+    "country": "Russie",
+    "iata": "MMK"
+  },
+  {
+    "code": "UIII",
+    "name": "Irkutsk International Airport",
+    "city": "Irkutsk",
+    "country": "Russie",
+    "iata": "IKT"
+  },
+  {
+    "code": "UMKK",
+    "name": "Kaliningrad · Khrabrovo Airport",
+    "city": "Kaliningrad",
+    "country": "Russie",
+    "iata": "KGD"
+  },
+  {
+    "code": "UWKD",
+    "name": "Kazan International Airport",
+    "city": "Kazan",
+    "country": "Russie",
+    "iata": "KZN"
+  },
+  {
+    "code": "URKK",
+    "name": "Krasnodar Pashkovsky International Airport",
+    "city": "Krasnodar",
+    "country": "Russie",
+    "iata": "KRR"
+  },
+  {
+    "code": "UNKL",
+    "name": "Krasnoyarsk International Airport",
+    "city": "Krasnoyarsk",
+    "country": "Russie",
+    "iata": "KJA"
+  },
+  {
+    "code": "USCC",
+    "name": "Kurchatov Chelyabinsk International Airport",
+    "city": "Chelyabinsk",
+    "country": "Russie",
+    "iata": "CEK"
+  },
+  {
+    "code": "USCM",
+    "name": "Magnitogorsk International Airport",
+    "city": "Magnitogorsk",
+    "country": "Russie",
+    "iata": "MQF"
+  },
+  {
+    "code": "URML",
+    "name": "Makhachkala Uytash International Airport",
+    "city": "Makhachkala",
+    "country": "Russie",
+    "iata": "MCX"
+  },
+  {
+    "code": "URMM",
+    "name": "Mineralnyye Vody · Mineralnye Vody Airport",
+    "city": "Mineralnyye Vody",
+    "country": "Russie",
+    "iata": "MRV"
+  },
+  {
+    "code": "UUBW",
+    "name": "Moscou · Zhukovsky International Airport",
+    "city": "Moscow",
+    "country": "Russie",
+    "iata": "ZIA"
+  },
+  {
+    "code": "UUEE",
+    "name": "Moscou-Cheremetievo",
+    "city": "Moscow",
+    "country": "Russie",
+    "iata": "SVO"
+  },
+  {
+    "code": "UUDD",
+    "name": "Moscou-Domodedovo",
+    "city": "Moscow",
+    "country": "Russie",
+    "iata": "DME"
+  },
+  {
+    "code": "UUWW",
+    "name": "Moscou-Vnoukovo",
+    "city": "Moscow",
+    "country": "Russie",
+    "iata": "VKO"
+  },
+  {
+    "code": "USNN",
+    "name": "Nizhnevartovsk Airport",
+    "city": "Nizhnevartovsk",
+    "country": "Russie",
+    "iata": "NJC"
+  },
+  {
+    "code": "UWGG",
+    "name": "Nizhny Novgorod / Strigino International Airport",
+    "city": "Nizhny Novgorod",
+    "country": "Russie",
+    "iata": "GOJ"
+  },
+  {
+    "code": "UOOO",
+    "name": "Norilsk · Alykel International Airport",
+    "city": "Norilsk",
+    "country": "Russie",
+    "iata": "NSK"
+  },
+  {
+    "code": "UNNT",
+    "name": "Novosibirsk Tolmachevo Airport",
+    "city": "Novosibirsk",
+    "country": "Russie",
+    "iata": "OVB"
+  },
+  {
+    "code": "UNOO",
+    "name": "Omsk Central Airport",
+    "city": "Omsk",
+    "country": "Russie",
+    "iata": "OMS"
+  },
+  {
+    "code": "USPP",
+    "name": "Perm International Airport",
+    "city": "Perm",
+    "country": "Russie",
+    "iata": "PEE"
+  },
+  {
+    "code": "UHPP",
+    "name": "Petropavlovsk-Kamchatsky · Yelizovo Airport",
+    "city": "Petropavlovsk-Kamchatsky",
+    "country": "Russie",
+    "iata": "PKC"
+  },
+  {
+    "code": "UEEE",
+    "name": "Platon Oyunsky Yakutsk International Airport",
+    "city": "Yakutsk",
+    "country": "Russie",
+    "iata": "YKS"
+  },
+  {
+    "code": "ULLI",
+    "name": "Saint-Pétersbourg-Poulkovo",
+    "city": "St. Petersburg",
+    "country": "Russie",
+    "iata": "LED"
+  },
+  {
+    "code": "UWWW",
+    "name": "Samara · Kurumoch International Airport",
+    "city": "Samara",
+    "country": "Russie",
+    "iata": "KUF"
+  },
+  {
+    "code": "UWPS",
+    "name": "Saransk International Airport",
+    "city": "Saransk",
+    "country": "Russie",
+    "iata": "SKX"
+  },
+  {
+    "code": "UWSG",
+    "name": "Saratov · Gagarin International Airport",
+    "city": "Saratov",
+    "country": "Russie",
+    "iata": "GSV"
+  },
+  {
+    "code": "URSS",
+    "name": "Sochi International Airport",
+    "city": "Sochi",
+    "country": "Russie",
+    "iata": "AER"
+  },
+  {
+    "code": "USRR",
+    "name": "Surgut International Airport",
+    "city": "Surgut",
+    "country": "Russie",
+    "iata": "SGC"
+  },
+  {
+    "code": "UNTT",
+    "name": "Tomsk Kamov Airport",
+    "city": "Tomsk",
+    "country": "Russie",
+    "iata": "TOF"
+  },
+  {
+    "code": "UUDL",
+    "name": "Tunoshna · Golden Ring Yaroslavl International Airport",
+    "city": "Tunoshna",
+    "country": "Russie",
+    "iata": "IAR"
+  },
+  {
+    "code": "USTR",
+    "name": "Tyumen · Roshchino International Airport",
+    "city": "Tyumen",
+    "country": "Russie",
+    "iata": "TJM"
+  },
+  {
+    "code": "UWUU",
+    "name": "Ufa International Airport",
+    "city": "Ufa",
+    "country": "Russie",
+    "iata": "UFA"
+  },
+  {
+    "code": "UIUU",
+    "name": "Ulan Ude · Baikal International Airport",
+    "city": "Ulan Ude",
+    "country": "Russie",
+    "iata": "UUD"
+  },
+  {
+    "code": "URWW",
+    "name": "Volgograd International Airport",
+    "city": "Volgograd",
+    "country": "Russie",
+    "iata": "VOG"
+  },
+  {
+    "code": "USSS",
+    "name": "Yekaterinburg · Koltsovo Airport",
+    "city": "Yekaterinburg",
+    "country": "Russie",
+    "iata": "SVX"
+  },
+  {
+    "code": "UHSS",
+    "name": "Yuzhno-Sakhalinsk International Airport",
+    "city": "Yuzhno-Sakhalinsk",
+    "country": "Russie",
+    "iata": "UUS"
+  },
+  {
+    "code": "HRYR",
+    "name": "Kigali International Airport",
+    "city": "Kigali",
+    "country": "Rwanda",
+    "iata": "KGL"
+  },
+  {
+    "code": "GMMH",
+    "name": "Dakhla Airport",
+    "city": "Dakhla",
+    "country": "Sahara occidental",
+    "iata": "VIL"
+  },
+  {
+    "code": "GMML",
+    "name": "El Aaiún · Laayoune Hassan I International Airport",
+    "city": "El Aaiún",
+    "country": "Sahara occidental",
+    "iata": "EUN"
+  },
+  {
+    "code": "TKPK",
+    "name": "Basseterre · Robert L. Bradshaw International Airport",
+    "city": "Basseterre",
+    "country": "Saint-Christophe-et-Niévès",
+    "iata": "SKB"
+  },
+  {
+    "code": "TNCM",
+    "name": "Sint Maarten · Princess Juliana International Airport",
+    "city": "Sint Maarten",
+    "country": "Saint-Martin (partie néerlandaise)",
+    "iata": "SXM"
+  },
+  {
+    "code": "TVSA",
+    "name": "Kingstown · Argyle International Airport",
+    "city": "Kingstown",
+    "country": "Saint-Vincent-et-les Grenadines",
+    "iata": "SVD"
+  },
+  {
+    "code": "TLPL",
+    "name": "Vieux Fort · Hewanorra International Airport",
+    "city": "Vieux Fort",
+    "country": "Sainte-Lucie",
+    "iata": "UVF"
+  },
+  {
+    "code": "MSLP",
+    "name": "San Salvador (San Luis Talpa) · El Salvador International Airport Saint Óscar Arnulfo Romero y Galdámez",
+    "city": "San Salvador (San Luis Talpa)",
+    "country": "Salvador",
+    "iata": "SAL"
+  },
+  {
+    "code": "NSFA",
+    "name": "Apia · Faleolo International Airport",
+    "city": "Apia",
+    "country": "Samoa",
+    "iata": "APW"
+  },
+  {
+    "code": "NSTU",
+    "name": "Pago Pago International Airport",
+    "city": "Pago Pago",
+    "country": "Samoa américaines",
+    "iata": "PPG"
+  },
+  {
+    "code": "FPST",
+    "name": "São Tomé International Airport",
+    "city": "São Tomé",
+    "country": "Sao Tomé-et-Principe",
+    "iata": "TMS"
+  },
+  {
+    "code": "GOBD",
+    "name": "Dakar · Blaise Diagne International Airport",
+    "city": "Dakar",
+    "country": "Sénégal",
+    "iata": "DSS"
+  },
+  {
+    "code": "LYBE",
+    "name": "Belgrade Nikola Tesla Airport",
+    "city": "Belgrade",
+    "country": "Serbie",
+    "iata": "BEG"
+  },
+  {
+    "code": "LYNI",
+    "name": "Niš Constantine the Great Airport",
+    "city": "Niš",
+    "country": "Serbie",
+    "iata": "INI"
+  },
+  {
+    "code": "FSIA",
+    "name": "Victoria · Seychelles International Airport",
+    "city": "Victoria",
+    "country": "Seychelles",
+    "iata": "SEZ"
+  },
+  {
+    "code": "GFLL",
+    "name": "Freetown (Lungi-Town) · Lungi International Airport",
+    "city": "Freetown (Lungi-Town)",
+    "country": "Sierra Leone",
+    "iata": "FNA"
+  },
+  {
+    "code": "WSSS",
+    "name": "Singapour · Singapore Changi Airport",
+    "city": "Singapore",
+    "country": "Singapour",
+    "iata": "SIN"
+  },
+  {
+    "code": "LZIB",
+    "name": "Bratislava · M. R. Štefánik Airport",
+    "city": "Bratislava",
+    "country": "Slovaquie",
+    "iata": "BTS"
+  },
+  {
+    "code": "LJLJ",
+    "name": "Zgornji Brnik · Ljubljana Jože Pučnik Airport",
+    "city": "Zgornji Brnik",
+    "country": "Slovénie",
+    "iata": "LJU"
+  },
+  {
+    "code": "HCMF",
+    "name": "Bosaso · Bender Qassim International Airport",
+    "city": "Bosaso",
+    "country": "Somalie",
+    "iata": "BSA"
+  },
+  {
+    "code": "HCMH",
+    "name": "Hargeisa · Egal International Airport",
+    "city": "Hargeisa",
+    "country": "Somalie",
+    "iata": "HGA"
+  },
+  {
+    "code": "HCMM",
+    "name": "Mogadishu · Aden Adde International Airport",
+    "city": "Mogadishu",
+    "country": "Somalie",
+    "iata": "MGQ"
+  },
+  {
+    "code": "HSSK",
+    "name": "Khartoum International Airport",
+    "city": "Khartoum",
+    "country": "Soudan",
+    "iata": "KRT"
+  },
+  {
+    "code": "HSPN",
+    "name": "Port Sudan New International Airport",
+    "city": "Port Sudan",
+    "country": "Soudan",
+    "iata": "PZU"
+  },
+  {
+    "code": "HJJJ",
+    "name": "Juba International Airport",
+    "city": "Juba",
+    "country": "Soudan du Sud",
+    "iata": "JUB"
+  },
+  {
+    "code": "VCBI",
+    "name": "Bandaranaike International Colombo Airport",
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "iata": "CMB"
+  },
+  {
+    "code": "VCCC",
+    "name": "Colombo Ratmalana International Airport",
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "iata": "RML"
+  },
+  {
+    "code": "VCCJ",
+    "name": "Jaffna International Airport",
+    "city": "Jaffna",
+    "country": "Sri Lanka",
+    "iata": "JAF"
+  },
+  {
+    "code": "ESGG",
+    "name": "Göteborg Landvetter Airport",
+    "city": "Göteborg",
+    "country": "Suède",
+    "iata": "GOT"
+  },
+  {
+    "code": "ESNQ",
+    "name": "Kiruna Airport",
+    "city": "Kiruna",
+    "country": "Suède",
+    "iata": "KRN"
+  },
+  {
+    "code": "ESSL",
+    "name": "Linköping City Airport",
+    "city": "Linköping",
+    "country": "Suède",
+    "iata": "LPI"
+  },
+  {
+    "code": "ESPA",
+    "name": "Luleå Airport",
+    "city": "Luleå",
+    "country": "Suède",
+    "iata": "LLA"
+  },
+  {
+    "code": "ESMS",
+    "name": "Malmö Sturup Airport",
+    "city": "Malmö",
+    "country": "Suède",
+    "iata": "MMX"
+  },
+  {
+    "code": "ESKS",
+    "name": "Malung-Sälen · Scandinavian Mountains Airport",
+    "city": "Malung-Sälen",
+    "country": "Suède",
+    "iata": "SCR"
+  },
+  {
+    "code": "ESKN",
+    "name": "Nyköping · Stockholm Skavsta Airport",
+    "city": "Nyköping",
+    "country": "Suède",
+    "iata": "NYO"
+  },
+  {
+    "code": "ESOW",
+    "name": "Stockholm / Västerås · Stockholm Västerås Airport",
+    "city": "Stockholm / Västerås",
+    "country": "Suède",
+    "iata": "VST"
+  },
+  {
+    "code": "ESSA",
+    "name": "Stockholm-Arlanda",
+    "city": "Stockholm",
+    "country": "Suède",
+    "iata": "ARN"
+  },
+  {
+    "code": "ESNU",
+    "name": "Umeå Airport",
+    "city": "Umeå",
+    "country": "Suède",
+    "iata": "UME"
+  },
+  {
+    "code": "ESSV",
+    "name": "Visby Airport",
+    "city": "Visby",
+    "country": "Suède",
+    "iata": "VBY"
+  },
+  {
+    "code": "LSGG",
+    "name": "Genève",
+    "city": "Geneva",
+    "country": "Suisse",
+    "iata": "GVA"
+  },
+  {
+    "code": "LSZH",
+    "name": "Zurich",
+    "city": "Zurich",
+    "country": "Suisse",
+    "iata": "ZRH"
+  },
+  {
+    "code": "SMJP",
+    "name": "Paramaribo · Johan Adolf Pengel International Airport",
+    "city": "Paramaribo",
+    "country": "Suriname",
+    "iata": "PBM"
+  },
+  {
+    "code": "OSAP",
+    "name": "Aleppo International Airport",
+    "city": "Aleppo",
+    "country": "Syrie",
+    "iata": "ALP"
+  },
+  {
+    "code": "OSDI",
+    "name": "Damascus International Airport",
+    "city": "Damascus",
+    "country": "Syrie",
+    "iata": "DAM"
+  },
+  {
+    "code": "UTDT",
+    "name": "Bokhtar International Airport",
+    "city": "Bokhtar",
+    "country": "Tadjikistan",
+    "iata": "KQT"
+  },
+  {
+    "code": "UTDD",
+    "name": "Dushanbe International Airport",
+    "city": "Dushanbe",
+    "country": "Tadjikistan",
+    "iata": "DYU"
+  },
+  {
+    "code": "UTDL",
+    "name": "Khujand International Airport",
+    "city": "Khujand",
+    "country": "Tadjikistan",
+    "iata": "LBD"
+  },
+  {
+    "code": "UTDK",
+    "name": "Kulob International Airport",
+    "city": "Kulob",
+    "country": "Tadjikistan",
+    "iata": "TJU"
+  },
+  {
+    "code": "RCYU",
+    "name": "Hualien City · Hualien Chiashan Airport",
+    "city": "Hualien City",
+    "country": "Taïwan",
+    "iata": "HUN"
+  },
+  {
+    "code": "RCQC",
+    "name": "Huxi · Penghu Magong Airport",
+    "city": "Huxi",
+    "country": "Taïwan",
+    "iata": "MZG"
+  },
+  {
+    "code": "RCKH",
+    "name": "Kaohsiung (Xiaogang) · Kaohsiung International Airport",
+    "city": "Kaohsiung (Xiaogang)",
+    "country": "Taïwan",
+    "iata": "KHH"
+  },
+  {
+    "code": "RCMQ",
+    "name": "Taichung (Qingshui) · Taichung International Airport / Ching Chuang Kang Air Base",
+    "city": "Taichung (Qingshui)",
+    "country": "Taïwan",
+    "iata": "RMQ"
+  },
+  {
+    "code": "RCNN",
+    "name": "Tainan (Rende) · Tainan International Airport / Tainan Air Base",
+    "city": "Tainan (Rende)",
+    "country": "Taïwan",
+    "iata": "TNN"
+  },
+  {
+    "code": "RCSS",
+    "name": "Taipei (Songshan) · Taipei Songshan International Airport",
+    "city": "Taipei (Songshan)",
+    "country": "Taïwan",
+    "iata": "TSA"
+  },
+  {
+    "code": "RCTP",
+    "name": "Taiwan Taoyuan International Airport",
+    "city": "Taoyuan",
+    "country": "Taïwan",
+    "iata": "TPE"
+  },
+  {
+    "code": "HTKJ",
+    "name": "Arusha · Kilimanjaro International Airport",
+    "city": "Arusha",
+    "country": "Tanzanie",
+    "iata": "JRO"
+  },
+  {
+    "code": "HTDA",
+    "name": "Dar es Salaam · Julius Nyerere International Airport",
+    "city": "Dar es Salaam",
+    "country": "Tanzanie",
+    "iata": "DAR"
+  },
+  {
+    "code": "HTMW",
+    "name": "Mwanza International Airport",
+    "city": "Mwanza",
+    "country": "Tanzanie",
+    "iata": "MWZ"
+  },
+  {
+    "code": "HTZA",
+    "name": "Zanzibar · Abeid Amani Karume International Airport",
+    "city": "Zanzibar",
+    "country": "Tanzanie",
+    "iata": "ZNZ"
+  },
+  {
+    "code": "FTTJ",
+    "name": "N'Djamena International Airport",
+    "city": "N'Djamena",
+    "country": "Tchad",
+    "iata": "NDJ"
+  },
+  {
+    "code": "LKCS",
+    "name": "České Budějovice South Bohemian Airport",
+    "city": "České Budějovice",
+    "country": "Tchéquie",
+    "iata": "JCL"
+  },
+  {
+    "code": "LKKV",
+    "name": "Karlovy Vary Airport",
+    "city": "Karlovy Vary",
+    "country": "Tchéquie",
+    "iata": "KLV"
+  },
+  {
+    "code": "LKMT",
+    "name": "Mošnov · Leoš Janáček Airport Ostrava",
+    "city": "Mošnov",
+    "country": "Tchéquie",
+    "iata": "OSR"
+  },
+  {
+    "code": "LKPD",
+    "name": "Pardubice Airport",
+    "city": "Pardubice",
+    "country": "Tchéquie",
+    "iata": "PED"
+  },
+  {
+    "code": "LKPR",
+    "name": "Prague",
+    "city": "Prague",
+    "country": "Tchéquie",
+    "iata": "PRG"
+  },
+  {
+    "code": "VTBD",
+    "name": "Bangkok · Don Mueang International Airport",
+    "city": "Bangkok",
+    "country": "Thaïlande",
+    "iata": "DMK"
+  },
+  {
+    "code": "VTBS",
+    "name": "Bangkok · Suvarnabhumi Airport",
+    "city": "Bangkok",
+    "country": "Thaïlande",
+    "iata": "BKK"
+  },
+  {
+    "code": "VTCC",
+    "name": "Chiang Mai International Airport",
+    "city": "Chiang Mai",
+    "country": "Thaïlande",
+    "iata": "CNX"
+  },
+  {
+    "code": "VTSS",
+    "name": "Hat Yai International Airport",
+    "city": "Hat Yai",
+    "country": "Thaïlande",
+    "iata": "HDY"
+  },
+  {
+    "code": "VTSG",
+    "name": "Krabi International Airport",
+    "city": "Krabi",
+    "country": "Thaïlande",
+    "iata": "KBV"
+  },
+  {
+    "code": "VTCT",
+    "name": "Mae Fah Luang - Chiang Rai International Airport",
+    "city": "Chiang Rai",
+    "country": "Thaïlande",
+    "iata": "CEI"
+  },
+  {
+    "code": "VTSM",
+    "name": "Na Thon (Ko Samui Island) · Samui International Airport",
+    "city": "Na Thon (Ko Samui Island)",
+    "country": "Thaïlande",
+    "iata": "USM"
+  },
+  {
+    "code": "VTSP",
+    "name": "Phuket International Airport",
+    "city": "Phuket",
+    "country": "Thaïlande",
+    "iata": "HKT"
+  },
+  {
+    "code": "VTBU",
+    "name": "U-Tapao–Rayong–Pattaya International Airport",
+    "city": "Rayong",
+    "country": "Thaïlande",
+    "iata": "UTP"
+  },
+  {
+    "code": "VTUD",
+    "name": "Udon Thani International Airport",
+    "city": "Udon Thani",
+    "country": "Thaïlande",
+    "iata": "UTH"
+  },
+  {
+    "code": "WPDL",
+    "name": "Dili · Presidente Nicolau Lobato International Airport",
+    "city": "Dili",
+    "country": "Timor oriental",
+    "iata": "DIL"
+  },
+  {
+    "code": "WPOC",
+    "name": "Oecussi-Ambeno · Oecusse Route of the Sandalwood International Airport",
+    "city": "Oecussi-Ambeno",
+    "country": "Timor oriental",
+    "iata": "OEC"
+  },
+  {
+    "code": "DXXX",
+    "name": "Lomé–Tokoin International Airport",
+    "city": "Lomé",
+    "country": "Togo",
+    "iata": "LFW"
+  },
+  {
+    "code": "NFTF",
+    "name": "Nuku'alofa · Fua'amotu International Airport",
+    "city": "Nuku'alofa",
+    "country": "Tonga",
+    "iata": "TBU"
+  },
+  {
+    "code": "NFTV",
+    "name": "Vava'u Island · Vava'u International Airport",
+    "city": "Vava'u Island",
+    "country": "Tonga",
+    "iata": "VAV"
+  },
+  {
+    "code": "TTPP",
+    "name": "Port of Spain · Piarco International Airport",
+    "city": "Port of Spain",
+    "country": "Trinité-et-Tobago",
+    "iata": "POS"
+  },
+  {
+    "code": "TTCP",
+    "name": "Scarborough · A.N.R. Robinson International Airport",
+    "city": "Scarborough",
+    "country": "Trinité-et-Tobago",
+    "iata": "TAB"
+  },
+  {
+    "code": "DTTJ",
+    "name": "Mellita · Djerba Zarzis International Airport",
+    "city": "Mellita",
+    "country": "Tunisie",
+    "iata": "DJE"
+  },
+  {
+    "code": "DTTA",
+    "name": "Tunis Carthage International Airport",
+    "city": "Tunis",
+    "country": "Tunisie",
+    "iata": "TUN"
+  },
+  {
+    "code": "UTAA",
+    "name": "Ashgabat International Airport",
+    "city": "Ashgabat",
+    "country": "Turkménistan",
+    "iata": "ASB"
+  },
+  {
+    "code": "UTAT",
+    "name": "Daşoguz · Dashoguz International Airport",
+    "city": "Daşoguz",
+    "country": "Turkménistan",
+    "iata": "TAZ"
+  },
+  {
+    "code": "UTAV",
+    "name": "Türkmenabat International Airport",
+    "city": "Türkmenabat",
+    "country": "Turkménistan",
+    "iata": "CRZ"
+  },
+  {
+    "code": "LTAC",
+    "name": "Ankara · Esenboğa International Airport",
+    "city": "Ankara",
+    "country": "Turquie",
+    "iata": "ESB"
+  },
+  {
+    "code": "LTAI",
+    "name": "Antalya International Airport",
+    "city": "Antalya",
+    "country": "Turquie",
+    "iata": "AYT"
+  },
+  {
+    "code": "LTBS",
+    "name": "Dalaman International Airport",
+    "city": "Dalaman",
+    "country": "Turquie",
+    "iata": "DLM"
+  },
+  {
+    "code": "LTFD",
+    "name": "Edremit · Balıkesir Koca Seyit Airport",
+    "city": "Edremit",
+    "country": "Turquie",
+    "iata": "EDO"
+  },
+  {
+    "code": "LTBY",
+    "name": "Eskişehir · Hasan Polatkan Airport",
+    "city": "Eskişehir",
+    "country": "Turquie",
+    "iata": "AOE"
+  },
+  {
+    "code": "LTAJ",
+    "name": "Gaziantep Oğuzeli International Airport",
+    "city": "Gaziantep",
+    "country": "Turquie",
+    "iata": "GZT"
+  },
+  {
+    "code": "LTBJ",
+    "name": "Gaziemir · Adnan Menderes International Airport",
+    "city": "Gaziemir",
+    "country": "Turquie",
+    "iata": "ADB"
+  },
+  {
+    "code": "LTFM",
+    "name": "Istanbul",
+    "city": "Istanbul",
+    "country": "Turquie",
+    "iata": "IST"
+  },
+  {
+    "code": "LTAU",
+    "name": "Kayseri Erkilet International Airport",
+    "city": "Kayseri",
+    "country": "Turquie",
+    "iata": "ASR"
+  },
+  {
+    "code": "LTAN",
+    "name": "Konya Airport",
+    "city": "Konya",
+    "country": "Turquie",
+    "iata": "KYA"
+  },
+  {
+    "code": "LTFE",
+    "name": "Milas Bodrum International Airport",
+    "city": "Bodrum",
+    "country": "Turquie",
+    "iata": "BJV"
+  },
+  {
+    "code": "LTAZ",
+    "name": "Nevşehir Kapadokya Airport",
+    "city": "Nevşehir",
+    "country": "Turquie",
+    "iata": "NAV"
+  },
+  {
+    "code": "LTFJ",
+    "name": "Pendik, Istanbul · Istanbul Sabiha Gökçen International Airport",
+    "city": "Pendik, Istanbul",
+    "country": "Turquie",
+    "iata": "SAW"
+  },
+  {
+    "code": "LTCS",
+    "name": "Şanlıurfa GAP Airport",
+    "city": "Şanlıurfa",
+    "country": "Turquie",
+    "iata": "GNY"
+  },
+  {
+    "code": "LTDB",
+    "name": "Tarsus · Çukurova International Airport",
+    "city": "Tarsus",
+    "country": "Turquie",
+    "iata": "COV"
+  },
+  {
+    "code": "SUMU",
+    "name": "Ciudad de la Costa · Carrasco General Cesáreo L. Berisso International Airport",
+    "city": "Ciudad de la Costa",
+    "country": "Uruguay",
+    "iata": "MVD"
+  },
+  {
+    "code": "NVVV",
+    "name": "Port Vila · Bauerfield International Airport",
+    "city": "Port Vila",
+    "country": "Vanuatu",
+    "iata": "VLI"
+  },
+  {
+    "code": "SVBC",
+    "name": "Barcelona · General José Antonio Anzoategui International Airport",
+    "city": "Barcelona",
+    "country": "Venezuela",
+    "iata": "BLA"
+  },
+  {
+    "code": "SVBM",
+    "name": "Barquisimeto · Jacinto Lara International Airport",
+    "city": "Barquisimeto",
+    "country": "Venezuela",
+    "iata": "BRM"
+  },
+  {
+    "code": "SVPR",
+    "name": "Guyana City · General Manuel Carlos Piar International Airport",
+    "city": "Guyana City",
+    "country": "Venezuela",
+    "iata": "PZO"
+  },
+  {
+    "code": "SVMG",
+    "name": "Isla Margarita · Del Caribe Santiago Mariño International Airport",
+    "city": "Isla Margarita",
+    "country": "Venezuela",
+    "iata": "PMV"
+  },
+  {
+    "code": "SVMI",
+    "name": "Maiquetía Simón Bolívar International Airport",
+    "city": "Maiquetía",
+    "country": "Venezuela",
+    "iata": "CCS"
+  },
+  {
+    "code": "SVMC",
+    "name": "Maracaibo · La Chinita International Airport",
+    "city": "Maracaibo",
+    "country": "Venezuela",
+    "iata": "MAR"
+  },
+  {
+    "code": "SVVA",
+    "name": "Valencia · Arturo Michelena International Airport",
+    "city": "Valencia",
+    "country": "Venezuela",
+    "iata": "VLN"
+  },
+  {
+    "code": "VVCT",
+    "name": "Can Tho International Airport",
+    "city": "Can Tho",
+    "country": "Viêt Nam",
+    "iata": "VCA"
+  },
+  {
+    "code": "VVDN",
+    "name": "Da Nang International Airport",
+    "city": "Da Nang",
+    "country": "Viêt Nam",
+    "iata": "DAD"
+  },
+  {
+    "code": "VVCI",
+    "name": "Haiphong (Hai An) · Cat Bi International Airport",
+    "city": "Haiphong (Hai An)",
+    "country": "Viêt Nam",
+    "iata": "HPH"
+  },
+  {
+    "code": "VVNB",
+    "name": "Hanoi (Soc Son) · Noi Bai International Airport",
+    "city": "Hanoi (Soc Son)",
+    "country": "Viêt Nam",
+    "iata": "HAN"
+  },
+  {
+    "code": "VVTS",
+    "name": "Ho Chi Minh City · Tan Son Nhat International Airport",
+    "city": "Ho Chi Minh City",
+    "country": "Viêt Nam",
+    "iata": "SGN"
+  },
+  {
+    "code": "VVPB",
+    "name": "Huế · Phu Bai International Airport",
+    "city": "Huế",
+    "country": "Viêt Nam",
+    "iata": "HUI"
+  },
+  {
+    "code": "VVCR",
+    "name": "Nha Trang/nha Trang aiurportCam Ranh · Cam Ranh International Airport / Cam Ranh Air Base",
+    "city": "Nha Trang/nha Trang aiurportCam Ranh",
+    "country": "Viêt Nam",
+    "iata": "CXR"
+  },
+  {
+    "code": "VVPQ",
+    "name": "Phu Quoc Island · Phú Quốc International Airport",
+    "city": "Phu Quoc Island",
+    "country": "Viêt Nam",
+    "iata": "PQC"
+  },
+  {
+    "code": "NLWW",
+    "name": "Wallis Island · Hihifo Airport",
+    "city": "Wallis Island",
+    "country": "Wallis-et-Futuna",
+    "iata": "WLS"
+  },
+  {
+    "code": "OYAA",
+    "name": "Aden International Airport",
+    "city": "Aden",
+    "country": "Yémen",
+    "iata": "ADE"
+  },
+  {
+    "code": "OYRN",
+    "name": "Mukalla(Riyan) · Riyan International Airport",
+    "city": "Mukalla(Riyan)",
+    "country": "Yémen",
+    "iata": "RIY"
+  },
+  {
+    "code": "OYSN",
+    "name": "Sanaa International Airport",
+    "city": "Sanaa",
+    "country": "Yémen",
+    "iata": "SAH"
+  },
+  {
+    "code": "OYSY",
+    "name": "Seiyun Hadhramaut International Airport",
+    "city": "Seiyun",
+    "country": "Yémen",
+    "iata": "GXF"
+  },
+  {
+    "code": "FLHN",
+    "name": "Livingstone · Harry Mwanga Nkumbula International Airport",
+    "city": "Livingstone",
+    "country": "Zambie",
+    "iata": "LVI"
+  },
+  {
+    "code": "FLKK",
+    "name": "Lusaka · Kenneth Kaunda International Airport",
+    "city": "Lusaka",
+    "country": "Zambie",
+    "iata": "LUN"
+  },
+  {
+    "code": "FLMF",
+    "name": "Mfuwe International Airport",
+    "city": "Mfuwe",
+    "country": "Zambie",
+    "iata": "MFU"
+  },
+  {
+    "code": "FLSK",
+    "name": "Ndola · Simon Mwansa Kapwepwe International Airport",
+    "city": "Ndola",
+    "country": "Zambie",
+    "iata": "NLA"
+  },
+  {
+    "code": "FVJN",
+    "name": "Bulawayo · Joshua Mqabuko Nkomo International Airport",
+    "city": "Bulawayo",
+    "country": "Zimbabwe",
+    "iata": "BUQ"
+  },
+  {
+    "code": "FVRG",
+    "name": "Harare · Robert Gabriel Mugabe International Airport",
+    "city": "Harare",
+    "country": "Zimbabwe",
+    "iata": "HRE"
+  },
+  {
+    "code": "FVFA",
+    "name": "Victoria Falls International Airport",
+    "city": "Victoria Falls",
+    "country": "Zimbabwe",
+    "iata": "VFA"
+  }
+]
