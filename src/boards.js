@@ -42,7 +42,8 @@ class OasisSplitBoard {
     if(!this.queue.length){cancelAnimationFrame(this.frame);this.frame=0;}
     this.scheduler?.schedule();
   }
-  update(values, message, sharedWidths) {
+  update(values, message, sharedWidths, instant = false) {
+    if(instant)this.stop();
     const initial=!this.initialized;this.initialized=true;
     if(!values.length){this.stop();this.body.replaceChildren();const row=document.createElement('tr'),cell=document.createElement('td');cell.colSpan=4;cell.textContent=message;row.append(cell);this.body.append(row);return;}
     if(this.body.querySelector('[colspan]'))this.body.replaceChildren();
@@ -76,7 +77,7 @@ class OasisSplitBoard {
         });
       });
       const job={row,slots,start:null};
-      if(!this.animate||initial||!slots.length||!this.visible(row))this.settle(job);else this.queue.push(job);
+      if(instant||!this.animate||initial||!slots.length||!this.visible(row))this.settle(job);else this.queue.push(job);
     });
     this.queue.sort((a,b)=>a.row.rowIndex-b.row.rowIndex);
     this.prune();this.schedule();

@@ -138,6 +138,15 @@ class OasisFlightradarCard extends HTMLElement {
   }
   _renderBoards() {
     if(!this._config)return;
+    const airport=String(this._hass?.states[this._config.airport_entity]?.state||'').trim().toUpperCase();
+    const airportChanged=this._boardAirport!==undefined&&airport!==this._boardAirport;
+    if(airportChanged){
+      // Les deux capteurs peuvent recevoir leurs nouvelles données à des instants différents.
+      this._airportBoardRefresh={departures:true,arrivals:true};
+      this._airportBoardBaseline={...this._boardStateSources};
+    }
+    this._boardAirport=airport;
+    this._boardStateSources ||= {};
     const container=this.shadowRoot.querySelector('.boards');
     const data={};
     for(const kind of ['departures','arrivals']){
@@ -162,7 +171,12 @@ class OasisFlightradarCard extends HTMLElement {
       view={caption,zoneLabel,engine:new OasisSplitBoard(scroll,body,this._boardScheduler,true,false)};this._boardViews.set(kind,view);}
       view.caption.textContent='Horaires dans le fuseau de l’aéroport : '+(this._airportClock._zone||'indisponible');view.zoneLabel.textContent=view.caption.textContent;
       const {values,message}=data[kind];
-      view.engine.update(values,message,sharedWidths);
+      const source=this._hass?.states[this._config[kind+'_entity']];
+      const firstAirportRefresh=this._airportBoardRefresh?.[kind]&&source!==this._airportBoardBaseline?.[kind];
+      view.engine.update(values,message,sharedWidths,airportChanged||!!this._airportBoardRefresh?.[kind]);
+      // Un état vide ou indisponible ne doit pas animer l'arrivée ultérieure des vols.
+      if(firstAirportRefresh&&values.length)this._airportBoardRefresh[kind]=false;
+      this._boardStateSources[kind]=source;
     }
     this._boardScheduler.hold=false;this._boardScheduler.schedule();
   }
