@@ -26,14 +26,14 @@ Oasis Flightradar Card is a standalone Home Assistant dashboard card for the Fli
 ### Checklist (leave pending items unchecked)
 
 - [x] Publishing documentation reviewed.
-- [ ] HACS action published and passing without ignored checks.
-- [ ] Successful HACS action URL supplied.
+- [x] HACS action published and passing without ignored checks.
+- [x] Successful HACS action URL supplied.
 - [ ] New full release published AFTER successful validation.
 - [ ] Release URL supplied.
 - [ ] `hacs/default` plugin entry sorted and JSON validated.
 - [ ] Current upstream PR template completed; maintainer edits enabled.
 
-Successful HACS run: **pending**.
+Successful HACS run: https://github.com/JustKidding49/oasis-flightradar-card/actions/runs/37135056942 (success, October 3, 2026; no ignored checks).
 Post-validation release: **pending**.
 Hassfest: not applicable (Dashboard/plugin).
 
