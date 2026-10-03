@@ -28,6 +28,39 @@ test('Changement aéroport : premier rafraîchissement instantané par tableau, 
   assert.equal(result.calls,0);
 });
 let browser,page;
+test('Option animations : valeur par défaut, arrêt immédiat et réactivation des deux tableaux',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard();c.shadowRoot.querySelector('.boards').scrollIntoView();
+    const engines=[...c._boardViews.values()].map(v=>v.engine);
+    const defaults=engines.map(e=>e.animate);
+    const refresh=city=>{mockHass.states={...mockHass.states};for(const kind of ['departures','arrivals'])mockHass.states['sensor.demo_'+kind]={state:'1',attributes:{flights:[{airport_city:city,flight_number:'AA1234',status_text:'OK'}]}};c.hass=mockHass;};
+    const snapshot=()=>engines.map(e=>({animate:e.animate,queue:e.queue.length,city:[...e.body.querySelectorAll('td:nth-child(2) .flap')].map(n=>n.dataset.char).join('').trim()}));
+    refresh('A');refresh('Z');const queued=engines.map(e=>e.queue.length);
+    c.setConfig({...mockConfig,table_animations:false});const stopped=snapshot();
+    refresh('D');const immediate=snapshot();
+    c.setConfig({...mockConfig,table_animations:true});refresh('G');const resumed=snapshot();
+    let invalid=false;try{c.setConfig({...mockConfig,table_animations:'false'});}catch(_){invalid=true;}
+    c.remove();return {defaults,queued,stopped,immediate,resumed,invalid,calls:mockCalls.length};
+  });
+  assert.deepEqual(result.defaults,[true,true]);assert.deepEqual(result.queued,[1,1]);
+  assert.deepEqual(result.stopped,[{animate:false,queue:0,city:'Z'},{animate:false,queue:0,city:'Z'}]);
+  assert.deepEqual(result.immediate,[{animate:false,queue:0,city:'D'},{animate:false,queue:0,city:'D'}]);
+  assert.deepEqual(result.resumed,[{animate:true,queue:1,city:'D'},{animate:true,queue:1,city:'D'}]);
+  assert.equal(result.invalid,true);assert.equal(result.calls,0);
+});
+test('Éditeur : option animations persistée sans modifier les autres réglages',async()=>{
+  const result=await page.evaluate(()=>{
+    const editor=document.createElement('oasis-flightradar-card-editor');editor.setConfig({...mockConfig,airport_timezones:{LFPB:'Europe/Paris'}});document.body.append(editor);
+    let last;editor.addEventListener('config-changed',e=>last=e.detail.config);
+    const label=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Animations des tableaux'));
+    const check=label.querySelector('input');const initial=check.checked;
+    check.checked=false;check.dispatchEvent(new Event('change'));const disabled=last.table_animations;
+    editor.setConfig(last);const persisted=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Animations des tableaux')).querySelector('input');
+    const restored=persisted.checked;persisted.checked=true;persisted.dispatchEvent(new Event('change'));
+    return {initial,disabled,restored,enabled:last.table_animations,read_only:last.read_only,zone:last.airport_timezones.LFPB};
+  });
+  assert.deepEqual(result,{initial:true,disabled:false,restored:false,enabled:true,read_only:true,zone:'Europe/Paris'});
+});
 before(async()=>{browser=await chromium.launch({headless:true,channel:process.env.OASIS_BROWSER_CHANNEL||'msedge'});});
 after(async()=>{await browser?.close();});
 beforeEach(async()=>{await page?.close();page=await browser.newPage({viewport:{width:1200,height:1000},timezoneId:'America/New_York'});await page.route('**/*',route=>route.abort());await page.setContent('<!doctype html><html lang="fr"><head><meta charset="utf-8"></head><body style="margin:20px;background:#1a1a17"></body></html>');await page.addScriptTag({content:fs.readFileSync(path.join(root,'dist/oasis-flightradar-card.js'),'utf8')});await page.addScriptTag({content:fs.readFileSync(path.join(__dirname,'fixture.js'),'utf8')});await page.evaluate(()=>{for(const view of document.querySelector('oasis-flightradar-card')._boardViews.values()){view.engine.animate=true;view.engine.rotate=true;const update=view.engine.update.bind(view.engine);view.engine.update=(values,message)=>update(values,message);}});});
