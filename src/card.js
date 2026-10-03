@@ -95,7 +95,7 @@ class OasisFlightradarCard extends HTMLElement {
   static getStubConfig() { return {airport_entity:'',departures_entity:'',arrivals_entity:'',read_only:true}; }
   static getConfigElement() { return document.createElement('oasis-flightradar-card-editor'); }
   setConfig(config) {
-    for(const key of ['read_only','online_images','online_timezones']) if(config[key]!==undefined&&typeof config[key]!=='boolean') throw Error(key+' doit être un booléen');
+    for(const key of ['read_only','online_images','online_timezones','table_animations']) if(config[key]!==undefined&&typeof config[key]!=='boolean') throw Error(key+' doit être un booléen');
     oasisEntity(config.airport_entity,['text','input_text'],true);
     for(const key of ['departures_entity','arrivals_entity','followed_entity']) oasisEntity(config[key],['sensor']);
     for(const key of ['add_entity','remove_entity']) oasisEntity(config[key],['text','input_text']);
@@ -105,7 +105,11 @@ class OasisFlightradarCard extends HTMLElement {
     if(config.airport_timezones){for(const [code,zone] of Object.entries(config.airport_timezones)){if(!/^[A-Z]{4}$/.test(code)||typeof zone!=='string')throw Error('airport_timezones invalide');try{new Intl.DateTimeFormat('fr-FR',{timeZone:zone});}catch(_){throw Error('Fuseau invalide : '+zone);}}}
     for(const kind of ['departures','arrivals']) if(config[kind+'_fields']&&Object.values(config[kind+'_fields']).some(v=>typeof v!=='string'))throw Error('Correspondance de champs invalide');
     if(config.local_images){for(const image of Object.values(config.local_images)){if(!image||typeof image.url!=='string'||!(image.url.startsWith('/')&&!image.url.startsWith('//')||image.url.startsWith('https://')))throw Error('Photo locale : utiliser un chemin /local/… ou une URL HTTPS');}}
-    this._config={visible_rows:10,read_only:true,...config};this._sources=[];this._rendered=false;
+    this._config={visible_rows:10,read_only:true,table_animations:true,...config};this._sources=[];this._rendered=false;
+    for(const view of this._boardViews.values()){
+      view.engine.animate=this._config.table_animations;
+      if(!view.engine.animate)view.engine.stop();
+    }
     const banner={entity:config.airport_entity,local_images:config.local_images,online_images:config.online_images!==false};
     this._banner.setConfig(banner);
     this._localClock.setConfig({time_zone:'auto'});
@@ -168,7 +172,7 @@ class OasisFlightradarCard extends HTMLElement {
       for(const label of ['Heure',cityTitle,'Vol','Statut']){const th=document.createElement('th');th.scope='col';th.textContent=label;hr.append(th);}head.append(hr);table.append(head);
       const body=document.createElement('tbody');
       table.append(body);scroll.append(table);board.append(scroll);container.append(board);
-      view={caption,zoneLabel,engine:new OasisSplitBoard(scroll,body,this._boardScheduler,true,false)};this._boardViews.set(kind,view);}
+      view={caption,zoneLabel,engine:new OasisSplitBoard(scroll,body,this._boardScheduler,this._config.table_animations,false)};this._boardViews.set(kind,view);}
       view.caption.textContent='Horaires dans le fuseau de l’aéroport : '+(this._airportClock._zone||'indisponible');view.zoneLabel.textContent=view.caption.textContent;
       const {values,message}=data[kind];
       const source=this._hass?.states[this._config[kind+'_entity']];
@@ -240,6 +244,7 @@ class OasisFlightradarCardEditor extends HTMLElement {
       input.addEventListener('change',()=>{if(!input.reportValidity())return;if(input.value)this._config[key]=key==='visible_rows'?Number(input.value):input.value.trim();else delete this._config[key];this._emit();});wrapper.append(input);this.shadowRoot.append(wrapper);
     }
     const label=document.createElement('label');label.textContent='Lecture seule';const check=document.createElement('input');check.type='checkbox';check.checked=this._config.read_only!==false;check.addEventListener('change',()=>{this._config.read_only=check.checked;this._emit();});label.append(check);this.shadowRoot.append(label);
+    const animationLabel=document.createElement('label');animationLabel.textContent='Animations des tableaux Départs et Arrivées';const animationCheck=document.createElement('input');animationCheck.type='checkbox';animationCheck.checked=this._config.table_animations!==false;animationCheck.addEventListener('change',()=>{this._config.table_animations=animationCheck.checked;this._emit();});animationLabel.append(animationCheck);this.shadowRoot.append(animationLabel);
     const help=document.createElement('p');help.textContent='Photos locales, fuseaux personnalisés et correspondances de champs : disponibles dans l’éditeur de code.';this.shadowRoot.append(help);
   }
   _emit(){this.dispatchEvent(new CustomEvent('config-changed',{detail:{config:{...this._config}},bubbles:true,composed:true}));}
