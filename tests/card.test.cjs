@@ -4,6 +4,29 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
+
+test('Changement aéroport : premier rafraîchissement instantané par tableau, puis animations',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard();c.shadowRoot.querySelector('.boards').scrollIntoView();
+    const rows=city=>[{airport_city:city,flight_number:'AA1234',status_text:'OK'}];
+    const state=city=>({state:'1',attributes:{flights:rows(city)}});
+    let states={...mockHass.states,'sensor.demo_departures':state('A'),'sensor.demo_arrivals':state('A')};
+    c.hass={...mockHass,states};
+    const snapshot=()=>[...c._boardViews.values()].map(v=>({queue:v.engine.queue.length,city:[...v.engine.body.querySelectorAll('td:nth-child(2) .flap')].map(n=>n.dataset.char).join('')}));
+    states={...states,'text.demo_airport':{state:'LHBP',attributes:{}}};c.hass={...mockHass,states};
+    states={...states,'sensor.demo_departures':state('D')};c.hass={...mockHass,states};const departure=snapshot();
+    states={...states,'sensor.demo_arrivals':{state:'unavailable',attributes:{}}};c.hass={...mockHass,states};
+    states={...states,'sensor.demo_arrivals':state('D')};c.hass={...mockHass,states};const arrival=snapshot();
+    states={...states,'sensor.demo_departures':state('G'),'sensor.demo_arrivals':state('G')};c.hass={...mockHass,states};const normal=snapshot();
+    states={...states,'text.demo_airport':{state:'EGLL',attributes:{}},'sensor.demo_departures':state('Z'),'sensor.demo_arrivals':state('Z')};c.hass={...mockHass,states};const simultaneous=snapshot();
+    c.remove();return {departure,arrival,normal,simultaneous,calls:mockCalls.length};
+  });
+  assert.deepEqual(result.departure,[{queue:0,city:'D'},{queue:0,city:'A'}]);
+  assert.deepEqual(result.arrival,[{queue:0,city:'D'},{queue:0,city:'D'}]);
+  assert.ok(result.normal.every(b=>b.queue===1&&b.city==='D'));
+  assert.deepEqual(result.simultaneous,[{queue:0,city:'Z'},{queue:0,city:'Z'}]);
+  assert.equal(result.calls,0);
+});
 let browser,page;
 before(async()=>{browser=await chromium.launch({headless:true,channel:process.env.OASIS_BROWSER_CHANNEL||'msedge'});});
 after(async()=>{await browser?.close();});
