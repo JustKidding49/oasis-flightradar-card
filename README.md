@@ -1,82 +1,107 @@
 # Oasis Flightradar Card
 
-Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : bandeau de la ville, deux horloges à panneaux basculants, recherche OACI, départs, arrivées, vols suivis et boutons de gestion du suivi.
+An airport-style Home Assistant dashboard card: city banner, split-flap clocks, ICAO search, departures, arrivals and flight tracking — in one standalone JavaScript module.
 
-Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
+[Latest release](https://github.com/JustKidding49/oasis-flightradar-card/releases/latest) · [Français](README.fr.md) · [Report an issue](https://github.com/JustKidding49/oasis-flightradar-card/issues)
 
-**Version 0.1.1.** Les 26 tests locaux réussissent. Installation de test et rendu réel vérifiés le 3 octobre 2026 dans Home Assistant, en lecture seule : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; elle n’est pas dans le catalogue par défaut.
+**Version 0.1.1 · GPL-3.0-only · Maintained by JustKidding49**
 
-## Ce qui est regroupé
+Available as a **custom HACS repository**, not yet in the default catalog. Documentation is in English; the current card interface is primarily French, with bilingual flight-board headings.
 
-- Bandeau dynamique d’après l’aéroport suivi ; photos locales prioritaires et crédits des photos Commons conservés.
-- Heure locale du navigateur et heure de l’aéroport, avec gestion des changements d’heure via les fuseaux IANA. Les secondes se mettent à jour instantanément, sans basculement ; les heures et minutes restent animées.
-- Recherche parmi 1 153 aéroports : nom, ville, pays, OACI et IATA ; saisie manuelle d’un code OACI.
-- Départs à gauche, arrivées à droite ; dix lignes visibles par défaut, en-têtes fixes et défilement. Sur écran étroit, les tableaux se placent l’un sous l’autre.
-- Tableaux au style panneaux d’aéroport : passage par les caractères intermédiaires, sans rotation des demi-panneaux. Cycle `vide → A…Z → 0…9 → : → - → vide`, parcouru dans le sens le plus court. Une cellule à la fois : Heure → Destination/Origine → Vol → Statut, puis ligne suivante ; Départs avant Arrivées. Seules les lignes visibles s’animent ; premier affichage et lignes hors écran instantanés. Les préférences de réduction du mouvement désactivent le cycle.
-- Cinq panneaux pour l’heure, six pour le numéro de vol. Destination/Origine et Statut sont dimensionnés d’après le texte le plus long parmi tous les vols reçus dans les deux tableaux ensemble, avec des panneaux vides pour compléter les cellules plus courtes. Accents normalisés, autres signes hors alphabet remplacés par des espaces ; texte original conservé pour l’accessibilité et au survol. Un identifiant de vol dépassant six caractères est tronqué visuellement, mais reste complet au survol. Taille des panneaux et largeur des colonnes adaptées à l’espace disponible pour éviter le défilement horizontal ; les textes très longs deviennent plus petits.
-- Après un changement d’aéroport, le premier rafraîchissement des vols est instantané pour chaque tableau, même si les Départs et Arrivées arrivent séparément ou après un état indisponible. Les mises à jour suivantes retrouvent leur animation habituelle.
-- Résumé des vols suivis et liens Flightradar24.
-- Police des panneaux identique aux horloges : hauteur = 1,45 × largeur et taille des caractères = 1,35 × largeur. Largeur adaptative commune aux Départs et Arrivées selon la place disponible, plafonnée à 11 px par panneau ; horloges inchangées.
-- Ajout/retrait par formulaire ; effacement avec confirmation.
-- Éditeur graphique pour les entités, le nombre de lignes et la lecture seule.
+## Preview
 
-Un seul module JavaScript à installer. Pas de `card-mod`, `browser_mod`, `flightradar-flight-card`, CDN JavaScript ou framework supplémentaire. Les composants internes sont embarqués dans le même fichier et ne nécessitent aucune ressource séparée.
+Public previews use synthetic flight data and the fallback banner: no live traffic, private entities or Home Assistant connection. Local or automatically fetched city photos can be configured, with attribution.
 
-La présentation des vols suivis est un nouveau résumé natif : elle ne reproduit pas les photos, logos, barre de progression ou carrousel de la carte externe précédemment utilisée.
+![Desktop preview: clocks and side-by-side flight boards](https://raw.githubusercontent.com/JustKidding49/oasis-flightradar-card/main/docs/desktop.png)
 
-## Prérequis
+<details>
+<summary>Phone and tablet previews</summary>
 
-L’[intégration Flightradar24](https://github.com/AlexandrErohin/home-assistant-flightradar24) doit déjà fournir les données dans Home Assistant. La carte ne se connecte pas directement à l’API Flightradar24 et ne demande aucun identifiant, mot de passe ou token.
+### Phone
 
-Les capteurs doivent exposer un attribut `flights`, contenant une liste d’objets. Les noms d’entités dépendent de l’installation et de la langue : sélectionner ses propres entités, ne pas recopier aveuglément celles des exemples.
+![Phone preview](https://raw.githubusercontent.com/JustKidding49/oasis-flightradar-card/main/docs/mobile.png)
 
-## Installation manuelle
+### Tablet
 
-1. Copier `dist/oasis-flightradar-card.js` dans le dossier `www` existant de Home Assistant.
-2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.1`, type **module**.
-3. Ajouter la carte « Oasis Flightradar Card » et renseigner les entités.
+![Tablet preview](https://raw.githubusercontent.com/JustKidding49/oasis-flightradar-card/main/docs/tablet.png)
 
-Le fichier autonome mesure environ 108 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.
+</details>
 
-## Configuration minimale
+## Features
+
+- Dynamic city banner with local images or credited Wikimedia Commons photos.
+- Device-local and airport-local clocks using IANA time zones and daylight-saving rules. Hours/minutes flip; seconds update instantly.
+- Search 1,153 airports by name, city, country, ICAO or IATA, or enter an ICAO code manually.
+- Departures/arrivals with sticky headers, vertical scrolling and ten visible rows by default. Tables stack on narrow screens.
+- Character cycling without half-panel rotation: shortest path through `space → A…Z → 0…9 → : → - → space`.
+- Sequential updates: time, destination/origin, flight, status, then next row; departures before arrivals. Only visible rows animate; reduced-motion preferences disable cycling.
+- After an airport switch, the first fresh data for each board appears instantly, even if the sensors update separately or temporarily become unavailable. Later updates animate normally.
+- Five panels for time and six for flight numbers. Destination/status widths are calculated from both boards; long text scales down, with original text accessible and available on hover.
+- Followed-flight summaries, Flightradar24 links, add/remove forms and confirmation before clearing follows.
+- Visual configuration editor; **read-only mode enabled by default**.
+
+No additional `card-mod`, `browser_mod`, external flight card, JavaScript CDN or framework is required. Followed flights use native summaries rather than an external photo carousel.
+
+## Requirements
+
+Configure the [Flightradar24 integration](https://github.com/AlexandrErohin/home-assistant-flightradar24) first. Sensors must expose a `flights` attribute containing a list of objects. Entity IDs vary: select your own entities instead of copying the example unchanged.
+
+A modern browser supporting `DecompressionStream` is required for the bundled catalog. The card reads Home Assistant entities; it does not authenticate directly with Flightradar24 or ask for passwords/tokens.
+
+## HACS installation
+
+1. Open **HACS → Custom repositories**.
+2. Add `https://github.com/JustKidding49/oasis-flightradar-card`, category **Dashboard**.
+3. Download **Oasis Flightradar Card** and reload your browser.
+4. Check `/hacsfiles/oasis-flightradar-card/oasis-flightradar-card.js` is registered as a **JavaScript module**. Do not keep a second manual/inline copy.
+5. Add the card, select your entities and keep `read_only: true` while checking configuration.
+
+HACS manages the resource version query in storage-mode dashboards. If an old copy remains cached, hard-reload the browser or reset the frontend cache in the Companion app.
+
+### Manual installation
+
+Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.1` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
+
+## Configuration
 
 ```yaml
 type: custom:oasis-flightradar-card
-airport_entity: text.mon_aeroport
-departures_entity: sensor.mes_departs
-arrivals_entity: sensor.mes_arrivees
-followed_entity: sensor.mes_vols_suivis
-add_entity: text.ajouter_un_vol
-remove_entity: text.retirer_un_vol
-clear_entity: button.effacer_les_suivis
+airport_entity: text.my_airport
+departures_entity: sensor.my_departures
+arrivals_entity: sensor.my_arrivals
+followed_entity: sensor.my_followed_flights
+add_entity: text.my_add_flight
+remove_entity: text.my_remove_flight
+clear_entity: button.my_clear_follows
 visible_rows: 10
 read_only: true
 ```
 
-`airport_entity` est requis. Les autres entités sont facultatives : les données non configurées sont signalées et les boutons sans cible sont désactivés. **`read_only` vaut `true` par défaut** ; passer explicitement à `false` pour autoriser la validation des formulaires. Ouvrir une recherche ou choisir un résultat ne modifie aucun état.
+Only `airport_entity` is required. Other entities are optional; missing data is reported and actions without targets are disabled. Explicitly set `read_only: false` to enable follow submissions. Opening search or selecting a provisional result does not write an entity; submitting does. Read-only mode is an interface guard, not an account-permission replacement.
 
-Les trois champs texte acceptent les domaines `text` ou `input_text` ; l’effacement accepte `button` ou `input_button`. Une entité `input_text`/`input_button` ne pilote pas d’elle-même l’intégration : l’utilisateur doit déjà disposer d’un mécanisme adapté. Les entités `text`/`button` natives de l’intégration sont le choix recommandé.
+Airport/add/remove entities accept `text` or `input_text`; clear accepts `button` or `input_button`. Prefer native integration entities. Helpers need an existing mechanism connecting them to the integration. No service is called except following a user confirmation/submission.
 
-En dehors des validations utilisateur, aucun service Home Assistant n’est lancé. La carte n’enregistre pas les recherches. Le mode lecture seule est un garde-fou de l’interface, pas un remplacement des permissions du compte Home Assistant.
+### Options
 
-## Options avancées
-
-| Option | Valeur par défaut | Description |
+| Option | Default | Purpose |
 | --- | --- | --- |
-| `visible_rows` | `10` | Entier de 1 à 30 ; taille des tableaux. |
-| `flights_attribute` | `flights` | Attribut contenant la liste de vols. |
-| `read_only` | `true` | Bloque toutes les validations de suivi. |
-| `online_images` | `true` | Autorise les recherches de photos Wikidata/Commons. |
-| `online_timezones` | `true` | Autorise le téléchargement de la base des fuseaux pour un code inconnu. |
-| `airport_timezones` | Table intégrée | Correspondances OACI → fuseau IANA, propres à chaque carte. |
-| `local_images` | Aucun | Photos OACI → `{city, url}` ; chemin local ou URL HTTPS. |
-| `airports` | Catalogue intégré | Liste personnalisée qui remplace le catalogue. Champs `code`, `name`, `country` ; `city`, `iata` facultatifs. |
-| `departures_fields` | Voir ci-dessous | Champs `time`, `city`, `flight`, `status`. Chemins imbriqués autorisés. |
-| `arrivals_fields` | Voir ci-dessous | Mêmes champs pour les arrivées. |
+| `visible_rows` | `10` | Visible rows, from 1 to 30. |
+| `flights_attribute` | `flights` | Attribute containing flight objects. |
+| `read_only` | `true` | Block follow-action submissions. |
+| `online_images` | `true` | Allow Wikidata/Commons photo lookup. |
+| `online_timezones` | `true` | Allow public time-zone lookup for unknown airports. |
+| `airport_timezones` | Built-in mappings | Per-card ICAO → IANA overrides. |
+| `local_images` | None | ICAO → `{city, url}`; local path or HTTPS URL. |
+| `airports` | Bundled catalog | Custom list: `code`, `name`, `country`; optional `city`, `iata`. |
+| `departures_fields` | Below | Mappings for `time`, `city`, `flight`, `status`; nested paths allowed. |
+| `arrivals_fields` | Below | Equivalent mappings for arrivals. |
 
-Départs : `time_scheduled_departure`, `airport_city`, `flight_number`, `status_text`.
-Arrivées : `time_scheduled_arrival`, `airport_city`, `flight_number`, `status_text`.
-Heures : timestamp Unix **en secondes** (nombre) ou chaîne ISO avec fuseau. Le champ de vol vide utilise `callsign` si présent. Les heures restent `--:--` si le fuseau de l’aéroport est inconnu plutôt que d’afficher une heure locale incorrecte.
+Departure defaults: `time_scheduled_departure`, `airport_city`, `flight_number`, `status_text`.
+Arrival defaults: `time_scheduled_arrival`, `airport_city`, `flight_number`, `status_text`.
+
+Times accept Unix timestamps **in seconds** or ISO strings with a time zone. Empty flight numbers fall back to `callsign`. Numbers exceeding six characters are visually truncated, with the full value on hover. Unknown time zones show `--:--`, not a misleading local time.
+
+### Local photos and offline lookups
 
 ```yaml
 airport_timezones:
@@ -89,9 +114,21 @@ online_images: false
 online_timezones: false
 ```
 
-Le fuseau local suit les réglages de l’appareil, **sans GPS**. L’aéroport utilise une petite table de fuseaux, puis éventuellement la base publique `mwgg/Airports`. Ces requêtes n’envoient aucun identifiant Home Assistant. Les requêtes photos transmettent le code OACI à Wikidata ; les images se chargent dans le navigateur. Pour un usage sans appels externes, désactiver les deux options `online_*` et utiliser des photos/fuseaux locaux.
+The local clock follows device settings, **not GPS**. Online photo lookup sends the ICAO code to Wikidata; images load from their source. Time-zone fallback downloads the public `mwgg/Airports` database. No Home Assistant credentials are sent. Disable both `online_*` options and provide local photos/time zones to avoid external lookups. Photo credits remain accessible in the banner.
 
-## Développement et tests
+## Troubleshooting
+
+- **Custom element not found:** check resource/module registration and reload. Remove duplicate resources.
+- **No flights:** check configured sensors and their `flights` attribute. Coverage is controlled by the integration, not this card.
+- **Disabled actions:** check read-only mode, entity mappings and availability. Enable actions only when ready to change real follows.
+- **Unknown time zone:** add an `airport_timezones` override.
+- **No city photo:** configure a local image or check online lookup availability. The fallback keeps the card usable.
+
+Issue reports should include card/HA/browser versions and redacted configuration or synthetic data. **Never publish tokens, passwords, private URLs or unredacted backups.**
+
+## Development and verification
+
+Requires Node.js 20+. On Windows:
 
 ```powershell
 npm install
@@ -99,34 +136,17 @@ npm run build
 npx playwright install chromium
 $env:OASIS_BROWSER_CHANNEL='chromium'
 npm test
+node scripts/screenshots.cjs
 ```
 
-Sur un Windows disposant déjà de Microsoft Edge, les tests utilisent Edge par défaut. Toutes les requêtes réseau des tests sont bloquées. Les données et les appels de service sont fictifs : aucun accès à Home Assistant.
+On Linux/macOS, use `OASIS_BROWSER_CHANNEL=chromium npm test` and the same prefix for screenshots. Tests default to Microsoft Edge without a channel override. `scripts/build.cjs` generates `dist/oasis-flightradar-card.js`; do not edit it directly. `examples/demo.html` runs with synthetic data offline.
 
-`scripts/build.cjs` assemble les sources et le catalogue dans `dist/oasis-flightradar-card.js`. Ne pas modifier directement ce fichier généré. `examples/demo.html` fournit une démonstration locale, sans serveur ni connexion Home Assistant.
+**26 automated browser tests passed** on October 3, 2026. Network requests are blocked and services/airport changes are simulated. Coverage includes safeguards, confirmation/errors, responsive layout, time zones, HTML injection prevention, multiple instances, character cycling and airport-switch first refresh.
 
-Tests : rendu autonome, fuseaux, recherche, lecture seule, confirmations, erreurs, double validation, mobile, tableaux, données absentes, protection contre l’injection HTML, deux instances, éditeur, séquençage Départs/Arrivées, proportions des caractères et chemin minimal sur les 1 521 paires de caractères, ordre cellule par cellule et absence de défilement horizontal.
+The maintainer reports action tests on the ChatGPT test dashboard and phone/tablet rendering checks as passed. These are maintainer-reported acceptance results, not additional automated tests. No exhaustive HA/browser/Companion compatibility matrix is claimed.
 
-Résultat local : **26 tests navigateur réussis** dans Microsoft Edge, le 3 octobre 2026. Les aperçus `docs/desktop.png` et `docs/mobile.png` utilisent uniquement des données fictives et un bandeau sans photo ; ils ne représentent pas une connexion à Home Assistant.
+## License and credits
 
-## Installation HACS
+Original code: **GPL-3.0-only**. See [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md). OurAirports data is public domain; time-zone data retains its MIT notice. Photos retain their individual licenses and attribution. No third-party flight-card or integration code is bundled. Source/build scripts are available in every release tag; the standalone JavaScript is attached to each release.
 
-1. Dans HACS, ouvrir **Dépôts personnalisés**.
-2. Ajouter `https://github.com/JustKidding49/oasis-flightradar-card`, type **Dashboard**.
-3. Télécharger **Oasis Flightradar Card**, puis recharger le navigateur.
-4. Vérifier la ressource `/hacsfiles/oasis-flightradar-card/oasis-flightradar-card.js`, type **module**. Ne pas conserver une seconde ressource inline de la même carte.
-5. Ajouter la carte et sélectionner ses entités ; conserver `read_only: true` pendant les vérifications.
-
-La présence dans le catalogue par défaut exige une demande distincte et l’acceptation par HACS. Les sources et le script de construction accompagnent chaque version dans le dépôt ; le fichier JS autonome est joint à la release.
-
-Références : [exigences des cartes HACS](https://www.hacs.dev/docs/publish/plugin/), [exigences générales](https://www.hacs.dev/docs/publish/start/), [API des cartes Home Assistant](https://developers.home-assistant.io/docs/frontend/custom-ui/custom-card/).
-
-## Limites de cette version
-
-- Non testée dans l’application mobile Companion ni sur une installation HA autre que les données examinées en lecture seule.
-- Les actions de suivi n’ont pas été exécutées sur une installation réelle : leurs tests utilisent des données et services fictifs.
-- Pas de catalogue exhaustif de tous les aérodromes ; les données publiques peuvent contenir des erreurs.
-- Les photos et fuseaux distants dépendent de services publics ; absence de photo ou fuseau signalée sans bloquer la carte.
-- Les créneaux des vols sont limités par les capteurs de l’intégration, pas par la carte.
-
-Licence : **GPL-3.0-only** ; voir `LICENSE` et `NOTICE.md`. Les éléments tiers conservent leurs licences et leurs crédits. La distribution du fichier JS doit rester accompagnée d’un accès aux sources correspondantes et au script de construction. Le paquet ZIP contient ces fichiers.
+Not affiliated with Flightradar24, Home Assistant or HACS. **Not an aviation navigation tool.**
