@@ -1,4 +1,4 @@
-/* Oasis Flightradar Card v0.1.0
+/* Oasis Flightradar Card v0.1.2
  * SPDX-License-Identifier: GPL-3.0-only
  * Copyright (c) 2026 JustKidding49 and contributors.
  * Distributed WITHOUT ANY WARRANTY; see LICENSE and NOTICE.md.
