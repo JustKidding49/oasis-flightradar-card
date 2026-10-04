@@ -6,7 +6,17 @@ Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : band
 
 Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
 
-**Version 0.1.3.** Les 28 tests locaux réussissent. Le rendu réel de la version précédente a été vérifié le 3 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
+**Version 0.1.4 : interface multilingue automatique.** Les 32 tests locaux réussissent le 4 octobre 2026. Le rendu réel de la version précédente a été vérifié le 3 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
+
+## Langue automatique
+
+La carte et son éditeur suivent la langue de l’interface Home Assistant de l’utilisateur : `hass.locale.language`, ou `hass.language` pour compatibilité. Aucun réglage YAML n’est nécessaire. Un changement de langue actualise aussi les dialogues ouverts sans modifier les entités.
+
+Treize langues : français, anglais, allemand, espagnol, italien, hongrois, portugais, indonésien, chinois simplifié, hindi, bengali, arabe et ourdou. Les variantes régionales utilisent la traduction de base (`en-GB`, `pt-BR`, `hu-HU`, etc.). Si la langue est absente ou non prise en charge, ou si une traduction manque, la carte utilise l’anglais. Toutes les traductions sont embarquées : aucun service de traduction ni appel réseau.
+
+L’arabe et l’ourdou utilisent une interface de droite à gauche. L’ordre des colonnes des tableaux reste inchangé ; les codes OACI et les chiffres des horloges restent de gauche à droite, en chiffres latins sur 24 heures. Les noms d’aéroports, pays, statuts des capteurs, métadonnées des photos et titres personnalisés restent tels que fournis par leur source. Les messages techniques de validation YAML conservent leurs diagnostics d’origine. Une relecture des traductions par des locuteurs natifs est bienvenue.
+
+Les dix langues demandées sont choisies selon le nombre total de locuteurs (langue maternelle et seconde langue), d’après le [classement Ethnologue 2026 reproduit ici](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers). L’allemand, l’italien et le hongrois s’y ajoutent.
 
 ## Ce qui est regroupé
 
@@ -35,7 +45,7 @@ Les capteurs doivent exposer un attribut `flights`, contenant une liste d’obje
 ## Installation manuelle
 
 1. Copier `dist/oasis-flightradar-card.js` dans le dossier `www` existant de Home Assistant.
-2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.3`, type **module**.
+2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.4`, type **module**.
 3. Ajouter la carte « Oasis Flightradar Card » et renseigner les entités.
 
 Le fichier autonome mesure environ 108 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.
