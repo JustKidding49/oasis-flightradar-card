@@ -153,7 +153,9 @@ test('Code invalide, erreur de service et double validation',async()=>{
 });
 test('Rendu mobile, dix lignes et en-têtes fixes',async()=>{
   await page.setViewportSize({width:390,height:900});
-  const result=await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card'),r=c.shadowRoot;return {overflow:document.documentElement.scrollWidth>innerWidth,boards:getComputedStyle(r.querySelector('.boards')).gridTemplateColumns.split(' ').length,scroll:r.querySelector('.scroll').clientHeight,max:getComputedStyle(r.querySelector('.scroll')).maxHeight,sticky:getComputedStyle(r.querySelector('th')).position,clock:c._localClock.getBoundingClientRect().width};});assert.equal(result.overflow,false);assert.equal(result.boards,1);assert.equal(result.max,'352px');assert.equal(result.sticky,'sticky');assert.ok(result.clock>100);
+  await page.evaluate(()=>document.querySelector('oasis-flightradar-card').shadowRoot.querySelector('.scroll').getBoundingClientRect());
+  await page.waitForFunction(()=>getComputedStyle(document.querySelector('oasis-flightradar-card').shadowRoot.querySelector('.scroll')).maxHeight==='370px');
+  const result=await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card'),r=c.shadowRoot;return {overflow:document.documentElement.scrollWidth>innerWidth,boards:getComputedStyle(r.querySelector('.boards')).gridTemplateColumns.split(' ').length,scroll:r.querySelector('.scroll').clientHeight,max:getComputedStyle(r.querySelector('.scroll')).maxHeight,sticky:getComputedStyle(r.querySelector('th')).position,clock:c._localClock.getBoundingClientRect().width};});assert.equal(result.overflow,false);assert.equal(result.boards,1);assert.equal(result.max,'370px');assert.equal(result.sticky,'sticky');assert.ok(result.clock>100);
   await page.locator('oasis-fr24-internal-selector .launch').click();
   assert.equal(await page.locator('oasis-fr24-internal-selector dialog').evaluate(n=>n.getBoundingClientRect().right<=innerWidth),true);
   await page.keyboard.press('Escape');
@@ -230,10 +232,29 @@ test('Une cellule à la fois : heure, destination, vol, statut puis ligne suivan
   await page.emulateMedia({reducedMotion:'no-preference'});
   const result=await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card'),e=c._boardViews.get('departures').engine,s=c._boardScheduler;const flights=mockHass.states['sensor.demo_departures'].attributes.flights.map(f=>({...f,time_scheduled_departure:'2026-10-03T10:01:00Z',airport_city:'B',flight_number:'B',status_text:'B'}));c.hass={...mockHass,states:{...mockHass.states,'sensor.demo_departures':{state:'2',attributes:{flights}}}};const trace=[];for(let time=0;time<3000&&e.queue.length;time+=70){cancelAnimationFrame(s.frame);s.tick(time);const cells=[...e.body.querySelectorAll('td')].filter(td=>td.querySelector('.flip-a,.flip-b'));if(cells.length>1)throw Error('Plusieurs cellules animées');if(cells.length){const cell=cells[0],key=cell.parentElement.sectionRowIndex+':'+cell.cellIndex;if(trace.at(-1)!==key)trace.push(key);}}const finished=e.queue.length===0;c.remove();return {trace,finished,calls:mockCalls.length};});assert.deepEqual(result.trace,['0:0','0:1','0:2','0:3','1:0','1:1','1:2','1:3']);assert.equal(result.finished,true);assert.equal(result.calls,0);
 });
-test('Aucun défilement horizontal avec destination et statut longs, desktop et mobile',async()=>{
+test('Aucun défilement horizontal avec destination et statut longs, ordinateur et tablette',async()=>{
   await page.emulateMedia({reducedMotion:'reduce'});
   await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card');const flights=[{airport_city:'SAINT PETERSBURG',flight_number:'AB1234',status_text:'ESTIMATED DEPARTURE 17:45'}];c.hass={...mockHass,states:{...mockHass.states,'sensor.demo_departures':{state:'1',attributes:{flights}},'sensor.demo_arrivals':{state:'1',attributes:{flights}}}};});
-  for(const width of [1200,1080,820,390]){await page.setViewportSize({width,height:1000});const result=await page.evaluate(()=>[...document.querySelector('oasis-flightradar-card').shadowRoot.querySelectorAll('.scroll')].map(s=>({client:s.clientWidth,scroll:s.scrollWidth,flap:getComputedStyle(s.querySelector('.flap')).width,cells:[...s.querySelectorAll('td')].map(td=>({width:td.clientWidth,word:td.querySelector('.flap-word').getBoundingClientRect().width})),fit:[...s.querySelectorAll('tbody td')].every(td=>td.querySelector('.flap-word').getBoundingClientRect().width<=td.clientWidth-8)})));for(const r of result){assert.ok(r.scroll<=r.client+1,JSON.stringify({width,...r}));assert.equal(r.fit,true);}}
+  for(const width of [1200,1080,820,601]){await page.setViewportSize({width,height:1000});const result=await page.evaluate(()=>[...document.querySelector('oasis-flightradar-card').shadowRoot.querySelectorAll('.scroll')].map(s=>({client:s.clientWidth,scroll:s.scrollWidth,flap:getComputedStyle(s.querySelector('.flap')).width,cells:[...s.querySelectorAll('td')].map(td=>({width:td.clientWidth,word:td.querySelector('.flap-word').getBoundingClientRect().width})),fit:[...s.querySelectorAll('tbody td')].every(td=>td.querySelector('.flap-word').getBoundingClientRect().width<=td.clientWidth-8)})));for(const r of result){assert.ok(r.scroll<=r.client+1,JSON.stringify({width,...r}));assert.equal(r.fit,true);}}
+});
+
+test('Téléphone uniquement : caractères lisibles et défilement horizontal limité aux tableaux',async()=>{
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card');const flights=Array.from({length:30},()=>({airport_city:'SAINT PETERSBURG',flight_number:'AB1234',status_text:'ESTIMATED DEPARTURE 17:45'}));mockHass={...mockHass,states:{...mockHass.states,'sensor.demo_departures':{state:'30',attributes:{flights}},'sensor.demo_arrivals':{state:'30',attributes:{flights}}}};c.hass=mockHass;});
+  for(const width of [320,390,600]){
+    await page.setViewportSize({width,height:1000});
+    await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+    await page.waitForFunction(()=>getComputedStyle(document.querySelector('oasis-flightradar-card').shadowRoot.querySelector('.flap')).width==='12px');
+    const result=await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card');return {pageOverflow:document.documentElement.scrollWidth>innerWidth,calls:mockCalls.length,boards:[...c.shadowRoot.querySelectorAll('.scroll')].map(s=>{const flap=getComputedStyle(s.querySelector('.flap')),head=s.querySelector('thead').getBoundingClientRect().height,row=s.querySelector('tbody tr').getBoundingClientRect().height;s.scrollLeft=s.scrollWidth;s.scrollTop=32;return {overflow:s.scrollWidth>s.clientWidth,left:s.scrollLeft,top:s.scrollTop,font:parseFloat(flap.fontSize),width:parseFloat(flap.width),complete:Math.floor((s.clientHeight-head)/row),sticky:getComputedStyle(s.querySelector('th')).position,fit:[...s.querySelectorAll('tbody tr:first-child td')].every(td=>td.querySelector('.flap-word').getBoundingClientRect().width<=td.clientWidth-8)};})};});
+    assert.equal(result.pageOverflow,false,JSON.stringify({width,...result}));assert.equal(result.calls,0);
+    for(const board of result.boards){assert.equal(board.overflow,true);assert.ok(board.left>0);assert.equal(board.top,32);assert.equal(board.width,12,JSON.stringify({width,...result}));assert.ok(board.font>=16);assert.equal(board.complete,10);assert.equal(board.sticky,'sticky');assert.equal(board.fit,true);}
+    assert.deepEqual(result.boards[0],result.boards[1]);
+  }
+  await page.setViewportSize({width:820,height:1000});
+  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+  await page.waitForFunction(()=>[...document.querySelector('oasis-flightradar-card').shadowRoot.querySelectorAll('.scroll')].every(s=>s.scrollWidth<=s.clientWidth+1));
+  const tablet=await page.evaluate(()=>[...document.querySelector('oasis-flightradar-card').shadowRoot.querySelectorAll('.scroll')].map(s=>({client:s.clientWidth,scroll:s.scrollWidth,flap:getComputedStyle(s.querySelector('.flap')).width,left:s.scrollLeft})));
+  assert.ok(tablet.every(s=>s.scroll<=s.client+1),JSON.stringify(tablet));
 });
 test('Secondes instantanées sur les deux horloges ; heures et minutes toujours animées',async()=>{
   await page.emulateMedia({reducedMotion:'no-preference'});
