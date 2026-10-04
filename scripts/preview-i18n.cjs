@@ -20,6 +20,11 @@ const root=path.resolve(__dirname,'..');
       await page.screenshot({path:output,fullPage:true});
       await page.locator('oasis-fr24-internal-selector .launch').click();
       assert.equal(await page.locator('oasis-fr24-internal-selector dialog').evaluate(n=>n.getBoundingClientRect().right<=innerWidth),true);
+      if(language==='hu'){
+        await page.locator('oasis-fr24-internal-selector .search').fill('Bécs');
+        assert.match(await page.locator('oasis-fr24-internal-selector .results').textContent(),/Bécs.*Ausztria/s);
+        await page.screenshot({path:path.resolve(root,'../Rapport/oasis-catalog-hu-'+width+'.png'),fullPage:true});
+      }
       assert.equal(await page.evaluate(()=>mockCalls.length),0);
       await page.close();console.log(language+' : rendu '+width+'px vérifié ; '+output);
     }
