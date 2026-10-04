@@ -29,6 +29,39 @@ test('Changement aéroport : premier rafraîchissement instantané par tableau, 
 });
 let browser,page;
 
+test('Catalogue hongrois : recherche Bécs, Ausztria, noms originaux et codes',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard();c.hass={...mockHass,locale:{language:'hu-HU'}};
+    const s=c._selector,before=JSON.stringify(s._airports);s._open();
+    const searches={};for(const query of ['Bécs','becs','Ausztria','Vienna','Vienne','Austria','Autriche','LOWW','VIE']){
+      s._search.value=query;s._renderResults();searches[query]=[...s.shadowRoot.querySelectorAll('.airport')].map(b=>({code:b.dataset.code,text:b.textContent,label:b.getAttribute('aria-label')}));
+    }
+    s._select('LOWW');const selection=s.shadowRoot.querySelector('.selection').textContent;
+    s._search.value='Budapest';s._renderResults();const draft=s._draft;
+    c.hass={...mockHass,locale:{language:'de'}};
+    const afterSwitch={search:s._search.value,draft:s._draft,text:s.shadowRoot.querySelector('.selection').textContent};
+    const unchanged=JSON.stringify(s._airports)===before,calls=mockCalls.length,disabled=s._apply.disabled;c.remove();
+    return {searches,selection,draft,afterSwitch,unchanged,calls,disabled};
+  });
+  for(const[query,results]of Object.entries(result.searches)){const vienna=results.find(a=>a.code==='LOWW');assert.ok(vienna,query);assert.match(vienna.text,/Bécs/);assert.match(vienna.text,/Ausztria/);assert.match(vienna.label,/Bécs/);}
+  assert.match(result.selection,/Bécs.*Ausztria/);assert.match(result.afterSwitch.text,/Wien.*Österreich/);
+  assert.equal(result.afterSwitch.search,'Budapest');assert.equal(result.afterSwitch.draft,'LOWW');
+  assert.equal(result.unchanged,true);assert.equal(result.calls,0);assert.equal(result.disabled,true);
+});
+test('Catalogue multilingue : chinois/arabe, repli et textes personnalisés sûrs',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard();const s=c._selector,results=[];
+    for(const[language,query]of [['zh','罗马'],['ar','فيينا'],['hu','Olaszország']]){
+      c.hass={...mockHass,locale:{language}};s._open();s._search.value=query;s._renderResults();results.push({language,codes:[...s.shadowRoot.querySelectorAll('.airport')].map(b=>b.dataset.code)});s._close();
+    }
+    s.setConfig({entity:'text.demo_airport',read_only:true,airports:[{code:'ZZZZ',name:'Original',city:'Original',country:'France',city_names:{en:'<img src=x onerror=alert(1)>',hu:'Magyar'}}]});
+    s.hass={...mockHass,locale:{language:'de'}};s._open();const text=s.shadowRoot.querySelector('.results').textContent,images=s.shadowRoot.querySelector('.results').querySelectorAll('img').length;
+    const calls=mockCalls.length;c.remove();return {results,text,images,calls};
+  });
+  assert.ok(result.results[0].codes.includes('LIRF'));assert.ok(result.results[1].codes.includes('LOWW'));assert.ok(result.results[2].codes.includes('LIRF'));
+  assert.match(result.text,/<img src=x/);assert.equal(result.images,0);assert.equal(result.calls,0);
+});
+
 test('Langue HA : changement à chaud, enfants, confirmation et éditeur sans service',async()=>{
   const result=await page.evaluate(()=>{
     const c=mountCard({read_only:false});c.hass={...mockHass,locale:{language:'en-GB'},language:'fr'};
@@ -99,7 +132,7 @@ test('Éditeur : option animations persistée sans modifier les autres réglages
 });
 before(async()=>{browser=await chromium.launch({headless:true,channel:process.env.OASIS_BROWSER_CHANNEL||'msedge'});});
 after(async()=>{await browser?.close();});
-beforeEach(async()=>{await page?.close();page=await browser.newPage({viewport:{width:1200,height:1000},timezoneId:'America/New_York'});await page.route('**/*',route=>route.abort());await page.setContent('<!doctype html><html lang="fr"><head><meta charset="utf-8"></head><body style="margin:20px;background:#1a1a17"></body></html>');await page.addScriptTag({content:fs.readFileSync(path.join(root,'dist/oasis-flightradar-card.js'),'utf8')});await page.addScriptTag({content:fs.readFileSync(path.join(__dirname,'fixture.js'),'utf8')});await page.evaluate(()=>{for(const view of document.querySelector('oasis-flightradar-card')._boardViews.values()){view.engine.animate=true;view.engine.rotate=true;const update=view.engine.update.bind(view.engine);view.engine.update=(values,message)=>update(values,message);}});});
+beforeEach(async()=>{await page?.close();page=await browser.newPage({viewport:{width:1200,height:1000},timezoneId:'America/New_York'});await page.route('**/*',route=>route.abort());await page.setContent('<!doctype html><html lang="fr"><head><meta charset="utf-8"></head><body style="margin:20px;background:#1a1a17"></body></html>');await page.addScriptTag({content:fs.readFileSync(path.join(root,'dist/oasis-flightradar-card.js'),'utf8')});await page.addScriptTag({content:fs.readFileSync(path.join(__dirname,'fixture.js'),'utf8')});await page.waitForFunction(()=>document.querySelector('oasis-flightradar-card')?._rendered);await page.evaluate(()=>{for(const view of document.querySelector('oasis-flightradar-card')._boardViews.values()){view.engine.animate=true;view.engine.rotate=true;const update=view.engine.update.bind(view.engine);view.engine.update=(values,message)=>update(values,message);}});});
 test('Carte autonome : catalogue, fuseaux, tables et suivi',async()=>{
   const result=await page.evaluate(()=>{const c=document.querySelector('oasis-flightradar-card');return {airports:c._selector._airports.length,bourget:c._selector._airports.find(a=>a.code==='LFPB').name,local:c._localClock._zone,airport:c._airportClock._zone,rows:c.shadowRoot.querySelectorAll('tbody tr').length,flight:c.shadowRoot.querySelector('.followed').textContent,link:c.shadowRoot.querySelector('.followed a').href,calls:mockCalls.length};});
   assert.equal(result.airports,1153);assert.equal(result.bourget,'Paris Le Bourget');assert.equal(result.local,'America/New_York');assert.equal(result.airport,'Europe/Paris');assert.equal(result.rows,60);assert.match(result.flight,/OA101/);assert.match(result.link,/abcd1234/);assert.equal(result.calls,0);
