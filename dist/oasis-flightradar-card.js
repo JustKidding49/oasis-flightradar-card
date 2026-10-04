@@ -1,4 +1,4 @@
-/* Oasis Flightradar Card v0.1.5
+/* Oasis Flightradar Card v0.1.6
  * SPDX-License-Identifier: GPL-3.0-only
  * Copyright (c) 2026 JustKidding49 and contributors.
  * Distributed WITHOUT ANY WARRANTY; see LICENSE and NOTICE.md.
@@ -1184,6 +1184,9 @@ const oasisRegionNames=new Map();
 function oasisCountryName(country,language,code){
   code=code||OASIS_COUNTRY_CODES[country];
   if(!code)return country||'';
+  // Home Assistant peut ne charger que la locale active de son polyfill.
+  // Les alias anglais doivent rester anglais même lorsque `en` est indisponible.
+  if(language==='en'&&OASIS_COUNTRY_NAMES_EN[code])return OASIS_COUNTRY_NAMES_EN[code];
   for(const locale of [language,'en']){
     try{
       if(!oasisRegionNames.has(locale))oasisRegionNames.set(locale,new Intl.DisplayNames([locale],{type:'region',fallback:'none'}));
