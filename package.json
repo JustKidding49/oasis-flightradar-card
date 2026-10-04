@@ -1,6 +1,6 @@
 {
   "name": "oasis-flightradar-card",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "description": "Carte Lovelace autonome : aéroport, horloges et suivi aérien",
   "scripts": { "build": "node scripts/build.cjs", "test": "node --test tests/card.test.cjs tests/i18n.test.cjs" },

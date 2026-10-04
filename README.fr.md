@@ -6,7 +6,7 @@ Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : band
 
 Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
 
-**Version 0.1.6 : catalogue et recherche géographique multilingues.** Les 38 tests locaux réussissent le 4 octobre 2026. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Le rendu réel de la version précédente a été vérifié le 4 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
+**Version 0.1.7 : tableaux lisibles et défilement horizontal sur téléphone.** Les 39 tests locaux réussissent le 4 octobre 2026. Sur les écrans de 600px maximum, les caractères restent lisibles et chaque tableau défile horizontalement ; ordinateur et tablette conservent l’ajustement automatique. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
 
 ## Langue automatique
 
@@ -33,7 +33,8 @@ Les dix langues demandées sont choisies selon le nombre total de locuteurs (lan
 - Recherche parmi 1 153 aéroports : nom, ville, pays, OACI et IATA ; saisie manuelle d’un code OACI.
 - Départs à gauche, arrivées à droite ; dix lignes visibles par défaut, en-têtes fixes et défilement. Sur écran étroit, les tableaux se placent l’un sous l’autre.
 - Tableaux au style panneaux d’aéroport : passage par les caractères intermédiaires, sans rotation des demi-panneaux. Cycle `vide → A…Z → 0…9 → : → - → vide`, parcouru dans le sens le plus court. Une cellule à la fois : Heure → Destination/Origine → Vol → Statut, puis ligne suivante ; Départs avant Arrivées. Seules les lignes visibles s’animent ; premier affichage et lignes hors écran instantanés. Les préférences de réduction du mouvement désactivent le cycle.
-- Cinq panneaux pour l’heure, six pour le numéro de vol. Destination/Origine et Statut sont dimensionnés d’après le texte le plus long parmi tous les vols reçus dans les deux tableaux ensemble, avec des panneaux vides pour compléter les cellules plus courtes. Accents normalisés, autres signes hors alphabet remplacés par des espaces ; texte original conservé pour l’accessibilité et au survol. Un identifiant de vol dépassant six caractères est tronqué visuellement, mais reste complet au survol. Taille des panneaux et largeur des colonnes adaptées à l’espace disponible pour éviter le défilement horizontal ; les textes très longs deviennent plus petits.
+- Cinq panneaux pour l’heure, six pour le numéro de vol. Destination/Origine et Statut sont dimensionnés d’après le texte le plus long parmi tous les vols reçus dans les deux tableaux ensemble, avec des panneaux vides pour compléter les cellules plus courtes. Accents normalisés, autres signes hors alphabet remplacés par des espaces ; texte original conservé pour l’accessibilité et au survol. Un identifiant de vol dépassant six caractères est tronqué visuellement, mais reste complet au survol. Sur ordinateur et tablette, les panneaux s’adaptent à l’espace disponible pour éviter le défilement horizontal.
+- Sur téléphone (largeur d’écran de 600px maximum), les panneaux conservent une largeur de 12px et des caractères d’environ 16px. Chaque tableau défile horizontalement de façon indépendante, sans faire déborder la page. Les dix lignes visibles et les en-têtes fixes sont conservés.
 - Après un changement d’aéroport, le premier rafraîchissement des vols est instantané pour chaque tableau, même si les Départs et Arrivées arrivent séparément ou après un état indisponible. Les mises à jour suivantes retrouvent leur animation habituelle.
 - Résumé des vols suivis et liens Flightradar24.
 - Police des panneaux identique aux horloges : hauteur = 1,45 × largeur et taille des caractères = 1,35 × largeur. Largeur adaptative commune aux Départs et Arrivées selon la place disponible, plafonnée à 11 px par panneau ; horloges inchangées.
@@ -53,10 +54,10 @@ Les capteurs doivent exposer un attribut `flights`, contenant une liste d’obje
 ## Installation manuelle
 
 1. Copier `dist/oasis-flightradar-card.js` dans le dossier `www` existant de Home Assistant.
-2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.6`, type **module**.
+2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.7`, type **module**.
 3. Ajouter la carte « Oasis Flightradar Card » et renseigner les entités.
 
-Le fichier autonome mesure environ 108 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.
+Le fichier autonome mesure environ 279 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.
 
 ## Configuration minimale
 
@@ -126,7 +127,7 @@ Sur un Windows disposant déjà de Microsoft Edge, les tests utilisent Edge par 
 
 `scripts/build.cjs` assemble les sources et le catalogue dans `dist/oasis-flightradar-card.js`. Ne pas modifier directement ce fichier généré. `examples/demo.html` fournit une démonstration locale, sans serveur ni connexion Home Assistant.
 
-Tests : rendu autonome, fuseaux, recherche, lecture seule, confirmations, erreurs, double validation, mobile, tableaux, données absentes, protection contre l’injection HTML, deux instances, éditeur, séquençage Départs/Arrivées, proportions des caractères et chemin minimal sur les 1 521 paires de caractères, ordre cellule par cellule et absence de défilement horizontal.
+Tests : rendu autonome, fuseaux, recherche, lecture seule, confirmations, erreurs, double validation, mobile, tableaux, données absentes, protection contre l’injection HTML, deux instances, éditeur, séquençage Départs/Arrivées, proportions des caractères et chemin minimal sur les 1 521 paires de caractères, ordre cellule par cellule, absence de défilement horizontal sur ordinateur/tablette et défilement horizontal lisible sur téléphone.
 
 Résultat local : **26 tests navigateur réussis** dans Microsoft Edge, le 3 octobre 2026. Les aperçus `docs/desktop.png` et `docs/mobile.png` utilisent uniquement des données fictives et un bandeau sans photo ; ils ne représentent pas une connexion à Home Assistant.
 
