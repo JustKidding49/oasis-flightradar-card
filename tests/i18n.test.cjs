@@ -25,6 +25,16 @@ test('Pays du catalogue : codes ISO et noms dans les treize langues',()=>{
   const oldBrowser=vm.runInNewContext(geoSource+';oasisCountryName',{Intl:{},OASIS_COUNTRY_CODES:countries,OASIS_COUNTRY_NAMES_EN:countryEnglish});
   assert.equal(oldBrowser('Hongrie','hu'),'Hungary');
 });
+test('Polyfill HA limité à la langue active : alias anglais toujours disponibles',()=>{
+  const localizedOnly=vm.runInNewContext(geoSource+';({location:oasisAirportLocation,country:oasisCountryName})',{
+    Intl:{DisplayNames:class{of(code){return new Intl.DisplayNames(['fr'],{type:'region'}).of(code);}}},
+    OASIS_COUNTRY_CODES:countries,OASIS_COUNTRY_NAMES_EN:countryEnglish,OASIS_AIRPORT_LOCALES:locations
+  });
+  const vienna=airports.find(a=>a.code==='LOWW');
+  assert.equal(localizedOnly.country('Autriche','fr'),'Autriche');
+  assert.equal(localizedOnly.country('Autriche','en'),'Austria');
+  assert.ok(localizedOnly.location(vienna,'fr').aliases.includes('Austria'));
+});
 test('Villes embarquées : correspondance OACI, traduction et repli anglais',()=>{
   for(const[code,entry]of Object.entries(locations.cities)){
     assert.equal(entry.original,airports.find(a=>a.code===code)?.city);
