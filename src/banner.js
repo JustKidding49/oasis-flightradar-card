@@ -1,5 +1,7 @@
 /* Carte de lecture seule : aucun service HA, aucune modification d'entité. */
 class OasisFr24Banner extends HTMLElement {
+  _t(key,params){return oasisTranslate(this._language||oasisLanguage(this._hass),key,params);}
+
   static cache = new Map();
   constructor() {
     super();
@@ -14,13 +16,16 @@ class OasisFr24Banner extends HTMLElement {
       @media(max-width:600px){.hero{height:190px}.label{left:20px;bottom:18px}h2{font-size:30px}}
     </style><ha-card><div class="hero"><img alt="" referrerpolicy="no-referrer"><div class="shade"></div><div class="label"><div class="code"></div><h2></h2><p class="status" aria-live="polite"></p></div></div><details class="credit" hidden><summary aria-label="Crédits de la photo" title="Crédits de la photo">ⓘ</summary><div class="credit-content"></div></details></ha-card>`;
   }
+  _translateStatic(){oasisStaticText(this,[["summary","Crédits de la photo","aria-label"],["summary","Crédits de la photo","title"]]);}
   setConfig(config) {
     if(!config.entity) throw new Error('entity est requis');
     this.config=config; this.code=undefined;
     if(this._hass) this.hass=this._hass;
   }
   set hass(hass) {
-    this._hass=hass;
+    const language=oasisLanguage(hass),changed=language!==this._language;this._language=language;this.lang=language;this.dir=['ar','ur'].includes(language)?'rtl':'ltr';
+    this._hass=hass;this._translateStatic();
+    if(changed){if(this._photoData)this.show(this.code,this._photoData);else if(this._statusKey)this.text('.status',this._statusKey);this.text('.code',this._t('AÉROPORT SUIVI')+(/^[A-Z0-9]{4}$/.test(this.code)?' · '+this.code:''));}
     if(!this.config) return;
     // preview_icao sert uniquement aux tests visuels, jamais à écrire un état HA.
     const code=String(this.config.preview_icao??hass.states[this.config.entity]?.state??'').trim().toUpperCase();
@@ -32,24 +37,24 @@ class OasisFr24Banner extends HTMLElement {
   disconnectedCallback(){this.controller?.abort();this.code=undefined;}
   getCardSize(){return 5;}
   getGridOptions(){return {columns:'full',rows:'auto'};}
-  text(selector,value){this.shadowRoot.querySelector(selector).textContent=value;}
+  text(selector,value){if(selector==='.status')this._statusKey=value;this.shadowRoot.querySelector(selector).textContent=this._t(value);}
   neutral(code,message){
-    const img=this.shadowRoot.querySelector('img');img.onload=null;img.onerror=null;img.removeAttribute('src');img.style.display='none';
-    this.text('.code',/^[A-Z0-9]{4}$/.test(code)?'AÉROPORT SUIVI · '+code:'AÉROPORT SUIVI');
-    this.text('h2',/^[A-Z0-9]{4}$/.test(code)?code:'À découvrir');this.text('.status',message);
+    this._photoData=null;const img=this.shadowRoot.querySelector('img');img.onload=null;img.onerror=null;img.removeAttribute('src');img.style.display='none';
+    this.text('.code',/^[A-Z0-9]{4}$/.test(code)?this._t('AÉROPORT SUIVI')+' · '+code:this._t('AÉROPORT SUIVI'));
+    this.text('h2',/^[A-Z0-9]{4}$/.test(code)?code:this._t("À découvrir"));this.text('.status',message);
     const credit=this.shadowRoot.querySelector('.credit');credit.hidden=true;credit.open=false;this.shadowRoot.querySelector('.credit-content').replaceChildren();
   }
   show(code,data){
-    if(code!==this.code) return;
-    this.text('h2',data.city);this.text('.status',data.local?'Photo de votre bibliothèque':'Ville desservie par l’aéroport');
+    if(code!==this.code) return;this._photoData=data;
+    this.text('h2',data.city);this.text('.status',data.local?"Photo de votre bibliothèque":"Ville desservie par l’aéroport");
     const img=this.shadowRoot.querySelector('img');img.alt=data.city;
     img.onload=()=>{if(code===this.code)img.style.display='block';};
-    img.onerror=()=>{if(code===this.code){img.style.display='none';this.text('.status','Image indisponible');}};
+    img.onerror=()=>{if(code===this.code){img.style.display='none';this.text('.status',"Image indisponible");}};
     img.src=data.url;
     const credit=this.shadowRoot.querySelector('.credit');const creditContent=this.shadowRoot.querySelector('.credit-content');creditContent.replaceChildren();
     if(!data.local){
       const a=document.createElement('a');a.href=data.page;a.target='_blank';a.rel='noopener noreferrer';a.referrerPolicy='no-referrer';a.textContent='Wikimedia Commons';
-      creditContent.append('Photo : '+data.artist+' · '+data.license+' · ',a,' · Recadrée pour le bandeau');credit.hidden=false;
+      creditContent.append(this._t("Photo : ")+data.artist+' · '+data.license+' · ',a,this._t(" · Recadrée pour le bandeau"));credit.hidden=false;
     }
   }
   async json(url,signal){
@@ -75,11 +80,11 @@ class OasisFr24Banner extends HTMLElement {
     return {city:row.cityLabel.value,url,page:info.descriptionurl,artist,license};
   }
   async update(code,signal){
-    this.neutral(code,/^[A-Z0-9]{4}$/.test(code)?'Recherche de la ville…':'Renseignez un code OACI');
+    this.neutral(code,/^[A-Z0-9]{4}$/.test(code)?"Recherche de la ville…":"Renseignez un code OACI");
     if(!/^[A-Z0-9]{4}$/.test(code))return;
     const local=this.config.local_images?.[code];
     if(local){this.show(code,{city:local.city,url:local.url,local:true});return;}
-    if(this.config.online_images===false){this.text('.status','Photo non configurée');return;}
+    if(this.config.online_images===false){this.text('.status',"Photo non configurée");return;}
     const cached=OasisFr24Banner.cache.get(code);
     if(cached&&Date.now()-cached.time<3600000){this.show(code,cached.data);return;}
     const timeout=setTimeout(()=>this.controller?.signal===signal&&this.controller.abort(),20000);
@@ -87,7 +92,7 @@ class OasisFr24Banner extends HTMLElement {
       const data=await this.lookup(code,signal);
       if(signal.aborted||code!==this.code)return;
       OasisFr24Banner.cache.set(code,{time:Date.now(),data});this.show(code,data);
-    }catch(error){if(code===this.code)this.text('.status',signal.aborted?'Recherche indisponible pour le moment':'Aucune photo disponible pour cet aéroport');}
+    }catch(error){if(code===this.code)this.text('.status',signal.aborted?"Recherche indisponible pour le moment":"Aucune photo disponible pour cet aéroport");}
     finally{clearTimeout(timeout);}
   }
 }

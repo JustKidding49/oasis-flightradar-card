@@ -16,6 +16,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 class OasisFr24Clock extends HTMLElement {
+  _t(key,params){return oasisTranslate(this._language||oasisLanguage(this._hass),key,params);}
+
   static airportZones = {
     EDDB:'Europe/Berlin',EDDL:'Europe/Berlin',EDDF:'Europe/Berlin',EDDH:'Europe/Berlin',EDDM:'Europe/Berlin',
     LOWW:'Europe/Vienna',EBBR:'Europe/Brussels',EKCH:'Europe/Copenhagen',
@@ -41,6 +43,7 @@ class OasisFr24Clock extends HTMLElement {
     };
   }
   set hass(value) {
+    const language=oasisLanguage(value);if(language!==this._language){this._language=language;this.lang=language;this._zone=null;if(this._digits)this._tick(false);}
     this._hass = value;
     if (!this._config?.airport_entity) return;
     const code = String(value.states[this._config.airport_entity]?.state || '').trim().toUpperCase();
@@ -48,9 +51,9 @@ class OasisFr24Clock extends HTMLElement {
     this._airportCode = code;
     this._lookupController?.abort();
     this._airportZone = this._config.airport_timezones?.[code] || OasisFr24Clock.airportZones[code] || null;
-    this._airportStatus = this._airportZone ? '' : 'FUSEAU INDISPONIBLE';
+    this._airportStatus = this._airportZone ? '' : "FUSEAU INDISPONIBLE";
     if (!this._airportZone && this._config.online_timezones !== false && /^[A-Z0-9]{4}$/.test(code)) {
-      this._airportStatus = 'RECHERCHE DU FUSEAU';
+      this._airportStatus = "RECHERCHE DU FUSEAU";
       this._lookupAirport(code);
     }
     if (this._digits) { this._stop(); this._tick(false); if (this.isConnected && !document.hidden) this._start(); }
@@ -159,15 +162,15 @@ class OasisFr24Clock extends HTMLElement {
       : requested;
     const title = this.shadowRoot.querySelector(".title");
     if (this._config.airport_entity) {
-      title.textContent = 'AÉROPORT · ' + (this._airportCode || '—') + ' · ' + (zone || this._airportStatus || 'EN ATTENTE').replaceAll('_',' ').toUpperCase();
+      title.textContent = this._t('AÉROPORT')+' · ' + (this._airportCode || '—') + ' · ' + (zone || this._t(this._airportStatus || 'EN ATTENTE')).replaceAll('_',' ').toUpperCase();
     }
     if (!zone) { this._formatter = null; this._zone = null; return true; }
     if (zone === this._zone) return false;
-    this._formatter = new Intl.DateTimeFormat("fr-FR", {
-      timeZone:zone, hour:"2-digit", minute:"2-digit", second:"2-digit", hourCycle:"h23"
+    this._formatter = new Intl.DateTimeFormat(this._language||"en", {
+      timeZone:zone, hour:"2-digit", minute:"2-digit", second:"2-digit", hourCycle:"h23", numberingSystem:"latn"
     });
     this._zone = this._formatter.resolvedOptions().timeZone;
-    if (!this._config.airport_entity) title.textContent = this._config.title || "HEURE LOCALE · " + this._zone.replaceAll("_"," ").toUpperCase();
+    if (!this._config.airport_entity) title.textContent = this._config.title || this._t("HEURE LOCALE · ") + this._zone.replaceAll("_"," ").toUpperCase();
     return true;
   }
   async _lookupAirport(code) {
@@ -192,7 +195,7 @@ class OasisFr24Clock extends HTMLElement {
       this._airportStatus = '';
     } catch (_) {
       if (this._lookupController !== controller || this._airportCode !== code) return;
-      this._airportStatus = 'FUSEAU INDISPONIBLE';
+      this._airportStatus = "FUSEAU INDISPONIBLE";
     } finally {
       clearTimeout(timeout);
       if (this._airportCode === code && this._digits) this._tick(false);

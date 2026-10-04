@@ -18,15 +18,17 @@ function oasisEntity(value, domains, required = false) {
     throw new Error('Entité invalide : '+(value || 'manquante')+' ; domaines attendus : '+domains.join(', '));
 }
 class OasisFlightradarCard extends HTMLElement {
+  _t(key,params){return oasisTranslate(this._language||oasisLanguage(this._hass),key,params);}
+
   constructor() {
     super(); this.attachShadow({mode:'open'}); this._sources = [];this._boardViews=new Map();this._boardScheduler=new OasisBoardScheduler();
     this.shadowRoot.innerHTML = `<style>
       :host{display:block;container-type:inline-size;color:#f4cf39;font-family:Arial,sans-serif;color-scheme:dark}
       *{box-sizing:border-box}ha-card{display:block;background:#11110f;border:1px solid #37372c;border-radius:24px;overflow:hidden;color:#f4cf39}
-      .body{padding:16px;display:grid;gap:16px}.clocks{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-      .boards{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+      .body{padding:16px;display:grid;gap:16px}.clocks{direction:ltr;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .boards{direction:ltr;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
       .board{border:1px solid #37372c;border-radius:12px;overflow:hidden;min-width:0;container-type:inline-size}
-      h3{font:600 15px Arial,sans-serif;letter-spacing:.5px;margin:0;padding:16px;background:#11110f}
+      h3{direction:var(--oasis-direction,ltr);font:600 15px Arial,sans-serif;letter-spacing:.5px;margin:0;padding:16px;background:#11110f}
       .zone-caption{font-size:10px;padding:6px;color:#c4b878;text-align:center;margin:0}
       caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
       .scroll{max-height:calc((var(--visible-rows,10) + 1)*32px);overflow:auto;container-type:inline-size;scrollbar-gutter:stable;scrollbar-color:#c6a62b #22221e;overscroll-behavior:contain}
@@ -94,6 +96,7 @@ class OasisFlightradarCard extends HTMLElement {
   }
   static getStubConfig() { return {airport_entity:'',departures_entity:'',arrivals_entity:'',read_only:true}; }
   static getConfigElement() { return document.createElement('oasis-flightradar-card-editor'); }
+  _translateStatic(){oasisStaticText(this,[[".followed","Vols suivis","aria-label"],["[data-action=\"add\"]","✈ Ajouter un vol"],["[data-action=\"remove\"]","✈ Retirer un vol"],["[data-action=\"clear\"]","✕ Effacer les suivis"],[".readonly","Lecture seule — aucune action autorisée"],["label[for=\"flight-input\"]","Numéro de vol ou indicatif"],[".cancel","Annuler"],[".submit","Confirmer"]]);}
   setConfig(config) {
     for(const key of ['read_only','online_images','online_timezones','table_animations']) if(config[key]!==undefined&&typeof config[key]!=='boolean') throw Error(key+' doit être un booléen');
     oasisEntity(config.airport_entity,['text','input_text'],true);
@@ -120,11 +123,15 @@ class OasisFlightradarCard extends HTMLElement {
     if(this._hass)this.hass=this._hass;
   }
   set hass(hass) {
-    this._hass=hass;if(!this._config)return;
+    const language=oasisLanguage(hass),languageChanged=language!==this._language;
+    this._language=language;this.lang=language;this.dir=['ar','ur'].includes(language)?'rtl':'ltr';
+    this.style.setProperty('--oasis-direction',this.dir);this._hass=hass;if(!this._config)return;
+    this._translateStatic();
     for(const child of [this._banner,this._localClock,this._airportClock,this._selector]) child.hass=hass;
     const ids=['airport_entity','departures_entity','arrivals_entity','followed_entity'];
     const sources=ids.map(k=>hass.states[this._config[k]]);
-    if(sources.some((s,i)=>s!==this._sources[i])||!this._rendered){this._sources=sources;this._renderBoards();this._renderFollowed();this._rendered=true;}
+    if(sources.some((s,i)=>s!==this._sources[i])||!this._rendered||languageChanged){this._sources=sources;this._renderBoards();this._renderFollowed();this._rendered=true;}
+    if(this._dialog.open){this.shadowRoot.querySelector('#flight-dialog-title').textContent=this._t({add:'Ajouter un vol',remove:'Retirer un vol',clear:'Effacer les suivis'}[this._action]);this.shadowRoot.querySelector('.explanation').textContent=this._t(this._action==='clear'?'Cette action effacera tous les suivis supplémentaires. Confirme pour continuer.':'Le suivi sera modifié uniquement après confirmation.');}
     this._updateButtons();
   }
   getCardSize(){return 18;}
@@ -133,12 +140,12 @@ class OasisFlightradarCard extends HTMLElement {
   disconnectedCallback(){this._boardScheduler.stop();for(const view of this._boardViews.values())view.engine.destroy();if(this._dialog.open)this._dialog.close();}
   _flights(key) {
     const entity=this._config[key],state=this._hass?.states[entity];
-    if(!entity)return {flights:[],message:'Source non configurée'};
-    if(!state||['unknown','unavailable'].includes(state.state))return {flights:[],message:'Données indisponibles'};
+    if(!entity)return {flights:[],message:this._t("Source non configurée")};
+    if(!state||['unknown','unavailable'].includes(state.state))return {flights:[],message:this._t("Données indisponibles")};
     const attribute=this._config.flights_attribute||'flights';
     const flights=state.attributes?.[attribute];
-    if(!Array.isArray(flights))return {flights:[],message:'Attribut '+attribute+' absent ou incompatible'};
-    return {flights:flights.filter(f=>f&&typeof f==='object'),message:'Aucun vol à afficher pour le moment'};
+    if(!Array.isArray(flights))return {flights:[],message:this._t("Attribut ")+attribute+this._t(" absent ou incompatible")};
+    return {flights:flights.filter(f=>f&&typeof f==='object'),message:this._t("Aucun vol à afficher pour le moment")};
   }
   _renderBoards() {
     if(!this._config)return;
@@ -161,19 +168,21 @@ class OasisFlightradarCard extends HTMLElement {
     const combined=[...data.departures.values,...data.arrivals.values];
     const sharedWidths=[5,Math.max(1,...combined.map(v=>oasisFlapText(v[1]).length)),6,Math.max(1,...combined.map(v=>oasisFlapText(v[3]).length))];
     this._boardScheduler.hold=true;
-    for(const [kind,title,cityTitle] of [['departures','DÉPARTS / DEPARTURES','Destination'],['arrivals','ARRIVÉES / ARRIVALS','Origine']]) {
+    for(const [kind,title,cityTitle] of [['departures',this._t("DÉPARTS / DEPARTURES"),this._t("Destination")],['arrivals',this._t("ARRIVÉES / ARRIVALS"),this._t("Origine")]]) {
       let view=this._boardViews.get(kind);
       if(!view){const board=document.createElement('section');board.className='board';
       const heading=document.createElement('h3');heading.textContent=title;board.append(heading);
-      const scroll=document.createElement('div');scroll.className='scroll';scroll.tabIndex=0;scroll.setAttribute('aria-label',title+' — défilement');
-      const table=document.createElement('table');const caption=document.createElement('caption');caption.textContent='Horaires dans le fuseau de l’aéroport : '+(this._airportClock._zone||'indisponible');table.append(caption);
+      const scroll=document.createElement('div');scroll.className='scroll';scroll.tabIndex=0;scroll.setAttribute('aria-label',title+this._t(" — défilement"));
+      const table=document.createElement('table');const caption=document.createElement('caption');caption.textContent=this._t("Horaires dans le fuseau de l’aéroport : ")+(this._airportClock._zone||this._t("indisponible"));table.append(caption);
       const zoneLabel=document.createElement('p');zoneLabel.className='zone-caption';zoneLabel.textContent=caption.textContent;zoneLabel.setAttribute('aria-hidden','true');board.append(zoneLabel);
       const head=document.createElement('thead'),hr=document.createElement('tr');
-      for(const label of ['Heure',cityTitle,'Vol','Statut']){const th=document.createElement('th');th.scope='col';th.textContent=label;hr.append(th);}head.append(hr);table.append(head);
+      for(const label of [this._t("Heure"),cityTitle,this._t("Vol"),this._t("Statut")]){const th=document.createElement('th');th.scope='col';th.textContent=label;hr.append(th);}head.append(hr);table.append(head);
       const body=document.createElement('tbody');
       table.append(body);scroll.append(table);board.append(scroll);container.append(board);
-      view={caption,zoneLabel,engine:new OasisSplitBoard(scroll,body,this._boardScheduler,this._config.table_animations,false)};this._boardViews.set(kind,view);}
-      view.caption.textContent='Horaires dans le fuseau de l’aéroport : '+(this._airportClock._zone||'indisponible');view.zoneLabel.textContent=view.caption.textContent;
+      view={heading,scroll,headers:[...hr.children],caption,zoneLabel,engine:new OasisSplitBoard(scroll,body,this._boardScheduler,this._config.table_animations,false)};this._boardViews.set(kind,view);}
+      view.heading.textContent=title;view.scroll.setAttribute('aria-label',title+this._t(' — défilement'));
+      view.headers.forEach((header,i)=>header.textContent=[this._t('Heure'),cityTitle,this._t('Vol'),this._t('Statut')][i]);
+      view.caption.textContent=this._t("Horaires dans le fuseau de l’aéroport : ")+(this._airportClock._zone||this._t("indisponible"));view.zoneLabel.textContent=view.caption.textContent;
       const {values,message}=data[kind];
       const source=this._hass?.states[this._config[kind+'_entity']];
       const firstAirportRefresh=this._airportBoardRefresh?.[kind]&&source!==this._airportBoardBaseline?.[kind];
@@ -190,15 +199,15 @@ class OasisFlightradarCard extends HTMLElement {
     if(!flights.length){const p=document.createElement('p');p.className='empty';p.textContent='✈ '+message;list.append(p);return;}
     for(const flight of flights) {
       const item=document.createElement('article');item.className='flight';
-      const title=document.createElement('strong');title.textContent=flight.flight_number||flight.callsign||'Vol suivi';
+      const title=document.createElement('strong');title.textContent=flight.flight_number||flight.callsign||this._t("Vol suivi");
       const airline=document.createElement('small');airline.textContent=flight.airline||flight.airline_short||'';
       const route=document.createElement('div');route.className='route';
       route.textContent=(flight.airport_origin_city||flight.airport_origin_code_iata||'—')+' → '+(flight.airport_destination_city||flight.airport_destination_code_iata||flight.airport_city||'—');
-      const details=document.createElement('small');details.className='route';details.textContent=[flight.aircraft_model,flight.aircraft_registration,flight.status_text,flight.altitude!==undefined?'Altitude : '+flight.altitude+' ft':null,flight.ground_speed!==undefined?'Vitesse : '+flight.ground_speed+' kt':null].filter(Boolean).join(' · ');
+      const details=document.createElement('small');details.className='route';details.textContent=[flight.aircraft_model,flight.aircraft_registration,flight.status_text,flight.altitude!==undefined?this._t("Altitude : ")+flight.altitude+' ft':null,flight.ground_speed!==undefined?this._t("Vitesse : ")+flight.ground_speed+' kt':null].filter(Boolean).join(' · ');
       item.append(title,airline,route,details);
       // Identifiants intégration uniquement ; jamais de HTML provenant d'un capteur.
       const flightId=flight.id||flight.flight_id;
-      if(/^[a-zA-Z0-9]+$/.test(String(flightId||''))){const link=document.createElement('a');link.href='https://www.flightradar24.com/'+encodeURIComponent(flight.callsign||flight.flight_number||'')+'/'+flightId;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';link.textContent='Voir sur Flightradar24 ↗';item.append(link);}
+      if(/^[a-zA-Z0-9]+$/.test(String(flightId||''))){const link=document.createElement('a');link.href='https://www.flightradar24.com/'+encodeURIComponent(flight.callsign||flight.flight_number||'')+'/'+flightId;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';link.textContent=this._t("Voir sur Flightradar24 ↗");item.append(link);}
       list.append(item);
     }
     list.scrollTop=scroll;
@@ -212,9 +221,9 @@ class OasisFlightradarCard extends HTMLElement {
   _openAction(action) {
     if(!this._actionAvailable(action))return;
     this._action=action;this._launcher=this.shadowRoot.querySelector('[data-action="'+action+'"]');
-    this.shadowRoot.querySelector('#flight-dialog-title').textContent={add:'Ajouter un vol',remove:'Retirer un vol',clear:'Effacer les suivis'}[action];
-    this.shadowRoot.querySelector('.explanation').textContent=action==='clear'?'Cette action effacera tous les suivis supplémentaires. Confirme pour continuer.':'Le suivi sera modifié uniquement après confirmation.';
-    this._input.value='';this._input.hidden=action==='clear';this._input.required=action!=='clear';
+    this.shadowRoot.querySelector('#flight-dialog-title').textContent={add:this._t("Ajouter un vol"),remove:this._t("Retirer un vol"),clear:this._t("Effacer les suivis")}[action];
+    this.shadowRoot.querySelector('.explanation').textContent=action==='clear'?this._t("Cette action effacera tous les suivis supplémentaires. Confirme pour continuer."):this._t("Le suivi sera modifié uniquement après confirmation.");
+    this._input.dir='ltr';this._input.value='';this._input.hidden=action==='clear';this._input.required=action!=='clear';
     this.shadowRoot.querySelector('label').hidden=action==='clear';
     this.shadowRoot.querySelector('.feedback').textContent='';this.shadowRoot.querySelector('.submit').disabled=false;
     this._dialog.showModal();(action==='clear'?this.shadowRoot.querySelector('.cancel'):this._input).focus();
@@ -222,30 +231,32 @@ class OasisFlightradarCard extends HTMLElement {
   async _submitAction() {
     if(!this._dialog.open||!this._actionAvailable(this._action)||!this.shadowRoot.querySelector('form').reportValidity())return;
     const value=this._input.value.trim().toUpperCase();
-    if(this._action!=='clear'&&!/^[A-Z0-9][A-Z0-9 -]{0,63}$/.test(value)){this.shadowRoot.querySelector('.feedback').textContent='Numéro de vol ou indicatif invalide.';return;}
+    if(this._action!=='clear'&&!/^[A-Z0-9][A-Z0-9 -]{0,63}$/.test(value)){this.shadowRoot.querySelector('.feedback').textContent=this._t("Numéro de vol ou indicatif invalide.");return;}
     const entity=this._actionEntity(this._action),domain=entity.split('.')[0];
     this._busy=true;this._updateButtons();this.shadowRoot.querySelector('.submit').disabled=true;
     try {
       // Seul point d'écriture : formulaire validé par l'utilisateur, jamais par le rendu.
       await this._hass.callService(domain,this._action==='clear'?'press':'set_value',this._action==='clear'?{entity_id:entity}:{entity_id:entity,value});
       this._dialog.close();
-    } catch (_) {this.shadowRoot.querySelector('.feedback').textContent='Action impossible. Vérifie ta connexion et tes droits.';}
+    } catch (_) {this.shadowRoot.querySelector('.feedback').textContent=this._t("Action impossible. Vérifie ta connexion et tes droits.");}
     finally {this._busy=false;this._updateButtons();this.shadowRoot.querySelector('.submit').disabled=false;}
   }
 }
 class OasisFlightradarCardEditor extends HTMLElement {
   constructor(){super();this.attachShadow({mode:'open'});}
+  _t(key){return oasisTranslate(this._language||'en',key);}
+  set hass(hass){const language=oasisLanguage(hass);if(language===this._language)return;this._language=language;this.lang=language;this.dir=['ar','ur'].includes(language)?'rtl':'ltr';if(this._config)this._render();}
   setConfig(config){this._config={...config};this._render();}
   _render(){
     this.shadowRoot.innerHTML='<style>label{display:block;margin:12px 0;font:14px system-ui}input{display:block;box-sizing:border-box;width:100%;padding:10px;background:var(--card-background-color);color:var(--primary-text-color);border:1px solid var(--divider-color);border-radius:6px}</style>';
-    for(const [key,label] of [['airport_entity','Aéroport (text / input_text)'],['departures_entity','Capteur des départs'],['arrivals_entity','Capteur des arrivées'],['followed_entity','Capteur des vols suivis'],['add_entity','Ajouter un vol (text / input_text)'],['remove_entity','Retirer un vol (text / input_text)'],['clear_entity','Effacer les suivis (button / input_button)'],['visible_rows','Lignes visibles (1–30)']]) {
+    for(const [key,label] of [['airport_entity',this._t("Aéroport (text / input_text)")],['departures_entity',this._t("Capteur des départs")],['arrivals_entity',this._t("Capteur des arrivées")],['followed_entity',this._t("Capteur des vols suivis")],['add_entity',this._t("Ajouter un vol (text / input_text)")],['remove_entity',this._t("Retirer un vol (text / input_text)")],['clear_entity',this._t("Effacer les suivis (button / input_button)")],['visible_rows',this._t("Lignes visibles (1–30)")]]) {
       const wrapper=document.createElement('label');wrapper.textContent=label;const input=document.createElement('input');input.value=this._config[key]??(key==='visible_rows'?10:'');
       if(key==='visible_rows'){input.type='number';input.min=1;input.max=30;input.step=1;}
       input.addEventListener('change',()=>{if(!input.reportValidity())return;if(input.value)this._config[key]=key==='visible_rows'?Number(input.value):input.value.trim();else delete this._config[key];this._emit();});wrapper.append(input);this.shadowRoot.append(wrapper);
     }
-    const label=document.createElement('label');label.textContent='Lecture seule';const check=document.createElement('input');check.type='checkbox';check.checked=this._config.read_only!==false;check.addEventListener('change',()=>{this._config.read_only=check.checked;this._emit();});label.append(check);this.shadowRoot.append(label);
-    const animationLabel=document.createElement('label');animationLabel.textContent='Animations des tableaux Départs et Arrivées';const animationCheck=document.createElement('input');animationCheck.type='checkbox';animationCheck.checked=this._config.table_animations!==false;animationCheck.addEventListener('change',()=>{this._config.table_animations=animationCheck.checked;this._emit();});animationLabel.append(animationCheck);this.shadowRoot.append(animationLabel);
-    const help=document.createElement('p');help.textContent='Photos locales, fuseaux personnalisés et correspondances de champs : disponibles dans l’éditeur de code.';this.shadowRoot.append(help);
+    const label=document.createElement('label');label.textContent=this._t("Lecture seule");const check=document.createElement('input');check.type='checkbox';check.checked=this._config.read_only!==false;check.addEventListener('change',()=>{this._config.read_only=check.checked;this._emit();});label.append(check);this.shadowRoot.append(label);
+    const animationLabel=document.createElement('label');animationLabel.textContent=this._t("Animations des tableaux Départs et Arrivées");const animationCheck=document.createElement('input');animationCheck.type='checkbox';animationCheck.checked=this._config.table_animations!==false;animationCheck.addEventListener('change',()=>{this._config.table_animations=animationCheck.checked;this._emit();});animationLabel.append(animationCheck);this.shadowRoot.append(animationLabel);
+    const help=document.createElement('p');help.textContent=this._t("Photos locales, fuseaux personnalisés et correspondances de champs : disponibles dans l’éditeur de code.");this.shadowRoot.append(help);
   }
   _emit(){this.dispatchEvent(new CustomEvent('config-changed',{detail:{config:{...this._config}},bubbles:true,composed:true}));}
 }

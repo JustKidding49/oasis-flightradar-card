@@ -1,5 +1,7 @@
 // Sélecteur propre au dashboard : aucune écriture avant validation utilisateur.
 class OasisFr24Selector extends HTMLElement {
+  _t(key,params){return oasisTranslate(this._language||oasisLanguage(this._hass),key,params);}
+
   constructor() {
     super();
     this.attachShadow({mode:'open'});
@@ -8,10 +10,10 @@ class OasisFr24Selector extends HTMLElement {
         :host{display:block;color:#f4cf39;font-family:Arial,sans-serif}
         *{box-sizing:border-box}button,input{font:inherit}button{cursor:pointer}
         button:focus-visible,input:focus-visible{outline:2px solid #f4cf39;outline-offset:3px}
-        .launch{width:100%;min-height:56px;display:flex;align-items:center;gap:12px;text-align:left;padding:9px 16px;background:#11110f;color:#f4cf39;border:1px solid #37372c;border-radius:12px;box-shadow:0 5px 18px #0003}
+        .launch{width:100%;min-height:56px;display:flex;align-items:center;gap:12px;text-align:start;padding:9px 16px;background:#11110f;color:#f4cf39;border:1px solid #37372c;border-radius:12px;box-shadow:0 5px 18px #0003}
         .icon{display:grid;place-items:center;background:#28271c;border-radius:50%;width:36px;height:36px;font-size:22px}
         .label{font-size:14px;letter-spacing:.5px}.code{display:table;font:700 12px 'Courier New',monospace;letter-spacing:3px;padding:2px 6px;margin-top:3px;background:repeating-linear-gradient(90deg,#27271f 0 6px,#20201a 6px 7px)}
-        .change{margin-left:auto;font-size:10px;letter-spacing:1.4px;color:#c4b878}
+        .change{margin-inline-start:auto;font-size:10px;letter-spacing:1.4px;color:#c4b878}
         dialog{width:min(620px,calc(100vw - 28px));max-height:calc(100dvh - 28px);padding:0;background:#11110f;color:#f4cf39;border:1px solid #514829;border-radius:20px;box-shadow:0 24px 100px #000b;overflow:auto;color-scheme:dark}
         dialog::backdrop{background:#000a;backdrop-filter:blur(5px)}
         form{margin:0;padding:24px}header{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
@@ -58,6 +60,7 @@ class OasisFr24Selector extends HTMLElement {
     this._input.addEventListener('input',()=>this._select(this._input.value));
     this._form.addEventListener('submit',event=>{event.preventDefault();this._save();});
   }
+  _translateStatic(){oasisStaticText(this,[[".launch","Choisir un aéroport","aria-label"],[".label","AÉROPORT"],[".change","CHOISIR ›"],[".eyebrow","OASIS · SUIVI AÉRIEN"],["h2","Choisir un aéroport"],[".close","Fermer","aria-label"],["label[for=\"airport-search\"]","VILLE, AÉROPORT, PAYS, CODE OACI OU IATA"],[".search","Ex. Nantes, Tokyo, KJFK, DXB…","placeholder"],[".results","Aéroports proposés","aria-label"],["label[for=\"airport-code\"]","CODE OACI"],[".cancel","Annuler"],[".apply","Suivre cet aéroport"]]);}
   setConfig(config) {
     if (!/^(text|input_text)\.[a-z0-9_]+$/.test(config.entity || '')) throw new Error('Une entité text ou input_text est requise');
     this._config = config;
@@ -65,7 +68,8 @@ class OasisFr24Selector extends HTMLElement {
     if(this._hass) this.hass=this._hass;
   }
   set hass(value) {
-    this._hass=value;
+    const language=oasisLanguage(value),changed=language!==this._language;this._language=language;this.lang=language;this.dir=['ar','ur'].includes(language)?'rtl':'ltr';
+    this._hass=value;this._translateStatic();this._input.dir='ltr';
     if(!this._config)return;
     const entity=value.states[this._config.entity];
     this._available=!!entity&&entity.state!=='unavailable';
@@ -74,8 +78,8 @@ class OasisFr24Selector extends HTMLElement {
     this.shadowRoot.querySelector('.code').textContent=/^[A-Z]{4}$/.test(this._current)?this._current:'—';
     const current=this.shadowRoot.querySelector('.current');
     const airport=this._airports.find(a=>a.code===this._current);
-    current.textContent='Actuellement suivi : '+this._current+(airport?' · '+airport.name:'');
-    if(this._dialog.open)this._updateApply();
+    current.textContent=this._t("Actuellement suivi : ")+this._current+(airport?' · '+airport.name:'');
+    if(this._dialog.open){if(changed){this._select(this._draft);this._renderResults();}this._updateApply();}
   }
   disconnectedCallback(){if(this._dialog.open)this._dialog.close();}
   getCardSize(){return 1;}
@@ -92,7 +96,7 @@ class OasisFr24Selector extends HTMLElement {
   _select(value){
     this._draft=String(value).trim().toUpperCase();this._input.value=this._draft;
     const airport=this._airports.find(a=>a.code===this._draft);
-    this.shadowRoot.querySelector('.selection').textContent=airport?airport.name+' · '+airport.country:/^[A-Z]{4}$/.test(this._draft)?'Code personnalisé · vérifie qu’il correspond à un aéroport.':'Sélectionne un aéroport ou saisis ses 4 lettres.';
+    this.shadowRoot.querySelector('.selection').textContent=airport?airport.name+' · '+airport.country:/^[A-Z]{4}$/.test(this._draft)?this._t("Code personnalisé · vérifie qu’il correspond à un aéroport."):this._t("Sélectionne un aéroport ou saisis ses 4 lettres.");
     this.shadowRoot.querySelector('.message').textContent='';
     this._updateApply();
     for(const b of this.shadowRoot.querySelectorAll('.airport')) b.setAttribute('aria-pressed',String(b.dataset.code===this._draft));
@@ -102,22 +106,22 @@ class OasisFr24Selector extends HTMLElement {
     const rows=this._airports.filter(a=>OasisFr24Selector.matches(a,this._search.value));
     const list=this.shadowRoot.querySelector('.results');list.replaceChildren();
     const visible=rows.slice(0,this._limit||80);
-    this.shadowRoot.querySelector('.count').textContent=rows.length+' aéroport'+(rows.length===1?'':'s')+(visible.length<rows.length?' · '+visible.length+' affichés — affine ta recherche':'');
+    this.shadowRoot.querySelector('.count').textContent=this._t(rows.length===1?'{count} aéroport':'{count} aéroports',{count:rows.length})+(visible.length<rows.length?this._t(' · {count} affichés — affine ta recherche',{count:visible.length}):'');
     for(const airport of visible){
       const button=document.createElement('button');button.type='button';button.className='airport';button.dataset.code=airport.code;button.setAttribute('aria-pressed',String(airport.code===this._draft));button.setAttribute('aria-label',airport.name+', '+airport.code);
       for(const [cls,text] of [['name',airport.name],['country',airport.country+(airport.iata?' · IATA '+airport.iata:'')],['icao',airport.code]]){const span=document.createElement('span');span.className=cls;span.textContent=text;button.append(span);}
       button.addEventListener('click',()=>this._select(airport.code));list.append(button);
     }
-    if(visible.length<rows.length){const more=document.createElement('button');more.type='button';more.className='more';more.textContent='Afficher davantage';more.addEventListener('click',()=>{this._limit=(this._limit||80)+80;this._renderResults();});list.append(more);}
-    if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent='Aucun résultat. Tu peux saisir un autre code OACI ci-dessous.';list.append(p);}
+    if(visible.length<rows.length){const more=document.createElement('button');more.type='button';more.className='more';more.textContent=this._t("Afficher davantage");more.addEventListener('click',()=>{this._limit=(this._limit||80)+80;this._renderResults();});list.append(more);}
+    if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent=this._t("Aucun résultat. Tu peux saisir un autre code OACI ci-dessous.");list.append(p);}
   }
   async _save(){
     if(this._apply.disabled||!this._hass||!this._form.reportValidity())return;
     // Unique écriture : appelée exclusivement par la validation du formulaire.
-    const code=this._draft;this._busy=true;this._updateApply();this._apply.textContent='Enregistrement…';
+    const code=this._draft;this._busy=true;this._updateApply();this._apply.textContent=this._t("Enregistrement…");
     try{await this._hass.callService(this._config.entity.split('.')[0],'set_value',{entity_id:this._config.entity,value:code});this._dialog.close();}
-    catch(_){this.shadowRoot.querySelector('.message').textContent='Impossible de modifier le suivi. Vérifie ta connexion et tes droits, puis réessaie.';}
-    finally{this._busy=false;this._apply.textContent='Suivre cet aéroport';this._updateApply();}
+    catch(_){this.shadowRoot.querySelector('.message').textContent=this._t("Impossible de modifier le suivi. Vérifie ta connexion et tes droits, puis réessaie.");}
+    finally{this._busy=false;this._apply.textContent=this._t("Suivre cet aéroport");this._updateApply();}
   }
 }
 if(!customElements.get('oasis-fr24-internal-selector'))customElements.define('oasis-fr24-internal-selector',OasisFr24Selector);
