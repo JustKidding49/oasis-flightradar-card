@@ -50,7 +50,9 @@ class OasisSplitBoard {
     // Largeur uniforme par colonne, calculée sur tous les vols, pas seulement les visibles.
     const widths=sharedWidths||[5,Math.max(1,...values.map(v=>oasisFlapText(v[1]).length)),6,Math.max(1,...values.map(v=>oasisFlapText(v[3]).length))];
     const total=widths.reduce((a,b)=>a+b,0);
-    this.scroll.style.setProperty('--flap-width',`clamp(.1px,calc((100cqi - 80px) / ${total} - .5px),11px)`);
+    this.scroll.style.setProperty('--fit-flap-width',`clamp(.1px,calc((100cqi - 80px) / ${total} - .5px),11px)`);
+    // Téléphone : panneaux lisibles, colonnes complètes et défilement local.
+    this.scroll.style.setProperty('--mobile-table-width',`${(total+8)*12.5}px`);
     let columns=this.scroll.querySelector('colgroup');
     if(!columns){columns=document.createElement('colgroup');this.scroll.querySelector('table').prepend(columns);}
     columns.replaceChildren(...widths.map(count=>{const col=document.createElement('col');col.style.width=`${100*(count+2)/(total+8)}%`;return col;}));

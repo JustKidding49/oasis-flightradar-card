@@ -31,7 +31,7 @@ class OasisFlightradarCard extends HTMLElement {
       h3{direction:var(--oasis-direction,ltr);font:600 15px Arial,sans-serif;letter-spacing:.5px;margin:0;padding:16px;background:#11110f}
       .zone-caption{font-size:10px;padding:6px;color:#c4b878;text-align:center;margin:0}
       caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
-      .scroll{max-height:calc((var(--visible-rows,10) + 1)*32px);overflow:auto;container-type:inline-size;scrollbar-gutter:stable;scrollbar-color:#c6a62b #22221e;overscroll-behavior:contain}
+      .scroll{--flap-width:var(--phone-flap-width,var(--fit-flap-width,11px));max-height:calc((var(--visible-rows,10) + 1)*32px + var(--phone-scrollbar-space,0px));overflow:auto;container-type:inline-size;scrollbar-gutter:stable;scrollbar-color:#c6a62b #22221e;overscroll-behavior:contain}
       table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0}tr{height:32px}
       th,td{height:32px;padding:5px 4px;line-height:20px;text-align:left;white-space:nowrap}
       th{position:sticky;top:0;z-index:1;background:#292923;color:#f8efd0;font:500 8px Arial,sans-serif;text-transform:uppercase;border-bottom:2px solid #050504;overflow:hidden}
@@ -72,6 +72,13 @@ class OasisFlightradarCard extends HTMLElement {
       footer{display:flex;justify-content:flex-end;gap:10px;margin-top:16px}.submit{background:#f4cf39;color:#16160f}.feedback{min-height:18px;color:#f5be72;font-size:12px}
       .readonly{color:#c4b878;text-align:center;font-size:11px;margin:0}[hidden]{display:none!important}
       @container(max-width:650px){.boards{grid-template-columns:1fr}.body{padding:10px;gap:10px}.clocks{gap:8px}.actions{gap:6px}.actions button{padding:8px 4px;font-size:11px}}
+      @media(max-width:600px){
+        :host{--phone-flap-width:12px;--phone-scrollbar-space:18px}
+        .board{position:relative}
+        .scroll .flap-word,.scroll .flap{--flap-width:12px}
+        .scroll table{min-width:var(--mobile-table-width,100%)}
+        .scroll th{font-size:10px}
+      }
     </style><ha-card>
       <oasis-fr24-internal-banner></oasis-fr24-internal-banner>
       <div class="body"><div class="clocks"><oasis-fr24-internal-clock class="local"></oasis-fr24-internal-clock><oasis-fr24-internal-clock class="airport-clock"></oasis-fr24-internal-clock></div>
