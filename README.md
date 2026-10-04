@@ -4,7 +4,7 @@ An airport-style Home Assistant dashboard card: city banner, split-flap clocks, 
 
 [Latest release](https://github.com/JustKidding49/oasis-flightradar-card/releases/latest) · [Français](README.fr.md) · [Report an issue](https://github.com/JustKidding49/oasis-flightradar-card/issues)
 
-**Version 0.1.4 · GPL-3.0-only · Maintained by JustKidding49**
+**Version 0.1.5 · GPL-3.0-only · Maintained by JustKidding49**
 
 Available as a **custom HACS repository**, not yet in the default catalog.
 
@@ -14,7 +14,15 @@ The card and visual editor follow the current user's Home Assistant interface la
 
 Supported languages: French, English, German, Spanish, Italian, Hungarian, Portuguese, Indonesian, Chinese (Simplified), Hindi, Bengali, Arabic and Urdu. Regional variants such as `en-GB`, `pt-BR` and `hu-HU` use their base translation. Unsupported or missing language settings, as well as missing translation entries, fall back to English. Translations are bundled locally; no translation service or network request is used.
 
-Arabic and Urdu interfaces use right-to-left layout. Flight boards retain the same left-to-right column order; ICAO codes and clock digits remain left-to-right and clocks retain 24-hour Latin digits. Airport names, countries, sensor statuses, photo metadata and custom titles remain as supplied by their source; the card does not translate or modify integration data. Translation wording welcomes review by native speakers.
+Arabic and Urdu interfaces use right-to-left layout. Flight boards retain the same left-to-right column order; ICAO codes and clock digits remain left-to-right and clocks retain 24-hour Latin digits. Sensor statuses, photo metadata and custom titles remain as supplied by their source; the card does not modify integration data. Translation wording welcomes review by native speakers.
+
+### Localized airport search
+
+The search dialog displays and searches city/country names in the Home Assistant language. For example, Hungarian `Bécs` / `becs` or `Ausztria` finds Vienna (`LOWW`, `VIE`). Original names, English city/country names and ICAO/IATA codes remain searchable. Results are sorted by localized country and airport title; changing language preserves the current search and provisional selection without submitting it.
+
+All 217 catalog countries/territories have ISO region mappings. Country display names use the browser's local `Intl.DisplayNames` data, with bundled English names as a fallback. The embedded Wikidata snapshot (October 4, 2026, CC0) identifies cities for 845 of 1,153 airports; translation availability varies (760 Hungarian labels). Missing city translations fall back to English, and unmatched cities retain their original catalog city name. Coverage is not claimed to be complete. Official airport names, patronyms and brands are preserved; the localized city is displayed alongside them when needed. No online translation/search request is made.
+
+Custom `airports` entries can provide `country_code` (ISO region) and `city_names` (for example `{en: "Vienna", hu: "Bécs"}`). A custom city override never inherits translations for a different bundled city with the same ICAO code. Only the selector/catalog display is localized; flight sensor data and banner photo metadata are unchanged.
 
 The ten-language set follows total speakers (first and second language), using the [2026 Ethnologue ranking reproduced here](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers), not a native-speaker-only ranking. German, Italian and Hungarian are additionally included.
 
@@ -70,7 +78,7 @@ HACS manages the resource version query in storage-mode dashboards. If an old co
 
 ### Manual installation
 
-Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.4` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
+Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.5` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
 
 ## Configuration
 
@@ -152,7 +160,7 @@ node scripts/screenshots.cjs
 
 On Linux/macOS, use `OASIS_BROWSER_CHANNEL=chromium npm test` and the same prefix for screenshots. Tests default to Microsoft Edge without a channel override. `scripts/build.cjs` generates `dist/oasis-flightradar-card.js`; do not edit it directly. `examples/demo.html` runs with synthetic data offline.
 
-**32 automated tests passed** on October 4, 2026. Network requests are blocked and services/airport changes are simulated. Coverage includes safeguards, confirmation/errors, responsive layout, time zones, HTML injection prevention, multiple instances, character cycling, airport-switch first refresh, all 13 interface languages, complete translation keys, regional language variants and live language changes without service calls.
+**37 automated tests passed** on October 4, 2026. Network requests are blocked and services/airport changes are simulated. Coverage includes safeguards, confirmation/errors, responsive layout, time zones, HTML injection prevention, multiple instances, character cycling, airport-switch first refresh, all 13 interface languages, complete translation keys, regional language variants, live language changes, localized city/country search and original-name/code compatibility without service calls.
 
 The maintainer reports action tests on the ChatGPT test dashboard and phone/tablet rendering checks as passed. These are maintainer-reported acceptance results, not additional automated tests. No exhaustive HA/browser/Companion compatibility matrix is claimed.
 
