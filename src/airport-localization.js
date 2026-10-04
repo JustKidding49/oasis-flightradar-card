@@ -39,6 +39,9 @@ const oasisRegionNames=new Map();
 function oasisCountryName(country,language,code){
   code=code||OASIS_COUNTRY_CODES[country];
   if(!code)return country||'';
+  // Home Assistant peut ne charger que la locale active de son polyfill.
+  // Les alias anglais doivent rester anglais même lorsque `en` est indisponible.
+  if(language==='en'&&OASIS_COUNTRY_NAMES_EN[code])return OASIS_COUNTRY_NAMES_EN[code];
   for(const locale of [language,'en']){
     try{
       if(!oasisRegionNames.has(locale))oasisRegionNames.set(locale,new Intl.DisplayNames([locale],{type:'region',fallback:'none'}));
