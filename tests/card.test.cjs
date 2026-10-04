@@ -28,6 +28,42 @@ test('Changement aéroport : premier rafraîchissement instantané par tableau, 
   assert.equal(result.calls,0);
 });
 let browser,page;
+
+test('Langue HA : changement à chaud, enfants, confirmation et éditeur sans service',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard({read_only:false});c.hass={...mockHass,locale:{language:'en-GB'},language:'fr'};
+    c._selector._open();c._selector._select('LHBP');c._selector._search.value='Budapest';c._selector._renderResults();
+    c._openAction('add');c._input.value='OA123';
+    const editor=document.createElement('oasis-flightradar-card-editor');editor.hass=c._hass;editor.setConfig({...mockConfig,table_animations:false,airport_timezones:{LFPB:'Europe/Paris'}});document.body.append(editor);
+    let events=0;editor.addEventListener('config-changed',()=>events++);
+    const initial={button:c.shadowRoot.querySelector('[data-action=add]').textContent,heading:c.shadowRoot.querySelector('h3').textContent,clock:c._localClock.shadowRoot.querySelector('.title').textContent,banner:c._banner.shadowRoot.querySelector('.status').textContent,selector:c._selector.shadowRoot.querySelector('h2').textContent,editor:editor.shadowRoot.textContent};
+    c.hass={...mockHass,locale:{language:'hu'}};editor.hass=c._hass;
+    const changed={heading:c.shadowRoot.querySelector('h3').textContent,dialog:c.shadowRoot.querySelector('#flight-dialog-title').textContent,input:c._input.value,draft:c._selector._draft,search:c._selector._search.value,open:c._dialog.open,editor:editor.shadowRoot.textContent,banner:c._banner.shadowRoot.querySelector('.status').textContent,events,animations:editor._config.table_animations,zone:editor._config.airport_timezones.LFPB,calls:mockCalls.length};
+    c.remove();return {initial,changed};
+  });
+  assert.equal(result.initial.button,'✈ Add a flight');assert.equal(result.initial.heading,'DEPARTURES');
+  assert.match(result.initial.clock,/LOCAL TIME/);assert.equal(result.initial.banner,'Photo not configured');
+  assert.equal(result.initial.selector,'Choose an airport');assert.match(result.initial.editor,/Departures sensor/);
+  assert.equal(result.changed.heading,'INDULÁSOK / DEPARTURES');assert.equal(result.changed.dialog,'Járat hozzáadása');
+  assert.equal(result.changed.input,'OA123');assert.equal(result.changed.draft,'LHBP');assert.equal(result.changed.search,'Budapest');assert.equal(result.changed.open,true);
+  assert.match(result.changed.editor,/Indulási érzékelő/);assert.equal(result.changed.banner,'Nincs beállított fotó');
+  assert.equal(result.changed.events,0);assert.equal(result.changed.calls,0);assert.equal(result.changed.animations,false);assert.equal(result.changed.zone,'Europe/Paris');
+});
+
+test('Treize langues, données inchangées, écriture RTL et codes/horloges LTR',async()=>{
+  const result=await page.evaluate(()=>{
+    const c=mountCard();const rows=[];
+    for(const language of ['fr','en','de','es','it','hu','pt-BR','id','zh-Hans','hi','bn','ar','ur']){
+      c.hass={...mockHass,locale:{language}};
+      rows.push({language:c.lang,dir:c.dir,title:c.shadowRoot.querySelector('h3').textContent,time:c._localClock._value,boards:getComputedStyle(c.shadowRoot.querySelector('.boards')).direction,clocks:getComputedStyle(c.shadowRoot.querySelector('.clocks')).direction,flight:c.shadowRoot.querySelector('.flight strong').textContent});
+    }
+    c.hass={...mockHass,locale:{language:'xx'}};const fallback=c.shadowRoot.querySelector('[data-action=add]').textContent;
+    c.remove();return {rows,fallback,calls:mockCalls.length};
+  });
+  assert.equal(new Set(result.rows.map(r=>r.title)).size,13);
+  for(const row of result.rows){assert.equal(row.dir,['ar','ur'].includes(row.language)?'rtl':'ltr');assert.match(row.time,/^[0-9]{6}$/);assert.equal(row.boards,'ltr');assert.equal(row.clocks,'ltr');assert.equal(row.flight,'OA101');}
+  assert.equal(result.fallback,'✈ Add a flight');assert.equal(result.calls,0);
+});
 test('Option animations : valeur par défaut, arrêt immédiat et réactivation des deux tableaux',async()=>{
   const result=await page.evaluate(()=>{
     const c=mountCard();c.shadowRoot.querySelector('.boards').scrollIntoView();
@@ -52,10 +88,10 @@ test('Éditeur : option animations persistée sans modifier les autres réglages
   const result=await page.evaluate(()=>{
     const editor=document.createElement('oasis-flightradar-card-editor');editor.setConfig({...mockConfig,airport_timezones:{LFPB:'Europe/Paris'}});document.body.append(editor);
     let last;editor.addEventListener('config-changed',e=>last=e.detail.config);
-    const label=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Animations des tableaux'));
+    const label=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Departures and Arrivals table animations'));
     const check=label.querySelector('input');const initial=check.checked;
     check.checked=false;check.dispatchEvent(new Event('change'));const disabled=last.table_animations;
-    editor.setConfig(last);const persisted=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Animations des tableaux')).querySelector('input');
+    editor.setConfig(last);const persisted=[...editor.shadowRoot.querySelectorAll('label')].find(l=>l.textContent.includes('Departures and Arrivals table animations')).querySelector('input');
     const restored=persisted.checked;persisted.checked=true;persisted.dispatchEvent(new Event('change'));
     return {initial,disabled,restored,enabled:last.table_animations,read_only:last.read_only,zone:last.airport_timezones.LFPB};
   });

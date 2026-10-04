@@ -2,7 +2,7 @@
 window.mockCalls=[];
 window.mockConfig={type:'custom:oasis-flightradar-card',airport_entity:'text.demo_airport',departures_entity:'sensor.demo_departures',arrivals_entity:'sensor.demo_arrivals',followed_entity:'sensor.demo_followed',add_entity:'text.demo_add',remove_entity:'text.demo_remove',clear_entity:'button.demo_clear',read_only:true,online_images:false,online_timezones:false};
 const flights=Array.from({length:30},(_,i)=>({time_scheduled_departure:1791025200+i*600,time_scheduled_arrival:1791028800+i*600,airport_city:['Londres','Budapest','Amsterdam','Rome','New York'][i%5],flight_number:'OA'+(100+i),status_text:i%4?'À L’HEURE':'RETARDÉ'}));
-window.mockHass={states:{
+window.mockHass={locale:{language:'fr'},states:{
   'text.demo_airport':{state:'LFPB',attributes:{}},
   'sensor.demo_departures':{state:'30',attributes:{flights}},
   'sensor.demo_arrivals':{state:'30',attributes:{flights}},
