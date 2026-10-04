@@ -23,11 +23,11 @@ class OasisFr24Selector extends HTMLElement {
         label{display:block;font-size:11px;letter-spacing:1px;color:#c4b878;margin-bottom:7px}
         input{width:100%;height:44px;border-radius:9px;border:1px solid #464330;background:#20201a;color:#fff4c1;padding:0 12px}
         input::placeholder{color:#a69e7e}.search{margin-bottom:10px}.count{font-size:11px;color:#aa9d6b;margin:10px 0}
-        .results{max-height:32dvh;min-height:100px;overflow:auto;scrollbar-color:#aa8d30 #20201a;display:grid;align-content:start;gap:5px;padding-right:5px}
+        .results{max-height:32dvh;min-height:100px;overflow:auto;scrollbar-color:#aa8d30 #20201a;display:grid;align-content:start;gap:5px;padding-inline-end:5px}
         .more{padding:12px;color:#f4cf39;background:#20201a;border:1px solid #514829;border-radius:8px}
-        .airport{display:grid;grid-template-columns:1fr auto;gap:4px 12px;width:100%;text-align:left;padding:11px 12px;border-radius:8px;border:1px solid #2e2e23;background:#1a1a16;color:#f4cf39}
+        .airport{display:grid;grid-template-columns:1fr auto;gap:4px 12px;width:100%;text-align:start;padding:11px 12px;border-radius:8px;border:1px solid #2e2e23;background:#1a1a16;color:#f4cf39}
         .airport:hover{background:#29271c;border-color:#78652a}.airport[aria-pressed=true]{border-color:#f4cf39;background:#33301c}
-        .airport .name{font-size:13px}.airport .country{grid-column:1;font-size:10px;color:#b1a578}.airport .icao{grid-column:2;grid-row:1/3;align-self:center;font:700 17px 'Courier New',monospace;letter-spacing:2px}
+        .airport .name{font-size:13px}.airport .country{grid-column:1;font-size:10px;color:#b1a578}.airport .icao{grid-column:2;grid-row:1/3;align-self:center;direction:ltr;font:700 17px 'Courier New',monospace;letter-spacing:2px}
         .empty{font-size:12px;color:#c4b878;padding:18px 8px;margin:0}
         .manual{border-top:1px solid #37372c;padding-top:16px;margin-top:18px;display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:end}
         .manual input{font:700 21px 'Courier New',monospace;letter-spacing:3px;text-transform:uppercase}.selection{font-size:12px;color:#c4b878;line-height:1.6;margin:0 0 3px;overflow-wrap:anywhere}
@@ -65,6 +65,7 @@ class OasisFr24Selector extends HTMLElement {
     if (!/^(text|input_text)\.[a-z0-9_]+$/.test(config.entity || '')) throw new Error('Une entité text ou input_text est requise');
     this._config = config;
     this._airports = Array.isArray(config.airports) ? config.airports : [];
+    this._localizedCatalog=new Map();
     if(this._hass) this.hass=this._hass;
   }
   set hass(value) {
@@ -78,14 +79,14 @@ class OasisFr24Selector extends HTMLElement {
     this.shadowRoot.querySelector('.code').textContent=/^[A-Z]{4}$/.test(this._current)?this._current:'—';
     const current=this.shadowRoot.querySelector('.current');
     const airport=this._airports.find(a=>a.code===this._current);
-    current.textContent=this._t("Actuellement suivi : ")+this._current+(airport?' · '+airport.name:'');
+    current.textContent=this._t("Actuellement suivi : ")+this._current+(airport?' · '+oasisAirportLocation(airport,this._language).name:'');
     if(this._dialog.open){if(changed){this._select(this._draft);this._renderResults();}this._updateApply();}
   }
   disconnectedCallback(){if(this._dialog.open)this._dialog.close();}
   getCardSize(){return 1;}
   getGridOptions(){return {columns:'full',rows:1};}
   static normalize(value){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
-  static matches(airport,query){const haystack=OasisFr24Selector.normalize([airport.name,airport.city||'',airport.country,airport.code,airport.iata||''].join(' '));return OasisFr24Selector.normalize(query.trim()).split(/\s+/).every(word=>haystack.includes(word));}
+  static matches(airport,query,language='en'){const haystack=OasisFr24Selector.normalize(oasisAirportLocation(airport,language).aliases.join(' '));return OasisFr24Selector.normalize(query.trim()).split(/\s+/).every(word=>haystack.includes(word));}
   _open(){
     if(!this._config)return;
     this._search.value='';this._limit=80;this.shadowRoot.querySelector('.message').textContent='';
@@ -96,20 +97,28 @@ class OasisFr24Selector extends HTMLElement {
   _select(value){
     this._draft=String(value).trim().toUpperCase();this._input.value=this._draft;
     const airport=this._airports.find(a=>a.code===this._draft);
-    this.shadowRoot.querySelector('.selection').textContent=airport?airport.name+' · '+airport.country:/^[A-Z]{4}$/.test(this._draft)?this._t("Code personnalisé · vérifie qu’il correspond à un aéroport."):this._t("Sélectionne un aéroport ou saisis ses 4 lettres.");
+    const location=airport?oasisAirportLocation(airport,this._language):null;
+    this.shadowRoot.querySelector('.selection').textContent=location?location.name+' · '+location.country:/^[A-Z]{4}$/.test(this._draft)?this._t("Code personnalisé · vérifie qu’il correspond à un aéroport."):this._t("Sélectionne un aéroport ou saisis ses 4 lettres.");
     this.shadowRoot.querySelector('.message').textContent='';
     this._updateApply();
     for(const b of this.shadowRoot.querySelectorAll('.airport')) b.setAttribute('aria-pressed',String(b.dataset.code===this._draft));
   }
   _updateApply(){this._apply.disabled=this._config.read_only===true||!this._available||!!this._busy||!/^[A-Z]{4}$/.test(this._draft || '')||this._draft===this._current;}
   _renderResults(){
-    const rows=this._airports.filter(a=>OasisFr24Selector.matches(a,this._search.value));
+    const language=this._language||'en';
+    if(!this._localizedCatalog.has(language)){
+      const localized=this._airports.map(airport=>{const location=oasisAirportLocation(airport,language);return {airport,location,search:OasisFr24Selector.normalize(location.aliases.join(' '))};});
+      localized.sort((a,b)=>a.location.country.localeCompare(b.location.country,language)||a.location.name.localeCompare(b.location.name,language)||a.airport.code.localeCompare(b.airport.code));
+      this._localizedCatalog.set(language,localized);
+    }
+    const words=OasisFr24Selector.normalize(this._search.value.trim()).split(/\s+/);
+    const rows=this._localizedCatalog.get(language).filter(a=>words.every(word=>a.search.includes(word)));
     const list=this.shadowRoot.querySelector('.results');list.replaceChildren();
     const visible=rows.slice(0,this._limit||80);
     this.shadowRoot.querySelector('.count').textContent=this._t(rows.length===1?'{count} aéroport':'{count} aéroports',{count:rows.length})+(visible.length<rows.length?this._t(' · {count} affichés — affine ta recherche',{count:visible.length}):'');
-    for(const airport of visible){
-      const button=document.createElement('button');button.type='button';button.className='airport';button.dataset.code=airport.code;button.setAttribute('aria-pressed',String(airport.code===this._draft));button.setAttribute('aria-label',airport.name+', '+airport.code);
-      for(const [cls,text] of [['name',airport.name],['country',airport.country+(airport.iata?' · IATA '+airport.iata:'')],['icao',airport.code]]){const span=document.createElement('span');span.className=cls;span.textContent=text;button.append(span);}
+    for(const {airport,location} of visible){
+      const button=document.createElement('button');button.type='button';button.className='airport';button.dataset.code=airport.code;button.setAttribute('aria-pressed',String(airport.code===this._draft));button.setAttribute('aria-label',location.name+', '+airport.code);button.title=airport.name;
+      for(const [cls,text] of [['name',location.name],['country',location.country+(airport.iata?' · IATA '+airport.iata:'')],['icao',airport.code]]){const span=document.createElement('span');span.className=cls;span.textContent=text;button.append(span);}
       button.addEventListener('click',()=>this._select(airport.code));list.append(button);
     }
     if(visible.length<rows.length){const more=document.createElement('button');more.type='button';more.className='more';more.textContent=this._t("Afficher davantage");more.addEventListener('click',()=>{this._limit=(this._limit||80)+80;this._renderResults();});list.append(more);}
