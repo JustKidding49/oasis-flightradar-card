@@ -6,7 +6,7 @@ Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : band
 
 Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
 
-**Version 0.1.5 : catalogue et recherche géographique multilingues.** Les 37 tests locaux réussissent le 4 octobre 2026. Le rendu réel de la version précédente a été vérifié le 4 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
+**Version 0.1.6 : catalogue et recherche géographique multilingues.** Les 38 tests locaux réussissent le 4 octobre 2026. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Le rendu réel de la version précédente a été vérifié le 4 octobre 2026 dans Home Assistant : bandeau, horloges, recherche et tableaux à dix lignes visibles. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
 
 ## Langue automatique
 
@@ -53,7 +53,7 @@ Les capteurs doivent exposer un attribut `flights`, contenant une liste d’obje
 ## Installation manuelle
 
 1. Copier `dist/oasis-flightradar-card.js` dans le dossier `www` existant de Home Assistant.
-2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.5`, type **module**.
+2. Dans les ressources du tableau de bord, ajouter `/local/oasis-flightradar-card.js?v=0.1.6`, type **module**.
 3. Ajouter la carte « Oasis Flightradar Card » et renseigner les entités.
 
 Le fichier autonome mesure environ 108 Ko. Le catalogue des 1 153 aéroports est compressé sans perte et décompressé localement, sans requête réseau, grâce à `DecompressionStream` : un navigateur récent est nécessaire. L’installation comme fichier JS reste recommandée pour HACS. Une ressource inline MCP est possible si sa limite et la politique CSP du reverse proxy le permettent. Bumper la version de l’URL lors d’une mise à jour manuelle pour éviter les caches obsolètes.

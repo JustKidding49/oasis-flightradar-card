@@ -4,7 +4,7 @@ An airport-style Home Assistant dashboard card: city banner, split-flap clocks, 
 
 [Latest release](https://github.com/JustKidding49/oasis-flightradar-card/releases/latest) · [Français](README.fr.md) · [Report an issue](https://github.com/JustKidding49/oasis-flightradar-card/issues)
 
-**Version 0.1.5 · GPL-3.0-only · Maintained by JustKidding49**
+**Version 0.1.6 · GPL-3.0-only · Maintained by JustKidding49**
 
 Available as a **custom HACS repository**, not yet in the default catalog.
 
@@ -78,7 +78,7 @@ HACS manages the resource version query in storage-mode dashboards. If an old co
 
 ### Manual installation
 
-Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.5` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
+Download `oasis-flightradar-card.js` from the latest release, put it in Home Assistant's existing `www` directory and register `/local/oasis-flightradar-card.js?v=0.1.6` as a JavaScript module. Bump the query version on updates. Do not use manual and HACS resources simultaneously.
 
 ## Configuration
 
@@ -160,7 +160,7 @@ node scripts/screenshots.cjs
 
 On Linux/macOS, use `OASIS_BROWSER_CHANNEL=chromium npm test` and the same prefix for screenshots. Tests default to Microsoft Edge without a channel override. `scripts/build.cjs` generates `dist/oasis-flightradar-card.js`; do not edit it directly. `examples/demo.html` runs with synthetic data offline.
 
-**37 automated tests passed** on October 4, 2026. Network requests are blocked and services/airport changes are simulated. Coverage includes safeguards, confirmation/errors, responsive layout, time zones, HTML injection prevention, multiple instances, character cycling, airport-switch first refresh, all 13 interface languages, complete translation keys, regional language variants, live language changes, localized city/country search and original-name/code compatibility without service calls.
+**38 automated tests passed** on October 4, 2026. Network requests are blocked and services/airport changes are simulated. Coverage includes safeguards, confirmation/errors, responsive layout, time zones, HTML injection prevention, multiple instances, character cycling, airport-switch first refresh, all 13 interface languages, complete translation keys, regional language variants, live language changes, localized city/country search and original-name/code compatibility without service calls. English country aliases use the bundled dictionary even when Home Assistant's Intl polyfill has only loaded the active language.
 
 The maintainer reports action tests on the ChatGPT test dashboard and phone/tablet rendering checks as passed. These are maintainer-reported acceptance results, not additional automated tests. No exhaustive HA/browser/Companion compatibility matrix is claimed.
 
