@@ -8,6 +8,16 @@ Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub
 
 **Disponible dans le catalogue officiel HACS depuis le 20 octobre 2026.** Rechercher directement **Oasis Flightradar Card** dans HACS : aucun dépôt personnalisé n’est nécessaire. [Demande approuvée et fusionnée](https://github.com/hacs/default/pull/11540).
 
+## Installation rapide — sans dépôt personnalisé
+
+[![Ouvrir Oasis Flightradar Card dans HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=JustKidding49&repository=oasis-flightradar-card)
+
+1. Avec **HACS déjà installé**, cliquer sur le bouton ci-dessus et sélectionner son instance Home Assistant si demandé. Le bouton ouvre la fiche HACS de la carte : il n’installe rien automatiquement.
+2. Cliquer sur **Télécharger**, puis recharger Home Assistant dans le navigateur.
+3. Ajouter **Oasis Flightradar Card** au dashboard et sélectionner ses entités Flightradar24.
+
+Autre méthode : ouvrir **HACS**, rechercher **Oasis Flightradar Card** et la télécharger dans la catégorie **Dashboard**. **Aucun dépôt personnalisé n’est nécessaire.** L’[intégration Flightradar24](https://github.com/AlexandrErohin/home-assistant-flightradar24) doit être configurée séparément. Voir les [instructions détaillées](#installation-hacs-recommandée) et la [configuration](#configuration-minimale).
+
 **Version 0.1.7 : tableaux lisibles et défilement horizontal sur téléphone.** Les 39 tests locaux réussissent le 4 octobre 2026. Sur les écrans de 600px maximum, les caractères restent lisibles et chaque tableau défile horizontalement ; ordinateur et tablette conservent l’ajustement automatique. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation.
 
 ## Langue automatique

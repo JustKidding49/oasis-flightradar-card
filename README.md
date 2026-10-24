@@ -8,6 +8,16 @@ An airport-style Home Assistant dashboard card: city banner, split-flap clocks, 
 
 Available in the **official HACS default catalog** since October 20, 2026. Search for **Oasis Flightradar Card** directly in HACS; no custom repository is required. [Approval and merged submission](https://github.com/hacs/default/pull/11540).
 
+## Quick installation — no custom repository
+
+[![Open Oasis Flightradar Card in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=JustKidding49&repository=oasis-flightradar-card)
+
+1. With **HACS already installed**, click the button above and select your Home Assistant instance if prompted. It opens this card's HACS page; it does not install anything automatically.
+2. Click **Download**, then reload Home Assistant in your browser.
+3. Add **Oasis Flightradar Card** to your dashboard and select your Flightradar24 entities.
+
+Alternatively, open **HACS**, search for **Oasis Flightradar Card** and download it from the **Dashboard** category. **No custom repository is needed.** The [Flightradar24 integration](https://github.com/AlexandrErohin/home-assistant-flightradar24) must be configured separately. See [detailed installation](#hacs-installation) and [configuration](#configuration).
+
 ## Automatic language selection
 
 The card and visual editor follow the current user's Home Assistant interface language (`hass.locale.language`, with `hass.language` as a compatibility fallback). No YAML language option is required. Changing the interface language also updates the card, including open dialogs, without changing any Home Assistant entity.
