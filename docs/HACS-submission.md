@@ -1,6 +1,19 @@
-# Default HACS catalog submission preparation
+# Official HACS catalog inclusion
 
-This is a preparation checklist, not an approval or an already-submitted request.
+**Accepted and merged on October 20, 2026.** Verified on October 24, 2026.
+
+Approved submission: https://github.com/hacs/default/pull/11540
+Merge commit: https://github.com/hacs/default/commit/164b0f29599d9deefbd66dbae1cc85f3cb468269
+
+Search for **Oasis Flightradar Card** directly in HACS, category **Dashboard**. A custom repository is no longer required. Existing custom-repository installations do not need to uninstall or add a duplicate resource; that route remains a fallback if HACS search has not refreshed.
+
+Latest release verified October 24, 2026: [v0.1.7](https://github.com/JustKidding49/oasis-flightradar-card/releases/tag/v0.1.7). Version 0.1.7 passed 39 local automated tests on October 4, 2026. [Successful pre-release HACS validation](https://github.com/JustKidding49/oasis-flightradar-card/actions/runs/37234047127).
+
+The card supports 13 interface languages with English fallback. The required Flightradar24 integration is separate from this dashboard card. Read-only mode is enabled by default.
+
+## Archived submission preparation (October 3, 2026)
+
+The historical checklist below describes preparation before approval, not outstanding work. References to pending releases and a primarily French interface reflect that earlier stage and are superseded by the status above.
 
 Repository: https://github.com/JustKidding49/oasis-flightradar-card
 Category: Dashboard (`plugin` in the HACS backend).
