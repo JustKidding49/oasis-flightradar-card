@@ -6,7 +6,9 @@ Une carte Lovelace autonome, au style tableau d’aéroport noir et doré : band
 
 Nom du dépôt validé : **oasis-flightradar-card**. Mainteneur et compte GitHub : **JustKidding49**. Licence du code original : **GPL-3.0-only** (GNU GPL version 3 uniquement).
 
-**Version 0.1.7 : tableaux lisibles et défilement horizontal sur téléphone.** Les 39 tests locaux réussissent le 4 octobre 2026. Sur les écrans de 600px maximum, les caractères restent lisibles et chaque tableau défile horizontalement ; ordinateur et tablette conservent l’ajustement automatique. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation. La carte est distribuée par dépôt personnalisé HACS ; sa demande d’ajout au catalogue par défaut est en attente.
+**Disponible dans le catalogue officiel HACS depuis le 20 octobre 2026.** Rechercher directement **Oasis Flightradar Card** dans HACS : aucun dépôt personnalisé n’est nécessaire. [Demande approuvée et fusionnée](https://github.com/hacs/default/pull/11540).
+
+**Version 0.1.7 : tableaux lisibles et défilement horizontal sur téléphone.** Les 39 tests locaux réussissent le 4 octobre 2026. Sur les écrans de 600px maximum, les caractères restent lisibles et chaque tableau défile horizontalement ; ordinateur et tablette conservent l’ajustement automatique. Les alias anglais des pays restent disponibles même si le polyfill Intl de Home Assistant ne charge que la langue active. Les appels de service et les changements de données synthétiques sont testés uniquement avec une simulation.
 
 ## Langue automatique
 
@@ -50,6 +52,20 @@ La présentation des vols suivis est un nouveau résumé natif : elle ne reprodu
 L’[intégration Flightradar24](https://github.com/AlexandrErohin/home-assistant-flightradar24) doit déjà fournir les données dans Home Assistant. La carte ne se connecte pas directement à l’API Flightradar24 et ne demande aucun identifiant, mot de passe ou token.
 
 Les capteurs doivent exposer un attribut `flights`, contenant une liste d’objets. Les noms d’entités dépendent de l’installation et de la langue : sélectionner ses propres entités, ne pas recopier aveuglément celles des exemples.
+
+## Installation HACS (recommandée)
+
+1. Ouvrir **HACS** et rechercher **Oasis Flightradar Card**.
+2. Ouvrir sa fiche dans la catégorie **Dashboard**.
+3. Télécharger la carte, puis recharger le navigateur.
+4. Vérifier la ressource `/hacsfiles/oasis-flightradar-card/oasis-flightradar-card.js`, type **module**. Ne pas conserver une seconde ressource manuelle ou inline de la même carte.
+5. Ajouter la carte et sélectionner ses entités ; conserver `read_only: true` pendant les vérifications.
+
+La carte fait partie du catalogue officiel depuis le 20 octobre 2026 : [PR HACS #11540 approuvée et fusionnée](https://github.com/hacs/default/pull/11540). Si une ancienne copie reste en cache, recharger complètement le navigateur ou réinitialiser le cache frontend de l’application Companion.
+
+### Dépôt personnalisé en solution de secours
+
+Si la carte n’apparaît pas dans la recherche, actualiser HACS et vérifier les filtres. En dernier recours, ouvrir **HACS → Dépôts personnalisés** et ajouter `https://github.com/JustKidding49/oasis-flightradar-card`, type **Dashboard**, puis suivre les étapes ci-dessus. Les installations existantes par dépôt personnalisé peuvent continuer leurs mises à jour normalement : ne pas désinstaller la carte ni ajouter une seconde copie.
 
 ## Installation manuelle
 
@@ -131,15 +147,9 @@ Tests : rendu autonome, fuseaux, recherche, lecture seule, confirmations, erreur
 
 Résultat local : **26 tests navigateur réussis** dans Microsoft Edge, le 3 octobre 2026. Les aperçus `docs/desktop.png` et `docs/mobile.png` utilisent uniquement des données fictives et un bandeau sans photo ; ils ne représentent pas une connexion à Home Assistant.
 
-## Installation HACS
+## Distribution et références HACS
 
-1. Dans HACS, ouvrir **Dépôts personnalisés**.
-2. Ajouter `https://github.com/JustKidding49/oasis-flightradar-card`, type **Dashboard**.
-3. Télécharger **Oasis Flightradar Card**, puis recharger le navigateur.
-4. Vérifier la ressource `/hacsfiles/oasis-flightradar-card/oasis-flightradar-card.js`, type **module**. Ne pas conserver une seconde ressource inline de la même carte.
-5. Ajouter la carte et sélectionner ses entités ; conserver `read_only: true` pendant les vérifications.
-
-La présence dans le catalogue par défaut exige une demande distincte et l’acceptation par HACS. Les sources et le script de construction accompagnent chaque version dans le dépôt ; le fichier JS autonome est joint à la release.
+La carte est incluse dans le catalogue officiel HACS. Les sources et le script de construction accompagnent chaque version dans le dépôt ; le fichier JS autonome est joint à la release.
 
 Références : [exigences des cartes HACS](https://www.hacs.dev/docs/publish/plugin/), [exigences générales](https://www.hacs.dev/docs/publish/start/), [API des cartes Home Assistant](https://developers.home-assistant.io/docs/frontend/custom-ui/custom-card/).
 

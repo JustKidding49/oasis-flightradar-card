@@ -6,7 +6,7 @@ An airport-style Home Assistant dashboard card: city banner, split-flap clocks, 
 
 **Version 0.1.7 · GPL-3.0-only · Maintained by JustKidding49**
 
-Available as a **custom HACS repository**, not yet in the default catalog.
+Available in the **official HACS default catalog** since October 20, 2026. Search for **Oasis Flightradar Card** directly in HACS; no custom repository is required. [Approval and merged submission](https://github.com/hacs/default/pull/11540).
 
 ## Automatic language selection
 
@@ -69,13 +69,17 @@ A modern browser supporting `DecompressionStream` is required for the bundled ca
 
 ## HACS installation
 
-1. Open **HACS → Custom repositories**.
-2. Add `https://github.com/JustKidding49/oasis-flightradar-card`, category **Dashboard**.
+1. Open **HACS** and search for **Oasis Flightradar Card**.
+2. Open the card's entry in the **Dashboard** category.
 3. Download **Oasis Flightradar Card** and reload your browser.
 4. Check `/hacsfiles/oasis-flightradar-card/oasis-flightradar-card.js` is registered as a **JavaScript module**. Do not keep a second manual/inline copy.
 5. Add the card, select your entities and keep `read_only: true` while checking configuration.
 
 HACS manages the resource version query in storage-mode dashboards. If an old copy remains cached, hard-reload the browser or reset the frontend cache in the Companion app.
+
+### Custom repository fallback
+
+If the card is not yet visible in your HACS search, refresh HACS and check your filters. As a fallback, open **HACS → Custom repositories** and add `https://github.com/JustKidding49/oasis-flightradar-card`, category **Dashboard**, then follow the installation steps above. Existing custom-repository installations can keep updating normally; do not uninstall or register a second copy of the card.
 
 ### Manual installation
 
